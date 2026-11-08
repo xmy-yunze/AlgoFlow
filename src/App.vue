@@ -1,5 +1,7 @@
 <script setup>
 import { restoreRandomSnapshot } from './lib/randomSnapshot.js'
+import ClearDataDialog from './components/ClearDataDialog.vue'
+import { clearAppData } from './lib/clearData.js'
 import BackupImport from './components/BackupImport.vue'
 import { planImport } from './lib/backupImport.js'
 import CompletionCelebration from './components/CompletionCelebration.vue'
@@ -131,6 +133,15 @@ function removeRecord() {
   state.value = next; pendingDelete.value = null; viewingSession.value = null; recordNotice.value = '记录已删除。'
 }
 const assistanceName = value => ({ INDEPENDENT: '独立完成 / 尝试', HINT: '查看提示', SOLUTION: '参考题解' })[value] ?? value
+const clearingData = ref(false)
+const clearError = ref('')
+function confirmClearData() {
+  try {
+    clearAppData(window.localStorage)
+    window.history.replaceState(null, '', '#/profile')
+    window.location.reload()
+  } catch (error) { clearError.value = error.message }
+}
 const importNotice = ref('')
 function confirmBackupImport(backup) {
   const plan = planImport(state.value, backup)
@@ -219,7 +230,7 @@ onUnmounted(() => { clearInterval(timer); window.removeEventListener('focus', re
 </script>
 
 <template>
-  <CompletionCelebration v-if="celebrate" @close="celebrate = false" /><AppShell :active="activeTab" :secondary="!!detail" @navigate="switchTab"><div class="page-shell">
+  <ClearDataDialog v-if="clearingData" :error="clearError" @cancel="clearingData = false" @confirm="confirmClearData" /><CompletionCelebration v-if="celebrate" @close="celebrate = false" /><AppShell :active="activeTab" :secondary="!!detail" @navigate="switchTab"><div class="page-shell">
     <header class="brand-row"><a class="brand" :href="routeBase()" @click.prevent="navigate(routeBase())" aria-label="AlgoFlow 首页"><span class="brand-icon"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6" cy="5" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="6" cy="19" r="2"/><path d="M6 7v10M8 14c8 0 10-2 10-6"/></svg></span>AlgoFlow</a><span class="date-pill">{{ todayLabel }}</span></header>
     <main v-if="recording && detail" class="detail-page">
       <button class="secondary-button back-button" @click="closeRecording">← 返回题目详情</button>
@@ -271,7 +282,7 @@ onUnmounted(() => { clearInterval(timer); window.removeEventListener('focus', re
       <ProblemLibrary :completed-ids="state.completedIds" @open="problem => showDetail(problem, 'library')" />
       </PracticePage>
       <ReviewPage v-show="activeTab === 'review'" :sessions="state.sessions ?? []" @open="problem => showDetail(problem, 'review')" />
-      <ProfilePage v-show="activeTab === 'profile'"><section class="greeting"><h1>我的</h1><p class="intro">你的学习档案</p></section><LearningStatistics :sessions="state.sessions ?? []" /><article class="preview"><h2>数据管理</h2><button class="secondary-button" @click="exportArchive">导出训练档案 JSON</button><BackupImport :state="state" @confirm="confirmBackupImport" /><p v-if="importNotice" role="status">{{ importNotice }}</p><p>数据只保存在当前浏览器和当前地址，可通过 JSON 备份手动迁移。手动结果不代表 OJ 官方判题。</p></article><section class="more-section"><button class="secondary-button" @click="switchTab('review')">查看训练档案</button></section></ProfilePage>
+      <ProfilePage v-show="activeTab === 'profile'"><section class="greeting"><h1>我的</h1><p class="intro">你的学习档案</p></section><LearningStatistics :sessions="state.sessions ?? []" /><article class="preview"><h2>数据管理</h2><button class="secondary-button" @click="exportArchive">导出训练档案 JSON</button><BackupImport :state="state" @confirm="confirmBackupImport" /><button class="danger-button clear-data-entry" @click="clearError = ''; clearingData = true">清空全部数据</button><p v-if="importNotice" role="status">{{ importNotice }}</p><p>数据只保存在当前浏览器和当前地址，可通过 JSON 备份手动迁移。手动结果不代表 OJ 官方判题。</p></article><section class="more-section"><button class="secondary-button" @click="switchTab('review')">查看训练档案</button></section></ProfilePage>
     </main>
   </div></AppShell>
 </template>
