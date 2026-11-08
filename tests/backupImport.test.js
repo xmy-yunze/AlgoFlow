@@ -1,0 +1,10 @@
+import test from 'node:test'
+import assert from 'node:assert/strict'
+import {parseBackup,planImport} from '../src/lib/backupImport.js'
+const s={id:'a',problemId:'LUOGU:P2249',recordedAt:'2026-11-08T01:00:00Z',source:'MANUAL',verdict:'AC',assistanceLevel:'INDEPENDENT',selfRating:3,masteryPercent:60,durationSeconds:null,errorTypes:[],note:''}
+const local=()=>({version:1,settings:{topicId:'binary-search',difficulty:'基础'},completedIds:[],legacyCompletedIds:[],sessions:[],daily:{problemId:'keep'}})
+const raw=sessions=>JSON.stringify({schemaVersion:1,learning:{version:1,completedIds:[],sessions}})
+test('非法结构、版本、字段、未知题目均拒绝',()=>{for(const data of ['{','null',JSON.stringify({schemaVersion:2}),raw([{...s,masteryPercent:101}]),raw([{...s,source:'OJ_SYNC'}]),raw([{...s,problemId:'unknown'}]),raw([{...s,note:null}])])assert.throws(()=>parseBackup(data))})
+test('合并幂等，内部重复与冲突保留首次记录，不改原输入和设置',()=>{const base=local(),backup=parseBackup(raw([s,s,{...s,note:'conflict'}]));const p=planImport(base,backup);assert.equal(p.added,1);assert.equal(p.duplicates,1);assert.equal(p.conflicts.length,1);assert.equal(base.sessions.length,0);assert.deepEqual(p.next.daily,base.daily);assert.deepEqual(p.next.settings,base.settings);assert.equal(planImport(p.next,backup).added,0)})
+test('旧记录合并不会取代较新本地结果，本地冲突不覆盖',()=>{const base=local();base.sessions=[{...s,id:'new',verdict:'WA',recordedAt:'2026-11-09T01:00:00Z'}];const p=planImport(base,parseBackup(raw([s])));assert.deepEqual(p.next.completedIds,[]);assert.equal(p.next.sessions[1].id,'new');const conflict=planImport(p.next,parseBackup(raw([{...s,note:'other'}])));assert.equal(conflict.conflicts.length,1);assert.equal(conflict.next.sessions[0].note,'')})
+test('兼容旧完成标记与旧五级记录',()=>{const old={...s};delete old.masteryPercent;const data=JSON.parse(raw([old]));data.learning.completedIds=['LUOGU:P1102'];const p=planImport(local(),parseBackup(JSON.stringify(data)));assert(p.next.completedIds.includes('LUOGU:P1102'));assert.equal(p.next.sessions[0].selfRating,3)})

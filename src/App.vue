@@ -1,10 +1,13 @@
 <script setup>
 import { restoreRandomSnapshot } from './lib/randomSnapshot.js'
+import BackupImport from './components/BackupImport.vue'
+import { planImport } from './lib/backupImport.js'
 import CompletionCelebration from './components/CompletionCelebration.vue'
 import { learningStatistics } from './lib/statistics.js'
 import LearningStatistics from './components/LearningStatistics.vue'
 import AppShell from './components/AppShell.vue'
 import TodayPage from './pages/TodayPage.vue'
+import ProblemLibrary from './components/ProblemLibrary.vue'
 import PracticePage from './pages/PracticePage.vue'
 import ReviewPage from './pages/ReviewPage.vue'
 import ProfilePage from './pages/ProfilePage.vue'
@@ -128,6 +131,14 @@ function removeRecord() {
   state.value = next; pendingDelete.value = null; viewingSession.value = null; recordNotice.value = '记录已删除。'
 }
 const assistanceName = value => ({ INDEPENDENT: '独立完成 / 尝试', HINT: '查看提示', SOLUTION: '参考题解' })[value] ?? value
+const importNotice = ref('')
+function confirmBackupImport(backup) {
+  const plan = planImport(state.value, backup)
+  const error = saveState(storage, plan.next)
+  if (error) { importNotice.value = error; return }
+  state.value = plan.next
+  importNotice.value = `导入完成：新增 ${plan.added} 条，重复跳过 ${plan.duplicates} 条，冲突保留本地 ${plan.conflicts.length} 条。`
+}
 function exportArchive() {
   const data = { schemaVersion: 1, exportedAt: new Date().toISOString(), learning: state.value, trainingChoice: training.value }
   const url = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }))
@@ -186,7 +197,7 @@ function navigate(url) {
 function switchTab(tab) { if(tab!==activeTab.value) navigate(`#/${tab}`) }
 function showDetail(problem,source) {
   if(!problem)return
-  detail.value={problem,source,explanation:source==='daily'?trainingReason.value+problem.focus:['profile','review'].includes(source)?problem.focus:reason.value}
+  detail.value={problem,source,explanation:source==='daily'?trainingReason.value+problem.focus:['profile','review','library'].includes(source)?problem.focus:reason.value}
   recordNotice.value=''; recordError.value=''
   navigate(routeFor('problem'))
 }
@@ -218,7 +229,7 @@ onUnmounted(() => { clearInterval(timer); window.removeEventListener('focus', re
     <main v-if="detail" v-show="!recording" class="detail-page">
       <button class="secondary-button back-button" @click="closeDetail">← 返回{{ {today: '今日', practice: '刷题', review: '记录', profile: '我的'}[activeTab] }}</button>
       <article class="preview">
-        <p class="problem-id">{{ detail.problem.id }} · {{ detail.source === 'daily' ? '每日推荐' : ['review','profile'].includes(detail.source) ? '训练档案' : '随机刷题' }}</p>
+        <p class="problem-id">{{ detail.problem.id }} · {{ detail.source === 'library' ? '题库选题' : detail.source === 'daily' ? '每日推荐' : ['review','profile'].includes(detail.source) ? '训练档案' : '随机刷题' }}</p>
         <h1 id="detail-title" tabindex="-1">{{ detail.problem.title }}</h1>
         <div class="tags"><span>来源：{{ detail.problem.platform }}</span><span>{{ detail.problem.difficulty }} · 自定分级</span><span v-for="id in detail.problem.leafTopicIds" :key="id">{{ topicPath(id) }}</span></div>
         <h2>推荐理由</h2><p>{{ detail.explanation }}</p><section class="ai-placeholder"><h2>AI 解题教练</h2><p>后续提供思路提示与解题引导，本版本尚未接入。</p></section>
@@ -257,9 +268,10 @@ onUnmounted(() => { clearInterval(timer); window.removeEventListener('focus', re
           <button v-if="selectedProblem" class="result-card" @click="showDetail(selectedProblem, panel, $event)"><span class="problem-id">{{ selectedProblem.id }}</span><strong>{{ selectedProblem.title }}</strong><span>{{ selectedProblem.difficulty }} · {{ selectedProblem.platform }}</span><span class="result-action">查看题目详情</span></button>
         </template>
       </section>
+      <ProblemLibrary :completed-ids="state.completedIds" @open="problem => showDetail(problem, 'library')" />
       </PracticePage>
       <ReviewPage v-show="activeTab === 'review'" :sessions="state.sessions ?? []" @open="problem => showDetail(problem, 'review')" />
-      <ProfilePage v-show="activeTab === 'profile'"><section class="greeting"><h1>我的</h1><p class="intro">你的学习档案</p></section><LearningStatistics :sessions="state.sessions ?? []" /><article class="preview"><h2>数据管理</h2><button class="secondary-button" @click="exportArchive">导出训练档案 JSON</button><p>数据只保存在当前浏览器和当前地址，暂不跨设备同步。手动结果不代表 OJ 官方判题。</p></article><section class="more-section"><button class="secondary-button" @click="switchTab('review')">查看训练档案</button></section></ProfilePage>
+      <ProfilePage v-show="activeTab === 'profile'"><section class="greeting"><h1>我的</h1><p class="intro">你的学习档案</p></section><LearningStatistics :sessions="state.sessions ?? []" /><article class="preview"><h2>数据管理</h2><button class="secondary-button" @click="exportArchive">导出训练档案 JSON</button><BackupImport :state="state" @confirm="confirmBackupImport" /><p v-if="importNotice" role="status">{{ importNotice }}</p><p>数据只保存在当前浏览器和当前地址，可通过 JSON 备份手动迁移。手动结果不代表 OJ 官方判题。</p></article><section class="more-section"><button class="secondary-button" @click="switchTab('review')">查看训练档案</button></section></ProfilePage>
     </main>
   </div></AppShell>
 </template>
