@@ -1,6 +1,7 @@
 <script setup>
 import { restoreRandomSnapshot } from './lib/randomSnapshot.js'
 import CompletionCelebration from './components/CompletionCelebration.vue'
+import { learningStatistics } from './lib/statistics.js'
 import LearningStatistics from './components/LearningStatistics.vue'
 import AppShell from './components/AppShell.vue'
 import TodayPage from './pages/TodayPage.vue'
@@ -132,6 +133,7 @@ function exportArchive() {
   const url = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }))
   const a = document.createElement('a'); a.href = url; a.download = `AlgoFlow-${localDate()}.json`; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000)
 }
+const todayOverview = computed(() => learningStatistics(state.value.sessions ?? []))
 const detail = ref(null)
 const activeTab = ref('today')
 const formDirty = ref(false)
@@ -207,7 +209,7 @@ onUnmounted(() => { clearInterval(timer); window.removeEventListener('focus', re
 
 <template>
   <CompletionCelebration v-if="celebrate" @close="celebrate = false" /><AppShell :active="activeTab" :secondary="!!detail" @navigate="switchTab"><div class="page-shell">
-    <header class="brand-row"><a class="brand" :href="routeBase()" @click.prevent="navigate(routeBase())" aria-label="AlgoFlow 首页"><span class="brand-icon">⌘</span>AlgoFlow<span class="version">0.1</span></a><span class="edition">YOUR DAILY PRACTICE</span></header>
+    <header class="brand-row"><a class="brand" :href="routeBase()" @click.prevent="navigate(routeBase())" aria-label="AlgoFlow 首页"><span class="brand-icon"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6" cy="5" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="6" cy="19" r="2"/><path d="M6 7v10M8 14c8 0 10-2 10-6"/></svg></span>AlgoFlow</a><span class="date-pill">{{ todayLabel }}</span></header>
     <main v-if="recording && detail" class="detail-page">
       <button class="secondary-button back-button" @click="closeRecording">← 返回题目详情</button>
       <p class="problem-id">{{ detail.problem.externalId }} · {{ detail.problem.title }}</p>
@@ -236,14 +238,15 @@ onUnmounted(() => { clearInterval(timer); window.removeEventListener('focus', re
     </main>
     <main v-show="!detail">
       <TodayPage v-show="activeTab === 'today'">
-      <section class="greeting"><p class="eyebrow">{{ todayLabel }}</p><h1>今日</h1><p class="intro">每天一题，认真理解。</p></section>
+      <section class="greeting today-welcome"><h1>今天，也来一道题。</h1><p class="intro">保持思考的节奏，积累算法能力。</p></section>
       <p v-if="warning" class="notice" role="alert">{{ warning }}</p>
-      <section class="learning-banner" aria-label="当前学习方向"><span class="orbit-icon" aria-hidden="true">✦</span><div><span class="banner-caption">你的学习路线</span><strong>{{ training?.confirmed ? topicPath(training.topicId) + ' · ' + training.difficulty : '随机练习 · 可选择专题训练' }}</strong></div></section>
-      <details class="settings-card"><summary>调整学习专题与难度</summary><div class="filter-grid"><TopicPicker v-model="draftSettings.topicId" label="学习专题" /><SmoothSelect v-model="draftSettings.difficulty" label="学习难度" :options="difficulties" /></div><button class="primary-button" @click="confirmTraining">确定训练 </button><p v-if="trainingMessage" role="status">{{ trainingMessage }}</p><p>选择专题与难度后，点击确定训练，下方立即推荐对应题目。未确定时默认随机推荐。</p></details>
-      <section class="daily-card clickable-card" aria-labelledby="daily-title" :tabindex="dailyProblem ? 0 : undefined" :role="dailyProblem ? 'link' : undefined" @click="showDetail(dailyProblem, 'daily', $event)" @keydown.enter.self.prevent="showDetail(dailyProblem, 'daily', $event)"><div class="card-top"><span class="label"><span class="small-dot"></span>{{ training?.confirmed ? '系统训练 · 专题练习' : '今日推荐 · 随机题' }}</span><span class="sample-tag">{{ isCompleted(dailyProblem) ? '已手动完成' : (training?.confirmed ? '已确定训练' : '随机推荐') }}</span></div>
-        <template v-if="dailyProblem"><div v-if="isCompleted(dailyProblem)" class="daily-congrats" role="status"><strong>✦ 今日挑战已完成，真棒！</strong><span>每一次认真思考，都在让你更进一步。</span></div><div class="topic-line">{{ dailyProblem.platform }} · {{ dailyProblem.externalId }}</div><h2 id="daily-title">{{ dailyProblem.title }}</h2><p class="daily-description">{{ dailyProblem.focus }}</p><div class="tags"><span v-for="id in dailyProblem.leafTopicIds" :key="id">{{ topicName(id) }}</span><span>{{ dailyProblem.difficulty }}</span></div><button class="primary-button" @click.stop="showDetail(dailyProblem, 'daily', $event)">查看题目详情 </button><p class="card-footnote">{{ date }} · 刷新保留 · 确定训练可更换题目</p></template>
+      <section class="daily-card clickable-card" aria-labelledby="daily-title" :tabindex="dailyProblem ? 0 : undefined" :role="dailyProblem ? 'link' : undefined" @click="showDetail(dailyProblem, 'daily', $event)" @keydown.enter.self.prevent="showDetail(dailyProblem, 'daily', $event)"><div class="card-top"><span class="label"><span class="small-dot"></span>今日推荐</span><span class="sample-tag">{{ isCompleted(dailyProblem) ? '已手动完成' : (training?.confirmed ? '已确定训练' : '随机推荐') }}</span></div>
+        <template v-if="dailyProblem"><div v-if="isCompleted(dailyProblem)" class="daily-congrats" role="status"><strong>✦ 今日挑战已完成，真棒！</strong><span>每一次认真思考，都在让你更进一步。</span></div><div class="topic-line">{{ dailyProblem.platform }} · {{ dailyProblem.externalId }}</div><h2 id="daily-title">{{ dailyProblem.title }}</h2><p class="daily-description">{{ dailyProblem.focus }}</p><div class="tags"><span v-for="id in dailyProblem.leafTopicIds" :key="id">{{ topicName(id) }}</span><span>{{ dailyProblem.difficulty }}</span></div><button class="primary-button" @click.stop="showDetail(dailyProblem, 'daily', $event)">开始今日训练 </button><p class="card-footnote">{{ date }} · 刷新保留 · 确定训练可更换题目</p></template>
         <template v-else><h2 id="daily-title">当前没有可推荐的新题</h2><p class="daily-description">当前专题与难度下没有未完成题目。请调整学习设置，或到随机模式选择其他范围。</p></template>
       </section>
+      <section class="today-overview"><div class="overview-heading"><h2>学习概览</h2><span>真实训练档案</span></div><div class="overview-grid"><article><span class="overview-symbol" aria-hidden="true">✓</span><strong>{{ todayOverview.practiced }}<small>题</small></strong><p>累计已练题目</p><span>同题多次训练只计一次</span></article><article><span class="overview-symbol" aria-hidden="true">◎</span><strong>{{ todayOverview.independent }}<small>题</small></strong><p>独立 AC 题目</p><span>仅统计独立完成的自报结果</span></article></div></section>
+      <button class="archive-entry" @click="switchTab('review')"><span class="archive-symbol" aria-hidden="true">▤</span><span><strong>我的训练档案</strong><small>回顾练过的题目和训练结果</small></span><span aria-hidden="true">›</span></button>
+      <details class="settings-card"><summary>调整学习专题与难度</summary><div class="filter-grid"><TopicPicker v-model="draftSettings.topicId" label="学习专题" /><SmoothSelect v-model="draftSettings.difficulty" label="学习难度" :options="difficulties" /></div><button class="primary-button" @click="confirmTraining">确定训练 </button><p v-if="trainingMessage" role="status">{{ trainingMessage }}</p><p>选择专题与难度后，点击确定训练，下方立即推荐对应题目。未确定时默认随机推荐。</p></details>
       </TodayPage>
       <PracticePage v-show="activeTab === 'practice'"><section class="greeting"><h1>刷题</h1><p class="intro">选择范围，随机练习。</p></section>
       <section v-if="panel" id="practice-panel" class="preview" aria-labelledby="panel-title"><div class="preview-top"><span>{{ panel === 'random' ? '随机刷题' : panel === 'daily' ? '今日训练' : '独立错题复习' }}</span><button @click="panel = ''" aria-label="收起练习面板">收起 ×</button></div>
