@@ -1,0 +1,17 @@
+{
+  "id": "/",
+  "name": "AlgoFlow",
+  "short_name": "AlgoFlow",
+  "description": "每日算法训练与个人学习档案",
+  "lang": "zh-CN",
+  "start_url": "/#/today",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0D0C10",
+  "theme_color": "#0D0C10",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

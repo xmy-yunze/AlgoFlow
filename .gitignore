@@ -1,0 +1,52 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Local configuration and credentials
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+secrets*.json
+.vercel/
+
+# Browser reports and local artifacts
+playwright-report/
+test-results/
+.playwright-cli/
+output/
+outputs/
+work/
+*.log
+
+# Personal training exports/backups (source data under src/data is retained)
+backups/
+exports/
+AlgoFlow-*.json
+algoflow-backup*.json
+training-backup*.json
+*.har
