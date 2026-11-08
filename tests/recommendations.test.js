@@ -4,10 +4,13 @@ import { problems } from '../src/data/problems.js'
 import { STORAGE_KEY, candidates, drawRandom, ensureDaily, initialState, loadState, localDate, saveState, toggleCompleted } from '../src/lib/recommendations.js'
 
 const memory = () => { const values = new Map(); return { getItem: key => values.get(key) ?? null, setItem: (key, value) => values.set(key, value) } }
-test('题库 24 道、稳定 ID 唯一、原题地址一致', () => {
-  assert.equal(problems.length, 24)
-  assert.equal(new Set(problems.map(p => p.id)).size, 24)
-  for (const p of problems) assert.equal(p.url, `https://www.luogu.com.cn/problem/${p.externalId}`)
+test('多平台题库稳定 ID 唯一、原题域名正确', () => {
+  assert.equal(new Set(problems.map(p => p.id)).size, problems.length)
+  for (const p of problems) {
+    assert(p.leafTopicIds.length && p.focus)
+    if (p.platform === '洛谷') assert.equal(p.url, `https://www.luogu.com.cn/problem/${p.externalId}`)
+    else { assert.equal(new URL(p.url).hostname, 'leetcode.cn'); assert(p.id.startsWith('LEETCODE:')) }
+  }
 })
 test('每日推荐保存后重载保持不变，修改设置与完成标记也不替换当天题目', () => {
   const storage = memory()
@@ -72,10 +75,11 @@ test('失效题目记录重建，过期推荐按最新设置生成', () => {
 
 test('分层专题聚合不重复，细分筛选正确，多标签题出现在各自分类', () => {
   const dp = candidates({ topicId: 'dp' })
-  assert.equal(dp.length, 5)
+  assert(dp.some(p => p.id === 'LUOGU:P1048'))
   assert.equal(new Set(dp.map(p => p.id)).size, dp.length)
   assert.deepEqual(candidates({ topicId: 'knapsack-01' }).map(p => p.externalId), ['P1048'])
-  assert.deepEqual(candidates({ topicId: 'bfs' }).map(p => p.externalId), ['P1443', 'P1135'])
+  assert(candidates({ topicId: 'bfs' }).some(p => p.externalId === 'P1443'))
+  assert(candidates({ topicId: 'bfs' }).some(p => p.externalId === 'P1135'))
   assert.deepEqual(candidates({ topicId: 'difference-2d' }).map(p => p.externalId), ['P3397'])
   assert(candidates({ topicId: 'data-structures' }).some(p => p.externalId === 'P3367'))
   assert(!candidates({ topicId: 'graph' }).some(p => p.externalId === 'P3367'))

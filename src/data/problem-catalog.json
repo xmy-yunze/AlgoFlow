@@ -1,0 +1,1095 @@
+[
+  {
+    "id": "LUOGU:P2249",
+    "platform": "洛谷",
+    "externalId": "P2249",
+    "title": "【深基13.例1】查找",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "基础",
+    "focus": "练习有序序列查找与左边界处理。",
+    "url": "https://www.luogu.com.cn/problem/P2249"
+  },
+  {
+    "id": "LUOGU:P1102",
+    "platform": "洛谷",
+    "externalId": "P1102",
+    "title": "A-B 数对",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "基础",
+    "focus": "练习排序后的范围查找与重复元素计数。",
+    "url": "https://www.luogu.com.cn/problem/P1102"
+  },
+  {
+    "id": "LUOGU:P1873",
+    "platform": "洛谷",
+    "externalId": "P1873",
+    "title": "[COCI 2011/2012 #5] EKO / 砍树",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习二分答案与单调可行性判断。",
+    "url": "https://www.luogu.com.cn/problem/P1873"
+  },
+  {
+    "id": "LUOGU:P1182",
+    "platform": "洛谷",
+    "externalId": "P1182",
+    "title": "数列分段 Section II",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习将最小化最大值转为可行性判断。",
+    "url": "https://www.luogu.com.cn/problem/P1182"
+  },
+  {
+    "id": "LUOGU:P2678",
+    "platform": "洛谷",
+    "externalId": "P2678",
+    "title": "[NOIP 2015 提高组] 跳石头",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习二分答案与贪心检查的组合。",
+    "url": "https://www.luogu.com.cn/problem/P2678"
+  },
+  {
+    "id": "LUOGU:P2440",
+    "platform": "洛谷",
+    "externalId": "P2440",
+    "title": "木材加工",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习整数二分与无可行解的边界。",
+    "url": "https://www.luogu.com.cn/problem/P2440"
+  },
+  {
+    "id": "LUOGU:P8218",
+    "platform": "洛谷",
+    "externalId": "P8218",
+    "title": "【深进1.例1】求区间和",
+    "leafTopicIds": [
+      "prefix-1d"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "prefix-1d"
+    ],
+    "difficulty": "基础",
+    "focus": "练习一维前缀和与区间下标。",
+    "url": "https://www.luogu.com.cn/problem/P8218"
+  },
+  {
+    "id": "LUOGU:P2367",
+    "platform": "洛谷",
+    "externalId": "P2367",
+    "title": "语文成绩",
+    "leafTopicIds": [
+      "difference-1d"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "difference-1d"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习差分数组处理批量区间修改。",
+    "url": "https://www.luogu.com.cn/problem/P2367"
+  },
+  {
+    "id": "LUOGU:P1719",
+    "platform": "洛谷",
+    "externalId": "P1719",
+    "title": "最大加权矩形",
+    "leafTopicIds": [
+      "prefix-2d",
+      "linear-dp"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "prefix-2d",
+      "dp",
+      "linear-dp"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习矩阵区间和与最大子段和的组合。",
+    "url": "https://www.luogu.com.cn/problem/P1719"
+  },
+  {
+    "id": "LUOGU:P3397",
+    "platform": "洛谷",
+    "externalId": "P3397",
+    "title": "地毯",
+    "leafTopicIds": [
+      "difference-2d"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "difference-2d"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习二维差分与覆盖次数还原。",
+    "url": "https://www.luogu.com.cn/problem/P3397"
+  },
+  {
+    "id": "LUOGU:P1223",
+    "platform": "洛谷",
+    "externalId": "P1223",
+    "title": "排队接水",
+    "leafTopicIds": [
+      "greedy"
+    ],
+    "topicIds": [
+      "greedy"
+    ],
+    "difficulty": "基础",
+    "focus": "练习排序策略与平均等待时间。",
+    "url": "https://www.luogu.com.cn/problem/P1223"
+  },
+  {
+    "id": "LUOGU:P1803",
+    "platform": "洛谷",
+    "externalId": "P1803",
+    "title": "凌乱的yyy / 线段覆盖",
+    "leafTopicIds": [
+      "greedy"
+    ],
+    "topicIds": [
+      "greedy"
+    ],
+    "difficulty": "基础",
+    "focus": "练习按结束时间选择不重叠区间。",
+    "url": "https://www.luogu.com.cn/problem/P1803"
+  },
+  {
+    "id": "LUOGU:P1090",
+    "platform": "洛谷",
+    "externalId": "P1090",
+    "title": "[NOIP 2004 提高组] 合并果子",
+    "leafTopicIds": [
+      "greedy",
+      "heap"
+    ],
+    "topicIds": [
+      "greedy",
+      "data-structures",
+      "heap"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习最小堆与最优合并策略。",
+    "url": "https://www.luogu.com.cn/problem/P1090"
+  },
+  {
+    "id": "LUOGU:P1208",
+    "platform": "洛谷",
+    "externalId": "P1208",
+    "title": "[USACO1.3] 混合牛奶 Mixing Milk",
+    "leafTopicIds": [
+      "greedy"
+    ],
+    "topicIds": [
+      "greedy"
+    ],
+    "difficulty": "基础",
+    "focus": "练习按单位代价选择资源。",
+    "url": "https://www.luogu.com.cn/problem/P1208"
+  },
+  {
+    "id": "LUOGU:P1036",
+    "platform": "洛谷",
+    "externalId": "P1036",
+    "title": "[NOIP 2002 普及组] 选数",
+    "leafTopicIds": [
+      "combinations",
+      "primes"
+    ],
+    "topicIds": [
+      "search",
+      "backtracking",
+      "combinations",
+      "math",
+      "number-theory",
+      "primes"
+    ],
+    "difficulty": "基础",
+    "focus": "练习组合枚举与素数判断。",
+    "url": "https://www.luogu.com.cn/problem/P1036"
+  },
+  {
+    "id": "LUOGU:P1605",
+    "platform": "洛谷",
+    "externalId": "P1605",
+    "title": "迷宫",
+    "leafTopicIds": [
+      "backtracking"
+    ],
+    "topicIds": [
+      "search",
+      "backtracking"
+    ],
+    "difficulty": "基础",
+    "focus": "练习深度优先搜索与回溯。",
+    "url": "https://www.luogu.com.cn/problem/P1605"
+  },
+  {
+    "id": "LUOGU:P1443",
+    "platform": "洛谷",
+    "externalId": "P1443",
+    "title": "马的遍历",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索求最少步数。",
+    "url": "https://www.luogu.com.cn/problem/P1443"
+  },
+  {
+    "id": "LUOGU:P1135",
+    "platform": "洛谷",
+    "externalId": "P1135",
+    "title": "奇怪的电梯",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习状态建模、BFS 与不可达判断。",
+    "url": "https://www.luogu.com.cn/problem/P1135"
+  },
+  {
+    "id": "LUOGU:P1048",
+    "platform": "洛谷",
+    "externalId": "P1048",
+    "title": "[NOIP 2005 普及组] 采药",
+    "leafTopicIds": [
+      "knapsack-01"
+    ],
+    "topicIds": [
+      "dp",
+      "knapsack",
+      "knapsack-01"
+    ],
+    "difficulty": "基础",
+    "focus": "练习 0/1 背包的状态与转移顺序。",
+    "url": "https://www.luogu.com.cn/problem/P1048"
+  },
+  {
+    "id": "LUOGU:P1216",
+    "platform": "洛谷",
+    "externalId": "P1216",
+    "title": "[IOI 1994 / USACO1.5] 数字三角形 Number Triangles",
+    "leafTopicIds": [
+      "linear-dp"
+    ],
+    "topicIds": [
+      "dp",
+      "linear-dp"
+    ],
+    "difficulty": "基础",
+    "focus": "练习路径型动态规划与边界初始化。",
+    "url": "https://www.luogu.com.cn/problem/P1216"
+  },
+  {
+    "id": "LUOGU:P1115",
+    "platform": "洛谷",
+    "externalId": "P1115",
+    "title": "最大子段和",
+    "leafTopicIds": [
+      "linear-dp"
+    ],
+    "topicIds": [
+      "dp",
+      "linear-dp"
+    ],
+    "difficulty": "基础",
+    "focus": "练习以当前位置结尾的最优状态。",
+    "url": "https://www.luogu.com.cn/problem/P1115"
+  },
+  {
+    "id": "LUOGU:P1020",
+    "platform": "洛谷",
+    "externalId": "P1020",
+    "title": "[NOIP 1999 提高组] 导弹拦截",
+    "leafTopicIds": [
+      "lis",
+      "greedy"
+    ],
+    "topicIds": [
+      "dp",
+      "linear-dp",
+      "lis",
+      "greedy"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习子序列模型与多问问题分析。",
+    "url": "https://www.luogu.com.cn/problem/P1020"
+  },
+  {
+    "id": "LUOGU:P3367",
+    "platform": "洛谷",
+    "externalId": "P3367",
+    "title": "【模板】并查集",
+    "leafTopicIds": [
+      "union-find"
+    ],
+    "topicIds": [
+      "data-structures",
+      "union-find"
+    ],
+    "difficulty": "基础",
+    "focus": "练习连通关系的合并与查询。",
+    "url": "https://www.luogu.com.cn/problem/P3367"
+  },
+  {
+    "id": "LUOGU:P3371",
+    "platform": "洛谷",
+    "externalId": "P3371",
+    "title": "【模板】单源最短路径（弱化版）",
+    "leafTopicIds": [
+      "shortest-path"
+    ],
+    "topicIds": [
+      "graph",
+      "shortest-path"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习有向带权图的单源最短路。",
+    "url": "https://www.luogu.com.cn/problem/P3371"
+  },
+  {
+    "id": "LEETCODE:1",
+    "platform": "LeetCode",
+    "externalId": "1",
+    "title": "两数之和",
+    "leafTopicIds": [
+      "hash-table"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table"
+    ],
+    "difficulty": "基础",
+    "focus": "练习哈希表查找与配对。",
+    "url": "https://leetcode.cn/problems/two-sum/"
+  },
+  {
+    "id": "LEETCODE:792",
+    "platform": "LeetCode",
+    "externalId": "704",
+    "title": "二分查找",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "基础",
+    "focus": "练习有序数组查找与区间边界。",
+    "url": "https://leetcode.cn/problems/binary-search/"
+  },
+  {
+    "id": "LEETCODE:70",
+    "platform": "LeetCode",
+    "externalId": "70",
+    "title": "爬楼梯",
+    "leafTopicIds": [
+      "linear-dp",
+      "memoization"
+    ],
+    "topicIds": [
+      "dp",
+      "linear-dp",
+      "memoization"
+    ],
+    "difficulty": "基础",
+    "focus": "练习递推状态与记忆化。",
+    "url": "https://leetcode.cn/problems/climbing-stairs/"
+  },
+  {
+    "id": "LEETCODE:20",
+    "platform": "LeetCode",
+    "externalId": "20",
+    "title": "有效的括号",
+    "leafTopicIds": [
+      "stack",
+      "strings"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "strings"
+    ],
+    "difficulty": "基础",
+    "focus": "练习栈与括号匹配。",
+    "url": "https://leetcode.cn/problems/valid-parentheses/"
+  },
+  {
+    "id": "LEETCODE:21",
+    "platform": "LeetCode",
+    "externalId": "21",
+    "title": "合并两个有序链表",
+    "leafTopicIds": [
+      "linked-list",
+      "recursion"
+    ],
+    "topicIds": [
+      "data-structures",
+      "linked-list",
+      "search",
+      "recursion"
+    ],
+    "difficulty": "基础",
+    "focus": "练习有序链表合并。",
+    "url": "https://leetcode.cn/problems/merge-two-sorted-lists/"
+  },
+  {
+    "id": "LEETCODE:121",
+    "platform": "LeetCode",
+    "externalId": "121",
+    "title": "买卖股票的最佳时机",
+    "leafTopicIds": [
+      "linear-dp"
+    ],
+    "topicIds": [
+      "dp",
+      "linear-dp"
+    ],
+    "difficulty": "基础",
+    "focus": "练习单次交易的最优收益维护。",
+    "url": "https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/"
+  },
+  {
+    "id": "LEETCODE:53",
+    "platform": "LeetCode",
+    "externalId": "53",
+    "title": "最大子数组和",
+    "leafTopicIds": [
+      "linear-dp"
+    ],
+    "topicIds": [
+      "dp",
+      "linear-dp"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习最大子段和的状态转移。",
+    "url": "https://leetcode.cn/problems/maximum-subarray/"
+  },
+  {
+    "id": "LEETCODE:35",
+    "platform": "LeetCode",
+    "externalId": "35",
+    "title": "搜索插入位置",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "基础",
+    "focus": "练习二分查找插入位置。",
+    "url": "https://leetcode.cn/problems/search-insert-position/"
+  },
+  {
+    "id": "LEETCODE:283",
+    "platform": "LeetCode",
+    "externalId": "283",
+    "title": "移动零",
+    "leafTopicIds": [
+      "two-pointers"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "基础",
+    "focus": "练习双指针原地移动元素。",
+    "url": "https://leetcode.cn/problems/move-zeroes/"
+  },
+  {
+    "id": "LEETCODE:141",
+    "platform": "LeetCode",
+    "externalId": "141",
+    "title": "环形链表",
+    "leafTopicIds": [
+      "linked-list",
+      "two-pointers"
+    ],
+    "topicIds": [
+      "data-structures",
+      "linked-list",
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "基础",
+    "focus": "练习快慢指针判断链表环。",
+    "url": "https://leetcode.cn/problems/linked-list-cycle/"
+  },
+  {
+    "id": "LEETCODE:226",
+    "platform": "LeetCode",
+    "externalId": "226",
+    "title": "翻转二叉树",
+    "leafTopicIds": [
+      "search",
+      "recursion"
+    ],
+    "topicIds": [
+      "search",
+      "recursion"
+    ],
+    "difficulty": "基础",
+    "focus": "练习二叉树遍历与递归交换。",
+    "url": "https://leetcode.cn/problems/invert-binary-tree/"
+  },
+  {
+    "id": "LEETCODE:200",
+    "platform": "LeetCode",
+    "externalId": "200",
+    "title": "岛屿数量",
+    "leafTopicIds": [
+      "search",
+      "bfs",
+      "union-find"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "union-find"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习网格连通块搜索。",
+    "url": "https://leetcode.cn/problems/number-of-islands/"
+  },
+  {
+    "id": "LUOGU:P1001",
+    "platform": "洛谷",
+    "externalId": "P1001",
+    "title": "A+B Problem",
+    "leafTopicIds": [
+      "basics"
+    ],
+    "topicIds": [
+      "basics"
+    ],
+    "difficulty": "基础",
+    "focus": "练习基本输入输出与整数运算。",
+    "url": "https://www.luogu.com.cn/problem/P1001"
+  },
+  {
+    "id": "LEETCODE:208",
+    "platform": "LeetCode",
+    "externalId": "208",
+    "title": "实现 Trie (前缀树)",
+    "leafTopicIds": [
+      "trie"
+    ],
+    "topicIds": [
+      "strings",
+      "trie"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习字典树的插入与前缀查询。",
+    "url": "https://leetcode.cn/problems/implement-trie-prefix-tree/"
+  },
+  {
+    "id": "LEETCODE:1127",
+    "platform": "LeetCode",
+    "externalId": "1046",
+    "title": "最后一块石头的重量",
+    "leafTopicIds": [
+      "heap"
+    ],
+    "topicIds": [
+      "data-structures",
+      "heap"
+    ],
+    "difficulty": "基础",
+    "focus": "练习最大堆模拟。",
+    "url": "https://leetcode.cn/problems/last-stone-weight/"
+  },
+  {
+    "id": "LEETCODE:303",
+    "platform": "LeetCode",
+    "externalId": "303",
+    "title": "区域和检索 - 数组不可变",
+    "leafTopicIds": [
+      "prefix-1d"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "prefix-1d"
+    ],
+    "difficulty": "基础",
+    "focus": "练习静态区间和查询。",
+    "url": "https://leetcode.cn/problems/range-sum-query-immutable/"
+  },
+  {
+    "id": "LEETCODE:50",
+    "platform": "LeetCode",
+    "externalId": "50",
+    "title": "Pow(x, n)",
+    "leafTopicIds": [
+      "fast-power",
+      "recursion"
+    ],
+    "topicIds": [
+      "math",
+      "fast-power",
+      "search",
+      "recursion"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习幂运算的分治计算与指数边界。",
+    "url": "https://leetcode.cn/problems/powx-n/"
+  },
+  {
+    "id": "LEETCODE:338",
+    "platform": "LeetCode",
+    "externalId": "338",
+    "title": "比特位计数",
+    "leafTopicIds": [
+      "bitwise",
+      "linear-dp"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "dp",
+      "linear-dp"
+    ],
+    "difficulty": "基础",
+    "focus": "练习位运算与计数递推。",
+    "url": "https://leetcode.cn/problems/counting-bits/"
+  },
+  {
+    "id": "LUOGU:P3372",
+    "platform": "洛谷",
+    "externalId": "P3372",
+    "title": "【模板】线段树 1",
+    "leafTopicIds": [
+      "segment-tree"
+    ],
+    "topicIds": [
+      "data-structures",
+      "segment-tree"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习区间加法与区间求和。",
+    "url": "https://www.luogu.com.cn/problem/P3372"
+  },
+  {
+    "id": "LUOGU:P1886",
+    "platform": "洛谷",
+    "externalId": "P1886",
+    "title": "【模板】单调队列 / 滑动窗口",
+    "leafTopicIds": [
+      "queue"
+    ],
+    "topicIds": [
+      "data-structures",
+      "queue"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习单调队列维护滑动窗口极值。",
+    "url": "https://www.luogu.com.cn/problem/P1886"
+  },
+  {
+    "id": "LEETCODE:2",
+    "platform": "LeetCode",
+    "externalId": "2",
+    "title": "两数相加",
+    "leafTopicIds": [
+      "linked-list",
+      "math"
+    ],
+    "topicIds": [
+      "data-structures",
+      "linked-list",
+      "math"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习链表逐位相加与进位。",
+    "url": "https://leetcode.cn/problems/add-two-numbers/"
+  },
+  {
+    "id": "LEETCODE:3",
+    "platform": "LeetCode",
+    "externalId": "3",
+    "title": "无重复字符的最长子串",
+    "leafTopicIds": [
+      "hash-table",
+      "strings",
+      "two-pointers"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "strings",
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习不重复字符窗口与边界维护。",
+    "url": "https://leetcode.cn/problems/longest-substring-without-repeating-characters/"
+  },
+  {
+    "id": "LEETCODE:4",
+    "platform": "LeetCode",
+    "externalId": "4",
+    "title": "寻找两个正序数组的中位数",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习两个有序数组的划分与边界判断。",
+    "url": "https://leetcode.cn/problems/median-of-two-sorted-arrays/"
+  },
+  {
+    "id": "LEETCODE:5",
+    "platform": "LeetCode",
+    "externalId": "5",
+    "title": "最长回文子串",
+    "leafTopicIds": [
+      "strings",
+      "two-pointers",
+      "dp"
+    ],
+    "topicIds": [
+      "strings",
+      "basics",
+      "two-pointers",
+      "dp"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习回文区间判断与中心扩展。",
+    "url": "https://leetcode.cn/problems/longest-palindromic-substring/"
+  },
+  {
+    "id": "LEETCODE:6",
+    "platform": "LeetCode",
+    "externalId": "6",
+    "title": "Z 字形变换",
+    "leafTopicIds": [
+      "strings",
+      "simulation"
+    ],
+    "topicIds": [
+      "strings",
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习字符位置与行方向模拟。",
+    "url": "https://leetcode.cn/problems/zigzag-conversion/"
+  },
+  {
+    "id": "LEETCODE:7",
+    "platform": "LeetCode",
+    "externalId": "7",
+    "title": "整数反转",
+    "leafTopicIds": [
+      "math"
+    ],
+    "topicIds": [
+      "math"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习整数拆位与溢出边界。",
+    "url": "https://leetcode.cn/problems/reverse-integer/"
+  },
+  {
+    "id": "LEETCODE:8",
+    "platform": "LeetCode",
+    "externalId": "8",
+    "title": "字符串转换整数 (atoi)",
+    "leafTopicIds": [
+      "strings",
+      "simulation"
+    ],
+    "topicIds": [
+      "strings",
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习字符串扫描与转换规则。",
+    "url": "https://leetcode.cn/problems/string-to-integer-atoi/"
+  },
+  {
+    "id": "LEETCODE:9",
+    "platform": "LeetCode",
+    "externalId": "9",
+    "title": "回文数",
+    "leafTopicIds": [
+      "math"
+    ],
+    "topicIds": [
+      "math"
+    ],
+    "difficulty": "基础",
+    "focus": "练习数字回文判断。",
+    "url": "https://leetcode.cn/problems/palindrome-number/"
+  },
+  {
+    "id": "LEETCODE:10",
+    "platform": "LeetCode",
+    "externalId": "10",
+    "title": "正则表达式匹配",
+    "leafTopicIds": [
+      "strings",
+      "dp"
+    ],
+    "topicIds": [
+      "strings",
+      "dp"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习模式匹配状态转移。",
+    "url": "https://leetcode.cn/problems/regular-expression-matching/"
+  },
+  {
+    "id": "LEETCODE:11",
+    "platform": "LeetCode",
+    "externalId": "11",
+    "title": "盛最多水的容器",
+    "leafTopicIds": [
+      "two-pointers",
+      "greedy"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers",
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习双指针缩小搜索范围。",
+    "url": "https://leetcode.cn/problems/container-with-most-water/"
+  },
+  {
+    "id": "LEETCODE:12",
+    "platform": "LeetCode",
+    "externalId": "12",
+    "title": "整数转罗马数字",
+    "leafTopicIds": [
+      "strings",
+      "math"
+    ],
+    "topicIds": [
+      "strings",
+      "math"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习数值与符号的转换。",
+    "url": "https://leetcode.cn/problems/integer-to-roman/"
+  },
+  {
+    "id": "LEETCODE:13",
+    "platform": "LeetCode",
+    "externalId": "13",
+    "title": "罗马数字转整数",
+    "leafTopicIds": [
+      "strings",
+      "hash-table"
+    ],
+    "topicIds": [
+      "strings",
+      "data-structures",
+      "hash-table"
+    ],
+    "difficulty": "基础",
+    "focus": "练习字符映射与相邻符号判断。",
+    "url": "https://leetcode.cn/problems/roman-to-integer/"
+  },
+  {
+    "id": "LEETCODE:14",
+    "platform": "LeetCode",
+    "externalId": "14",
+    "title": "最长公共前缀",
+    "leafTopicIds": [
+      "strings"
+    ],
+    "topicIds": [
+      "strings"
+    ],
+    "difficulty": "基础",
+    "focus": "练习公共前缀扫描与终止条件。",
+    "url": "https://leetcode.cn/problems/longest-common-prefix/"
+  },
+  {
+    "id": "LEETCODE:15",
+    "platform": "LeetCode",
+    "externalId": "15",
+    "title": "三数之和",
+    "leafTopicIds": [
+      "sorting",
+      "two-pointers"
+    ],
+    "topicIds": [
+      "basics",
+      "sorting",
+      "two-pointers"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习排序后的数对搜索与去重。",
+    "url": "https://leetcode.cn/problems/3sum/"
+  },
+  {
+    "id": "LEETCODE:16",
+    "platform": "LeetCode",
+    "externalId": "16",
+    "title": "最接近的三数之和",
+    "leafTopicIds": [
+      "sorting",
+      "two-pointers"
+    ],
+    "topicIds": [
+      "basics",
+      "sorting",
+      "two-pointers"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习双指针逼近目标和。",
+    "url": "https://leetcode.cn/problems/3sum-closest/"
+  },
+  {
+    "id": "LEETCODE:17",
+    "platform": "LeetCode",
+    "externalId": "17",
+    "title": "电话号码的字母组合",
+    "leafTopicIds": [
+      "backtracking",
+      "strings"
+    ],
+    "topicIds": [
+      "search",
+      "backtracking",
+      "strings"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习字符组合枚举与回溯。",
+    "url": "https://leetcode.cn/problems/letter-combinations-of-a-phone-number/"
+  },
+  {
+    "id": "LEETCODE:18",
+    "platform": "LeetCode",
+    "externalId": "18",
+    "title": "四数之和",
+    "leafTopicIds": [
+      "sorting",
+      "two-pointers"
+    ],
+    "topicIds": [
+      "basics",
+      "sorting",
+      "two-pointers"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习多层枚举与重复组合处理。",
+    "url": "https://leetcode.cn/problems/4sum/"
+  },
+  {
+    "id": "LEETCODE:19",
+    "platform": "LeetCode",
+    "externalId": "19",
+    "title": "删除链表的倒数第 N 个结点",
+    "leafTopicIds": [
+      "linked-list",
+      "two-pointers"
+    ],
+    "topicIds": [
+      "data-structures",
+      "linked-list",
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习链表快慢指针与删除边界。",
+    "url": "https://leetcode.cn/problems/remove-nth-node-from-end-of-list/"
+  },
+  {
+    "id": "LEETCODE:22",
+    "platform": "LeetCode",
+    "externalId": "22",
+    "title": "括号生成",
+    "leafTopicIds": [
+      "backtracking",
+      "strings"
+    ],
+    "topicIds": [
+      "search",
+      "backtracking",
+      "strings"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习括号组合构造与合法性剪枝。",
+    "url": "https://leetcode.cn/problems/generate-parentheses/"
+  },
+  {
+    "id": "LEETCODE:23",
+    "platform": "LeetCode",
+    "externalId": "23",
+    "title": "合并 K 个升序链表",
+    "leafTopicIds": [
+      "linked-list",
+      "heap"
+    ],
+    "topicIds": [
+      "data-structures",
+      "linked-list",
+      "heap"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习多路有序链表合并。",
+    "url": "https://leetcode.cn/problems/merge-k-sorted-lists/"
+  }
+]
