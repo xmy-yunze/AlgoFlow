@@ -236,7 +236,8 @@
     "title": "[NOIP 2002 普及组] 选数",
     "leafTopicIds": [
       "combinations",
-      "primes"
+      "primes",
+      "enumeration"
     ],
     "topicIds": [
       "search",
@@ -244,7 +245,9 @@
       "combinations",
       "math",
       "number-theory",
-      "primes"
+      "primes",
+      "basics",
+      "enumeration"
     ],
     "difficulty": "基础",
     "focus": "练习组合枚举与素数判断。",
@@ -1340,11 +1343,13 @@
     "externalId": "39",
     "title": "组合总和",
     "leafTopicIds": [
-      "backtracking"
+      "backtracking",
+      "combinations"
     ],
     "topicIds": [
       "search",
-      "backtracking"
+      "backtracking",
+      "combinations"
     ],
     "difficulty": "进阶",
     "focus": "练习回溯相关问题，结合原题理解边界与实现。",
@@ -1356,11 +1361,13 @@
     "externalId": "40",
     "title": "组合总和 II",
     "leafTopicIds": [
-      "backtracking"
+      "backtracking",
+      "combinations"
     ],
     "topicIds": [
       "search",
-      "backtracking"
+      "backtracking",
+      "combinations"
     ],
     "difficulty": "进阶",
     "focus": "练习回溯相关问题，结合原题理解边界与实现。",
@@ -1411,13 +1418,15 @@
     "leafTopicIds": [
       "math",
       "strings",
-      "simulation"
+      "simulation",
+      "big-integer"
     ],
     "topicIds": [
       "math",
       "strings",
       "basics",
-      "simulation"
+      "simulation",
+      "big-integer"
     ],
     "difficulty": "进阶",
     "focus": "练习数学、字符串、模拟相关问题，结合原题理解边界与实现。",
@@ -1468,11 +1477,13 @@
     "externalId": "46",
     "title": "全排列",
     "leafTopicIds": [
-      "backtracking"
+      "backtracking",
+      "permutations"
     ],
     "topicIds": [
       "search",
-      "backtracking"
+      "backtracking",
+      "permutations"
     ],
     "difficulty": "进阶",
     "focus": "练习回溯相关问题，结合原题理解边界与实现。",
@@ -1485,13 +1496,15 @@
     "title": "全排列 II",
     "leafTopicIds": [
       "backtracking",
-      "sorting"
+      "sorting",
+      "permutations"
     ],
     "topicIds": [
       "search",
       "backtracking",
       "basics",
-      "sorting"
+      "sorting",
+      "permutations"
     ],
     "difficulty": "进阶",
     "focus": "练习回溯、排序相关问题，结合原题理解边界与实现。",
@@ -1768,14 +1781,16 @@
       "bitwise",
       "math",
       "strings",
-      "simulation"
+      "simulation",
+      "big-integer"
     ],
     "topicIds": [
       "basics",
       "bitwise",
       "math",
       "strings",
-      "simulation"
+      "simulation",
+      "big-integer"
     ],
     "difficulty": "基础",
     "focus": "练习位运算、数学、字符串、模拟相关问题，结合原题理解边界与实现。",
@@ -1926,11 +1941,13 @@
     "externalId": "77",
     "title": "组合",
     "leafTopicIds": [
-      "backtracking"
+      "backtracking",
+      "combinations"
     ],
     "topicIds": [
       "search",
-      "backtracking"
+      "backtracking",
+      "combinations"
     ],
     "difficulty": "进阶",
     "focus": "练习回溯相关问题，结合原题理解边界与实现。",
@@ -1943,13 +1960,15 @@
     "title": "子集",
     "leafTopicIds": [
       "bitwise",
-      "backtracking"
+      "backtracking",
+      "subsets"
     ],
     "topicIds": [
       "basics",
       "bitwise",
       "search",
-      "backtracking"
+      "backtracking",
+      "subsets"
     ],
     "difficulty": "进阶",
     "focus": "练习位运算、回溯相关问题，结合原题理解边界与实现。",
@@ -2157,13 +2176,15 @@
     "title": "子集 II",
     "leafTopicIds": [
       "bitwise",
-      "backtracking"
+      "backtracking",
+      "subsets"
     ],
     "topicIds": [
       "basics",
       "bitwise",
       "search",
-      "backtracking"
+      "backtracking",
+      "subsets"
     ],
     "difficulty": "进阶",
     "focus": "练习位运算、回溯相关问题，结合原题理解边界与实现。",
@@ -3384,11 +3405,14 @@
     "title": "Excel 表列名称",
     "leafTopicIds": [
       "math",
-      "strings"
+      "strings",
+      "base-conversion"
     ],
     "topicIds": [
       "math",
-      "strings"
+      "strings",
+      "basics",
+      "base-conversion"
     ],
     "difficulty": "基础",
     "focus": "练习数学、字符串相关问题，结合原题理解边界与实现。",
@@ -3420,11 +3444,14 @@
     "title": "Excel 表列序号",
     "leafTopicIds": [
       "math",
-      "strings"
+      "strings",
+      "base-conversion"
     ],
     "topicIds": [
       "math",
-      "strings"
+      "strings",
+      "basics",
+      "base-conversion"
     ],
     "difficulty": "基础",
     "focus": "练习数学、字符串相关问题，结合原题理解边界与实现。",
@@ -3495,5 +3522,1844 @@
     "difficulty": "进阶",
     "focus": "练习贪心与思维、字符串、排序相关问题，结合原题理解边界与实现。",
     "url": "https://leetcode.cn/problems/largest-number/"
+  },
+  {
+    "id": "LUOGU:P1008",
+    "platform": "洛谷",
+    "externalId": "P1008",
+    "title": "[NOIP 1998 普及组] 三连击",
+    "difficulty": "基础",
+    "leafTopicIds": [
+      "enumeration"
+    ],
+    "topicIds": [
+      "basics",
+      "enumeration"
+    ],
+    "focus": "练习枚举相关的建模、边界和实现。",
+    "url": "https://www.luogu.com.cn/problem/P1008"
+  },
+  {
+    "id": "LUOGU:P1618",
+    "platform": "洛谷",
+    "externalId": "P1618",
+    "title": "三连击（升级版）",
+    "difficulty": "基础",
+    "leafTopicIds": [
+      "enumeration",
+      "permutations"
+    ],
+    "topicIds": [
+      "basics",
+      "enumeration",
+      "search",
+      "backtracking",
+      "permutations"
+    ],
+    "focus": "练习枚举相关的建模、边界和实现。",
+    "url": "https://www.luogu.com.cn/problem/P1618"
+  },
+  {
+    "id": "LUOGU:P2089",
+    "platform": "洛谷",
+    "externalId": "P2089",
+    "title": "烤鸡",
+    "difficulty": "基础",
+    "leafTopicIds": [
+      "enumeration"
+    ],
+    "topicIds": [
+      "basics",
+      "enumeration"
+    ],
+    "focus": "练习枚举相关的建模、边界和实现。",
+    "url": "https://www.luogu.com.cn/problem/P2089"
+  },
+  {
+    "id": "LUOGU:P1157",
+    "platform": "洛谷",
+    "externalId": "P1157",
+    "title": "组合的输出",
+    "difficulty": "基础",
+    "leafTopicIds": [
+      "enumeration"
+    ],
+    "topicIds": [
+      "basics",
+      "enumeration"
+    ],
+    "focus": "练习枚举相关的建模、边界和实现。",
+    "url": "https://www.luogu.com.cn/problem/P1157"
+  },
+  {
+    "id": "LEETCODE:504",
+    "platform": "LeetCode",
+    "externalId": "504",
+    "title": "七进制数",
+    "difficulty": "基础",
+    "leafTopicIds": [
+      "base-conversion"
+    ],
+    "topicIds": [
+      "basics",
+      "base-conversion"
+    ],
+    "focus": "练习进制转换相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/base-7/"
+  },
+  {
+    "id": "LEETCODE:405",
+    "platform": "LeetCode",
+    "externalId": "405",
+    "title": "数字转换为十六进制数",
+    "difficulty": "基础",
+    "leafTopicIds": [
+      "base-conversion"
+    ],
+    "topicIds": [
+      "basics",
+      "base-conversion"
+    ],
+    "focus": "练习进制转换相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/convert-a-number-to-hexadecimal/"
+  },
+  {
+    "id": "LEETCODE:1070",
+    "platform": "LeetCode",
+    "externalId": "1017",
+    "title": "负二进制转换",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "base-conversion"
+    ],
+    "topicIds": [
+      "basics",
+      "base-conversion"
+    ],
+    "focus": "练习进制转换相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/convert-to-base-2/"
+  },
+  {
+    "id": "LEETCODE:560",
+    "platform": "LeetCode",
+    "externalId": "560",
+    "title": "和为 K 的子数组",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "prefix-1d"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "prefix-1d"
+    ],
+    "focus": "练习一维前缀和相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/subarray-sum-equals-k/"
+  },
+  {
+    "id": "LEETCODE:525",
+    "platform": "LeetCode",
+    "externalId": "525",
+    "title": "连续数组",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "prefix-1d"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "prefix-1d"
+    ],
+    "focus": "练习一维前缀和相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/contiguous-array/"
+  },
+  {
+    "id": "LEETCODE:724",
+    "platform": "LeetCode",
+    "externalId": "724",
+    "title": "寻找数组的中心下标",
+    "difficulty": "基础",
+    "leafTopicIds": [
+      "prefix-1d"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "prefix-1d"
+    ],
+    "focus": "练习一维前缀和相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/find-pivot-index/"
+  },
+  {
+    "id": "LEETCODE:1184",
+    "platform": "LeetCode",
+    "externalId": "1094",
+    "title": "拼车",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "difference-1d"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "difference-1d"
+    ],
+    "focus": "练习一维差分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/car-pooling/"
+  },
+  {
+    "id": "LEETCODE:1206",
+    "platform": "LeetCode",
+    "externalId": "1109",
+    "title": "航班预订统计",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "difference-1d"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "difference-1d"
+    ],
+    "focus": "练习一维差分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/corporate-flight-bookings/"
+  },
+  {
+    "id": "LEETCODE:2465",
+    "platform": "LeetCode",
+    "externalId": "2381",
+    "title": "字母移位 II",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "difference-1d"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "difference-1d"
+    ],
+    "focus": "练习一维差分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/shifting-letters-ii/"
+  },
+  {
+    "id": "LEETCODE:3639",
+    "platform": "LeetCode",
+    "externalId": "3355",
+    "title": "零数组变换 I",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "difference-1d"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "difference-1d"
+    ],
+    "focus": "练习一维差分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/zero-array-transformation-i/"
+  },
+  {
+    "id": "LEETCODE:304",
+    "platform": "LeetCode",
+    "externalId": "304",
+    "title": "二维区域和检索 - 矩阵不可变",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "prefix-2d"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "prefix-2d"
+    ],
+    "focus": "练习二维前缀和相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/range-sum-query-2d-immutable/"
+  },
+  {
+    "id": "LEETCODE:1242",
+    "platform": "LeetCode",
+    "externalId": "1314",
+    "title": "矩阵区域和",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "prefix-2d"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "prefix-2d"
+    ],
+    "focus": "练习二维前缀和相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/matrix-block-sum/"
+  },
+  {
+    "id": "LEETCODE:1413",
+    "platform": "LeetCode",
+    "externalId": "1292",
+    "title": "元素和小于等于阈值的正方形的最大边长",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "prefix-2d"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "prefix-2d"
+    ],
+    "focus": "练习二维前缀和相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold/"
+  },
+  {
+    "id": "LEETCODE:1145",
+    "platform": "LeetCode",
+    "externalId": "1074",
+    "title": "元素和为目标值的子矩阵数量",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "prefix-2d"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "prefix-2d"
+    ],
+    "focus": "练习二维前缀和相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/number-of-submatrices-that-sum-to-target/"
+  },
+  {
+    "id": "LEETCODE:2625",
+    "platform": "LeetCode",
+    "externalId": "2536",
+    "title": "子矩阵元素加 1",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "difference-2d"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "difference-2d"
+    ],
+    "focus": "练习二维差分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/increment-submatrices-by-one/"
+  },
+  {
+    "id": "LEETCODE:2200",
+    "platform": "LeetCode",
+    "externalId": "2132",
+    "title": "用邮票贴满网格图",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "difference-2d"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "difference-2d"
+    ],
+    "focus": "练习二维差分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/stamping-the-grid/"
+  },
+  {
+    "id": "LEETCODE:880",
+    "platform": "LeetCode",
+    "externalId": "850",
+    "title": "矩形面积 II",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "difference-2d",
+      "discretization"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "difference-2d",
+      "discretization"
+    ],
+    "focus": "练习二维差分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/rectangle-area-ii/"
+  },
+  {
+    "id": "LUOGU:P4514",
+    "platform": "洛谷",
+    "externalId": "P4514",
+    "title": "上帝造题的七分钟",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "difference-2d"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "difference-2d"
+    ],
+    "focus": "练习二维差分相关的建模、边界和实现。",
+    "url": "https://www.luogu.com.cn/problem/P4514"
+  },
+  {
+    "id": "LEETCODE:1256",
+    "platform": "LeetCode",
+    "externalId": "1331",
+    "title": "数组序号转换",
+    "difficulty": "基础",
+    "leafTopicIds": [
+      "discretization"
+    ],
+    "topicIds": [
+      "basics",
+      "discretization"
+    ],
+    "focus": "练习离散化相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/rank-transform-of-an-array/"
+  },
+  {
+    "id": "LEETCODE:1257",
+    "platform": "LeetCode",
+    "externalId": "1632",
+    "title": "矩阵转换后的排名",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "discretization"
+    ],
+    "topicIds": [
+      "basics",
+      "discretization"
+    ],
+    "focus": "练习离散化相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/rank-transform-of-a-matrix/"
+  },
+  {
+    "id": "LEETCODE:327",
+    "platform": "LeetCode",
+    "externalId": "327",
+    "title": "区间和的个数",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "discretization"
+    ],
+    "topicIds": [
+      "basics",
+      "discretization"
+    ],
+    "focus": "练习离散化相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/count-of-range-sum/"
+  },
+  {
+    "id": "LEETCODE:493",
+    "platform": "LeetCode",
+    "externalId": "493",
+    "title": "翻转对",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "discretization"
+    ],
+    "topicIds": [
+      "basics",
+      "discretization"
+    ],
+    "focus": "练习离散化相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/reverse-pairs/"
+  },
+  {
+    "id": "LEETCODE:699",
+    "platform": "LeetCode",
+    "externalId": "699",
+    "title": "掉落的方块",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "discretization",
+      "segment-tree"
+    ],
+    "topicIds": [
+      "basics",
+      "discretization",
+      "data-structures",
+      "segment-tree"
+    ],
+    "focus": "练习离散化相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/falling-squares/"
+  },
+  {
+    "id": "LEETCODE:415",
+    "platform": "LeetCode",
+    "externalId": "415",
+    "title": "字符串相加",
+    "difficulty": "基础",
+    "leafTopicIds": [
+      "big-integer"
+    ],
+    "topicIds": [
+      "basics",
+      "big-integer"
+    ],
+    "focus": "练习高精度相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/add-strings/"
+  },
+  {
+    "id": "LEETCODE:1031",
+    "platform": "LeetCode",
+    "externalId": "989",
+    "title": "数组形式的整数加法",
+    "difficulty": "基础",
+    "leafTopicIds": [
+      "big-integer"
+    ],
+    "topicIds": [
+      "basics",
+      "big-integer"
+    ],
+    "focus": "练习高精度相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/add-to-array-form-of-integer/"
+  },
+  {
+    "id": "LEETCODE:306",
+    "platform": "LeetCode",
+    "externalId": "306",
+    "title": "累加数",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "big-integer"
+    ],
+    "topicIds": [
+      "basics",
+      "big-integer"
+    ],
+    "focus": "练习高精度相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/additive-number/"
+  },
+  {
+    "id": "LEETCODE:232",
+    "platform": "LeetCode",
+    "externalId": "232",
+    "title": "用栈实现队列",
+    "difficulty": "基础",
+    "leafTopicIds": [
+      "queue"
+    ],
+    "topicIds": [
+      "data-structures",
+      "queue"
+    ],
+    "focus": "练习队列相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/implement-queue-using-stacks/"
+  },
+  {
+    "id": "LEETCODE:860",
+    "platform": "LeetCode",
+    "externalId": "622",
+    "title": "设计循环队列",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "queue"
+    ],
+    "topicIds": [
+      "data-structures",
+      "queue"
+    ],
+    "focus": "练习队列相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/design-circular-queue/"
+  },
+  {
+    "id": "LEETCODE:859",
+    "platform": "LeetCode",
+    "externalId": "641",
+    "title": "设计循环双端队列",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "queue"
+    ],
+    "topicIds": [
+      "data-structures",
+      "queue"
+    ],
+    "focus": "练习队列相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/design-circular-deque/"
+  },
+  {
+    "id": "LEETCODE:239",
+    "platform": "LeetCode",
+    "externalId": "239",
+    "title": "滑动窗口最大值",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "queue"
+    ],
+    "topicIds": [
+      "data-structures",
+      "queue"
+    ],
+    "focus": "练习队列相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/sliding-window-maximum/"
+  },
+  {
+    "id": "LEETCODE:215",
+    "platform": "LeetCode",
+    "externalId": "215",
+    "title": "数组中的第K个最大元素",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "heap"
+    ],
+    "topicIds": [
+      "data-structures",
+      "heap"
+    ],
+    "focus": "练习堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/kth-largest-element-in-an-array/"
+  },
+  {
+    "id": "LEETCODE:347",
+    "platform": "LeetCode",
+    "externalId": "347",
+    "title": "前 K 个高频元素",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "heap"
+    ],
+    "topicIds": [
+      "data-structures",
+      "heap"
+    ],
+    "focus": "练习堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/top-k-frequent-elements/"
+  },
+  {
+    "id": "LEETCODE:684",
+    "platform": "LeetCode",
+    "externalId": "684",
+    "title": "冗余连接",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "union-find"
+    ],
+    "topicIds": [
+      "data-structures",
+      "union-find"
+    ],
+    "focus": "练习并查集相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/redundant-connection/"
+  },
+  {
+    "id": "LEETCODE:307",
+    "platform": "LeetCode",
+    "externalId": "307",
+    "title": "区域和检索 - 数组可修改",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "segment-tree"
+    ],
+    "topicIds": [
+      "data-structures",
+      "segment-tree"
+    ],
+    "focus": "练习线段树相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/range-sum-query-mutable/"
+  },
+  {
+    "id": "LEETCODE:2703",
+    "platform": "LeetCode",
+    "externalId": "2569",
+    "title": "更新数组后处理求和查询",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "segment-tree"
+    ],
+    "topicIds": [
+      "data-structures",
+      "segment-tree"
+    ],
+    "focus": "练习线段树相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/handling-sum-queries-after-update/"
+  },
+  {
+    "id": "LEETCODE:2380",
+    "platform": "LeetCode",
+    "externalId": "2286",
+    "title": "以组为单位订音乐会的门票",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "segment-tree"
+    ],
+    "topicIds": [
+      "data-structures",
+      "segment-tree"
+    ],
+    "focus": "练习线段树相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/booking-concert-tickets-in-groups/"
+  },
+  {
+    "id": "LUOGU:P1706",
+    "platform": "洛谷",
+    "externalId": "P1706",
+    "title": "全排列问题",
+    "difficulty": "基础",
+    "leafTopicIds": [
+      "permutations"
+    ],
+    "topicIds": [
+      "search",
+      "backtracking",
+      "permutations"
+    ],
+    "focus": "练习全排列相关的建模、边界和实现。",
+    "url": "https://www.luogu.com.cn/problem/P1706"
+  },
+  {
+    "id": "LEETCODE:1160",
+    "platform": "LeetCode",
+    "externalId": "1079",
+    "title": "活字印刷",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "permutations"
+    ],
+    "topicIds": [
+      "search",
+      "backtracking",
+      "permutations"
+    ],
+    "focus": "练习全排列相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/letter-tile-possibilities/"
+  },
+  {
+    "id": "LEETCODE:1993",
+    "platform": "LeetCode",
+    "externalId": "1863",
+    "title": "找出所有子集的异或总和再求和",
+    "difficulty": "基础",
+    "leafTopicIds": [
+      "subsets"
+    ],
+    "topicIds": [
+      "search",
+      "backtracking",
+      "subsets"
+    ],
+    "focus": "练习子集枚举相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/sum-of-all-subset-xor-totals/"
+  },
+  {
+    "id": "LEETCODE:800",
+    "platform": "LeetCode",
+    "externalId": "784",
+    "title": "字母大小写全排列",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "subsets"
+    ],
+    "topicIds": [
+      "search",
+      "backtracking",
+      "subsets"
+    ],
+    "focus": "练习子集枚举相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/letter-case-permutation/"
+  },
+  {
+    "id": "LEETCODE:1360",
+    "platform": "LeetCode",
+    "externalId": "1239",
+    "title": "串联字符串的最大长度",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "subsets"
+    ],
+    "topicIds": [
+      "search",
+      "backtracking",
+      "subsets"
+    ],
+    "focus": "练习子集枚举相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/maximum-length-of-a-concatenated-string-with-unique-characters/"
+  },
+  {
+    "id": "LEETCODE:216",
+    "platform": "LeetCode",
+    "externalId": "216",
+    "title": "组合总和 III",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "combinations"
+    ],
+    "topicIds": [
+      "search",
+      "backtracking",
+      "combinations"
+    ],
+    "focus": "练习组合枚举相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/combination-sum-iii/"
+  },
+  {
+    "id": "LEETCODE:329",
+    "platform": "LeetCode",
+    "externalId": "329",
+    "title": "矩阵中的最长递增路径",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "memoization"
+    ],
+    "topicIds": [
+      "dp",
+      "memoization"
+    ],
+    "focus": "练习记忆化搜索相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/longest-increasing-path-in-a-matrix/"
+  },
+  {
+    "id": "LEETCODE:464",
+    "platform": "LeetCode",
+    "externalId": "464",
+    "title": "我能赢吗",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "memoization",
+      "state-compression-dp"
+    ],
+    "topicIds": [
+      "dp",
+      "memoization",
+      "state-compression-dp"
+    ],
+    "focus": "练习记忆化搜索相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/can-i-win/"
+  },
+  {
+    "id": "LEETCODE:416",
+    "platform": "LeetCode",
+    "externalId": "416",
+    "title": "分割等和子集",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "knapsack-01"
+    ],
+    "topicIds": [
+      "dp",
+      "knapsack",
+      "knapsack-01"
+    ],
+    "focus": "练习01 背包相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/partition-equal-subset-sum/"
+  },
+  {
+    "id": "LEETCODE:494",
+    "platform": "LeetCode",
+    "externalId": "494",
+    "title": "目标和",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "knapsack-01"
+    ],
+    "topicIds": [
+      "dp",
+      "knapsack",
+      "knapsack-01"
+    ],
+    "focus": "练习01 背包相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/target-sum/"
+  },
+  {
+    "id": "LUOGU:P1060",
+    "platform": "洛谷",
+    "externalId": "P1060",
+    "title": "[NOIP 2006 普及组] 开心的金明",
+    "difficulty": "基础",
+    "leafTopicIds": [
+      "knapsack-01"
+    ],
+    "topicIds": [
+      "dp",
+      "knapsack",
+      "knapsack-01"
+    ],
+    "focus": "练习01 背包相关的建模、边界和实现。",
+    "url": "https://www.luogu.com.cn/problem/P1060"
+  },
+  {
+    "id": "LUOGU:P1049",
+    "platform": "洛谷",
+    "externalId": "P1049",
+    "title": "[NOIP 2001 普及组] 装箱问题",
+    "difficulty": "基础",
+    "leafTopicIds": [
+      "knapsack-01"
+    ],
+    "topicIds": [
+      "dp",
+      "knapsack",
+      "knapsack-01"
+    ],
+    "focus": "练习01 背包相关的建模、边界和实现。",
+    "url": "https://www.luogu.com.cn/problem/P1049"
+  },
+  {
+    "id": "LUOGU:P1164",
+    "platform": "洛谷",
+    "externalId": "P1164",
+    "title": "小 A 点菜",
+    "difficulty": "基础",
+    "leafTopicIds": [
+      "knapsack-01"
+    ],
+    "topicIds": [
+      "dp",
+      "knapsack",
+      "knapsack-01"
+    ],
+    "focus": "练习01 背包相关的建模、边界和实现。",
+    "url": "https://www.luogu.com.cn/problem/P1164"
+  },
+  {
+    "id": "LEETCODE:300",
+    "platform": "LeetCode",
+    "externalId": "300",
+    "title": "最长递增子序列",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "lis"
+    ],
+    "topicIds": [
+      "dp",
+      "linear-dp",
+      "lis"
+    ],
+    "focus": "练习最长上升子序列相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/longest-increasing-subsequence/"
+  },
+  {
+    "id": "LEETCODE:673",
+    "platform": "LeetCode",
+    "externalId": "673",
+    "title": "最长递增子序列的个数",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "lis"
+    ],
+    "topicIds": [
+      "dp",
+      "linear-dp",
+      "lis"
+    ],
+    "focus": "练习最长上升子序列相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/number-of-longest-increasing-subsequence/"
+  },
+  {
+    "id": "LEETCODE:354",
+    "platform": "LeetCode",
+    "externalId": "354",
+    "title": "俄罗斯套娃信封问题",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "lis"
+    ],
+    "topicIds": [
+      "dp",
+      "linear-dp",
+      "lis"
+    ],
+    "focus": "练习最长上升子序列相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/russian-doll-envelopes/"
+  },
+  {
+    "id": "LEETCODE:1766",
+    "platform": "LeetCode",
+    "externalId": "1671",
+    "title": "得到山形数组的最少删除次数",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "lis"
+    ],
+    "topicIds": [
+      "dp",
+      "linear-dp",
+      "lis"
+    ],
+    "focus": "练习最长上升子序列相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/minimum-number-of-removals-to-make-mountain-array/"
+  },
+  {
+    "id": "LEETCODE:877",
+    "platform": "LeetCode",
+    "externalId": "847",
+    "title": "访问所有节点的最短路径",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "state-compression-dp"
+    ],
+    "topicIds": [
+      "dp",
+      "state-compression-dp"
+    ],
+    "focus": "练习状态压缩 DP相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/shortest-path-visiting-all-nodes/"
+  },
+  {
+    "id": "LEETCODE:698",
+    "platform": "LeetCode",
+    "externalId": "698",
+    "title": "划分为k个相等的子集",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "state-compression-dp"
+    ],
+    "topicIds": [
+      "dp",
+      "state-compression-dp"
+    ],
+    "focus": "练习状态压缩 DP相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/"
+  },
+  {
+    "id": "LEETCODE:1220",
+    "platform": "LeetCode",
+    "externalId": "1125",
+    "title": "最小的必要团队",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "state-compression-dp"
+    ],
+    "topicIds": [
+      "dp",
+      "state-compression-dp"
+    ],
+    "focus": "练习状态压缩 DP相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/smallest-sufficient-team/"
+  },
+  {
+    "id": "LEETCODE:526",
+    "platform": "LeetCode",
+    "externalId": "526",
+    "title": "优美的排列",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "state-compression-dp"
+    ],
+    "topicIds": [
+      "dp",
+      "state-compression-dp"
+    ],
+    "focus": "练习状态压缩 DP相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/beautiful-arrangement/"
+  },
+  {
+    "id": "LEETCODE:233",
+    "platform": "LeetCode",
+    "externalId": "233",
+    "title": "数字 1 的个数",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "digit-dp"
+    ],
+    "topicIds": [
+      "dp",
+      "digit-dp"
+    ],
+    "focus": "练习数位 DP相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/number-of-digit-one/"
+  },
+  {
+    "id": "LEETCODE:938",
+    "platform": "LeetCode",
+    "externalId": "902",
+    "title": "最大为 N 的数字组合",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "digit-dp"
+    ],
+    "topicIds": [
+      "dp",
+      "digit-dp"
+    ],
+    "focus": "练习数位 DP相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/numbers-at-most-n-given-digit-set/"
+  },
+  {
+    "id": "LEETCODE:2457",
+    "platform": "LeetCode",
+    "externalId": "2376",
+    "title": "统计特殊整数",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "digit-dp"
+    ],
+    "topicIds": [
+      "dp",
+      "digit-dp"
+    ],
+    "focus": "练习数位 DP相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/count-special-integers/"
+  },
+  {
+    "id": "LEETCODE:2757",
+    "platform": "LeetCode",
+    "externalId": "2719",
+    "title": "统计整数数目",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "digit-dp"
+    ],
+    "topicIds": [
+      "dp",
+      "digit-dp"
+    ],
+    "focus": "练习数位 DP相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/count-of-integers/"
+  },
+  {
+    "id": "LEETCODE:600",
+    "platform": "LeetCode",
+    "externalId": "600",
+    "title": "不含连续1的非负整数",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "digit-dp"
+    ],
+    "topicIds": [
+      "dp",
+      "digit-dp"
+    ],
+    "focus": "练习数位 DP相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/non-negative-integers-without-consecutive-ones/"
+  },
+  {
+    "id": "LEETCODE:1814",
+    "platform": "LeetCode",
+    "externalId": "1696",
+    "title": "跳跃游戏 VI",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "dp-optimization"
+    ],
+    "topicIds": [
+      "dp",
+      "dp-optimization"
+    ],
+    "focus": "练习动态规划优化相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/jump-game-vi/"
+  },
+  {
+    "id": "LEETCODE:1286",
+    "platform": "LeetCode",
+    "externalId": "1425",
+    "title": "带限制的子序列和",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "dp-optimization"
+    ],
+    "topicIds": [
+      "dp",
+      "dp-optimization"
+    ],
+    "focus": "练习动态规划优化相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/constrained-subsequence-sum/"
+  },
+  {
+    "id": "LEETCODE:1789",
+    "platform": "LeetCode",
+    "externalId": "1687",
+    "title": "从仓库到码头运输箱子",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "dp-optimization"
+    ],
+    "topicIds": [
+      "dp",
+      "dp-optimization"
+    ],
+    "focus": "练习动态规划优化相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/delivering-boxes-from-storage-to-ports/"
+  },
+  {
+    "id": "LEETCODE:2697",
+    "platform": "LeetCode",
+    "externalId": "2617",
+    "title": "网格图中最少访问的格子数",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "dp-optimization"
+    ],
+    "topicIds": [
+      "dp",
+      "dp-optimization"
+    ],
+    "focus": "练习动态规划优化相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/minimum-number-of-visited-cells-in-a-grid/"
+  },
+  {
+    "id": "LEETCODE:2067",
+    "platform": "LeetCode",
+    "externalId": "1937",
+    "title": "扣分后的最大得分",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "dp-optimization"
+    ],
+    "topicIds": [
+      "dp",
+      "dp-optimization"
+    ],
+    "focus": "练习动态规划优化相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/maximum-number-of-points-with-cost/"
+  },
+  {
+    "id": "LEETCODE:372",
+    "platform": "LeetCode",
+    "externalId": "372",
+    "title": "超级次方",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "fast-power"
+    ],
+    "topicIds": [
+      "math",
+      "fast-power"
+    ],
+    "focus": "练习快速幂相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/super-pow/"
+  },
+  {
+    "id": "LEETCODE:2050",
+    "platform": "LeetCode",
+    "externalId": "1922",
+    "title": "统计好数字的数目",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "fast-power"
+    ],
+    "topicIds": [
+      "math",
+      "fast-power"
+    ],
+    "focus": "练习快速幂相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/count-good-numbers/"
+  },
+  {
+    "id": "LEETCODE:2680",
+    "platform": "LeetCode",
+    "externalId": "2550",
+    "title": "猴子碰撞的方法数",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "fast-power"
+    ],
+    "topicIds": [
+      "math",
+      "fast-power"
+    ],
+    "focus": "练习快速幂相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/count-collisions-of-monkeys-on-a-polygon/"
+  },
+  {
+    "id": "LUOGU:P1226",
+    "platform": "洛谷",
+    "externalId": "P1226",
+    "title": "【模板】快速幂",
+    "difficulty": "基础",
+    "leafTopicIds": [
+      "fast-power"
+    ],
+    "topicIds": [
+      "math",
+      "fast-power"
+    ],
+    "focus": "练习快速幂相关的建模、边界和实现。",
+    "url": "https://www.luogu.com.cn/problem/P1226"
+  },
+  {
+    "id": "LEETCODE:1064",
+    "platform": "LeetCode",
+    "externalId": "1015",
+    "title": "可被 K 整除的最小整数",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "congruence"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "congruence"
+    ],
+    "focus": "练习整除与同余相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/smallest-integer-divisible-by-k/"
+  },
+  {
+    "id": "LEETCODE:523",
+    "platform": "LeetCode",
+    "externalId": "523",
+    "title": "连续的子数组和",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "congruence"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "congruence"
+    ],
+    "focus": "练习整除与同余相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/continuous-subarray-sum/"
+  },
+  {
+    "id": "LEETCODE:1016",
+    "platform": "LeetCode",
+    "externalId": "974",
+    "title": "和可被 K 整除的子数组",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "congruence"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "congruence"
+    ],
+    "focus": "练习整除与同余相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/subarray-sums-divisible-by-k/"
+  },
+  {
+    "id": "LEETCODE:1694",
+    "platform": "LeetCode",
+    "externalId": "1590",
+    "title": "使数组和能被 P 整除",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "congruence"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "congruence"
+    ],
+    "focus": "练习整除与同余相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/make-sum-divisible-by-p/"
+  },
+  {
+    "id": "LEETCODE:1620",
+    "platform": "LeetCode",
+    "externalId": "1497",
+    "title": "检查数组对是否可以被 k 整除",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "congruence"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "congruence"
+    ],
+    "focus": "练习整除与同余相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/check-if-array-pairs-are-divisible-by-k/"
+  },
+  {
+    "id": "LEETCODE:1284",
+    "platform": "LeetCode",
+    "externalId": "1390",
+    "title": "四因数",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "divisors"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "divisors"
+    ],
+    "focus": "练习约数相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/four-divisors/"
+  },
+  {
+    "id": "LEETCODE:1585",
+    "platform": "LeetCode",
+    "externalId": "1492",
+    "title": "n 的第 k 个因子",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "divisors"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "divisors"
+    ],
+    "focus": "练习约数相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/the-kth-factor-of-n/"
+  },
+  {
+    "id": "LEETCODE:507",
+    "platform": "LeetCode",
+    "externalId": "507",
+    "title": "完美数",
+    "difficulty": "基础",
+    "leafTopicIds": [
+      "divisors"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "divisors"
+    ],
+    "focus": "练习约数相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/perfect-number/"
+  },
+  {
+    "id": "LUOGU:P1403",
+    "platform": "洛谷",
+    "externalId": "P1403",
+    "title": "[AHOI2005] 约数研究",
+    "difficulty": "基础",
+    "leafTopicIds": [
+      "divisors"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "divisors"
+    ],
+    "focus": "练习约数相关的建模、边界和实现。",
+    "url": "https://www.luogu.com.cn/problem/P1403"
+  },
+  {
+    "id": "LEETCODE:2507",
+    "platform": "LeetCode",
+    "externalId": "2427",
+    "title": "公因子的数目",
+    "difficulty": "基础",
+    "leafTopicIds": [
+      "divisors",
+      "gcd-lcm"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "divisors",
+      "gcd-lcm"
+    ],
+    "focus": "练习约数相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/number-of-common-factors/"
+  },
+  {
+    "id": "LEETCODE:204",
+    "platform": "LeetCode",
+    "externalId": "204",
+    "title": "计数质数",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "primes",
+      "sieve"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "primes",
+      "sieve"
+    ],
+    "focus": "练习素数相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/count-primes/"
+  },
+  {
+    "id": "LEETCODE:1279",
+    "platform": "LeetCode",
+    "externalId": "1175",
+    "title": "质数排列",
+    "difficulty": "基础",
+    "leafTopicIds": [
+      "primes"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "primes"
+    ],
+    "focus": "练习素数相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/prime-arrangements/"
+  },
+  {
+    "id": "LEETCODE:2610",
+    "platform": "LeetCode",
+    "externalId": "2523",
+    "title": "范围内最接近的两个质数",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "primes",
+      "sieve"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "primes",
+      "sieve"
+    ],
+    "focus": "练习素数相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/closest-prime-numbers-in-range/"
+  },
+  {
+    "id": "LEETCODE:767",
+    "platform": "LeetCode",
+    "externalId": "762",
+    "title": "二进制表示中质数个计算置位",
+    "difficulty": "基础",
+    "leafTopicIds": [
+      "primes"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "primes"
+    ],
+    "focus": "练习素数相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/prime-number-of-set-bits-in-binary-representation/"
+  },
+  {
+    "id": "LEETCODE:2716",
+    "platform": "LeetCode",
+    "externalId": "2601",
+    "title": "质数减法运算",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "sieve"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "sieve"
+    ],
+    "focus": "练习埃氏筛相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/prime-subtraction-operation/"
+  },
+  {
+    "id": "LEETCODE:2595",
+    "platform": "LeetCode",
+    "externalId": "2507",
+    "title": "使用质因数之和替换后可以取到的最小值",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "sieve",
+      "factorization"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "sieve",
+      "factorization"
+    ],
+    "focus": "练习埃氏筛相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/smallest-value-after-replacing-with-sum-of-prime-factors/"
+  },
+  {
+    "id": "LEETCODE:2609",
+    "platform": "LeetCode",
+    "externalId": "2521",
+    "title": "数组乘积中的不同质因数数目",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "sieve",
+      "factorization"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "sieve",
+      "factorization"
+    ],
+    "focus": "练习埃氏筛相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/distinct-prime-factors-of-product-of-array/"
+  },
+  {
+    "id": "LEETCODE:650",
+    "platform": "LeetCode",
+    "externalId": "650",
+    "title": "两个键的键盘",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "factorization"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "factorization"
+    ],
+    "focus": "练习分解质因数相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/2-keys-keyboard/"
+  },
+  {
+    "id": "LEETCODE:856",
+    "platform": "LeetCode",
+    "externalId": "829",
+    "title": "连续整数求和",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "factorization"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "factorization"
+    ],
+    "focus": "练习分解质因数相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/consecutive-numbers-sum/"
+  },
+  {
+    "id": "LUOGU:P1075",
+    "platform": "洛谷",
+    "externalId": "P1075",
+    "title": "[NOIP 2012 普及组] 质因数分解",
+    "difficulty": "基础",
+    "leafTopicIds": [
+      "factorization"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "factorization"
+    ],
+    "focus": "练习分解质因数相关的建模、边界和实现。",
+    "url": "https://www.luogu.com.cn/problem/P1075"
+  },
+  {
+    "id": "LEETCODE:1146",
+    "platform": "LeetCode",
+    "externalId": "1071",
+    "title": "字符串的最大公因子",
+    "difficulty": "基础",
+    "leafTopicIds": [
+      "gcd-lcm"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "gcd-lcm"
+    ],
+    "focus": "练习最大公约数与最小公倍数相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/greatest-common-divisor-of-strings/"
+  },
+  {
+    "id": "LEETCODE:2106",
+    "platform": "LeetCode",
+    "externalId": "1979",
+    "title": "找出数组的最大公约数",
+    "difficulty": "基础",
+    "leafTopicIds": [
+      "gcd-lcm"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "gcd-lcm"
+    ],
+    "focus": "练习最大公约数与最小公倍数相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/find-greatest-common-divisor-of-array/"
+  },
+  {
+    "id": "LEETCODE:2557",
+    "platform": "LeetCode",
+    "externalId": "2470",
+    "title": "最小公倍数等于 K 的子数组数目",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "gcd-lcm"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "gcd-lcm"
+    ],
+    "focus": "练习最大公约数与最小公倍数相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/number-of-subarrays-with-lcm-equal-to-k/"
+  },
+  {
+    "id": "LEETCODE:187",
+    "platform": "LeetCode",
+    "externalId": "187",
+    "title": "重复的DNA序列",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "string-hash"
+    ],
+    "topicIds": [
+      "strings",
+      "string-hash"
+    ],
+    "focus": "练习字符串哈希相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/repeated-dna-sequences/"
+  },
+  {
+    "id": "LEETCODE:1122",
+    "platform": "LeetCode",
+    "externalId": "1044",
+    "title": "最长重复子串",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "string-hash"
+    ],
+    "topicIds": [
+      "strings",
+      "string-hash"
+    ],
+    "focus": "练习字符串哈希相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/longest-duplicate-substring/"
+  },
+  {
+    "id": "LEETCODE:1244",
+    "platform": "LeetCode",
+    "externalId": "1316",
+    "title": "不同的循环子字符串",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "string-hash"
+    ],
+    "topicIds": [
+      "strings",
+      "string-hash"
+    ],
+    "focus": "练习字符串哈希相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/distinct-echo-substrings/"
+  },
+  {
+    "id": "LEETCODE:1508",
+    "platform": "LeetCode",
+    "externalId": "1392",
+    "title": "最长快乐前缀",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "string-hash"
+    ],
+    "topicIds": [
+      "strings",
+      "string-hash"
+    ],
+    "focus": "练习字符串哈希相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/longest-happy-prefix/"
+  },
+  {
+    "id": "LUOGU:P3370",
+    "platform": "洛谷",
+    "externalId": "P3370",
+    "title": "【模板】字符串哈希",
+    "difficulty": "基础",
+    "leafTopicIds": [
+      "string-hash"
+    ],
+    "topicIds": [
+      "strings",
+      "string-hash"
+    ],
+    "focus": "练习字符串哈希相关的建模、边界和实现。",
+    "url": "https://www.luogu.com.cn/problem/P3370"
+  },
+  {
+    "id": "LEETCODE:212",
+    "platform": "LeetCode",
+    "externalId": "212",
+    "title": "单词搜索 II",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "trie"
+    ],
+    "topicIds": [
+      "strings",
+      "trie"
+    ],
+    "focus": "练习字典树相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/word-search-ii/"
+  },
+  {
+    "id": "LEETCODE:648",
+    "platform": "LeetCode",
+    "externalId": "648",
+    "title": "单词替换",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "trie"
+    ],
+    "topicIds": [
+      "strings",
+      "trie"
+    ],
+    "focus": "练习字典树相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/replace-words/"
+  },
+  {
+    "id": "LEETCODE:744",
+    "platform": "LeetCode",
+    "externalId": "743",
+    "title": "网络延迟时间",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "dijkstra"
+    ],
+    "topicIds": [
+      "graph",
+      "shortest-path",
+      "dijkstra"
+    ],
+    "focus": "练习Dijkstra 算法相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/network-delay-time/"
+  },
+  {
+    "id": "LEETCODE:1753",
+    "platform": "LeetCode",
+    "externalId": "1631",
+    "title": "最小体力消耗路径",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "dijkstra"
+    ],
+    "topicIds": [
+      "graph",
+      "shortest-path",
+      "dijkstra"
+    ],
+    "focus": "练习Dijkstra 算法相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/path-with-minimum-effort/"
+  },
+  {
+    "id": "LEETCODE:1325",
+    "platform": "LeetCode",
+    "externalId": "1514",
+    "title": "概率最大的路径",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "dijkstra"
+    ],
+    "topicIds": [
+      "graph",
+      "shortest-path",
+      "dijkstra"
+    ],
+    "focus": "练习Dijkstra 算法相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/path-with-maximum-probability/"
+  },
+  {
+    "id": "LEETCODE:2090",
+    "platform": "LeetCode",
+    "externalId": "1976",
+    "title": "到达目的地的方案数",
+    "difficulty": "进阶",
+    "leafTopicIds": [
+      "dijkstra"
+    ],
+    "topicIds": [
+      "graph",
+      "shortest-path",
+      "dijkstra"
+    ],
+    "focus": "练习Dijkstra 算法相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/number-of-ways-to-arrive-at-destination/"
+  },
+  {
+    "id": "LEETCODE:918",
+    "platform": "LeetCode",
+    "externalId": "882",
+    "title": "细分图中的可到达节点",
+    "difficulty": "挑战",
+    "leafTopicIds": [
+      "dijkstra"
+    ],
+    "topicIds": [
+      "graph",
+      "shortest-path",
+      "dijkstra"
+    ],
+    "focus": "练习Dijkstra 算法相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/reachable-nodes-in-subdivided-graph/"
   }
 ]

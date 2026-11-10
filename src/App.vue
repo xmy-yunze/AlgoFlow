@@ -1,4 +1,5 @@
 <script setup>
+import { ensureTrainingChoice } from './lib/trainingChoice.js'
 import { restoreRandomSnapshot } from './lib/randomSnapshot.js'
 import ClearDataDialog from './components/ClearDataDialog.vue'
 import { clearAppData } from './lib/clearData.js'
@@ -39,16 +40,16 @@ const training = ref(null)
 const trainingMessage = ref('')
 try {
   const saved = JSON.parse(storage.getItem('algoflow:v1:training-choice'))
-  if (saved?.date === localDate() && problems.some(p => p.id === saved.problemId)) training.value = saved
+  training.value = saved
 } catch {}
 function saveTraining() {
   try { storage.setItem('algoflow:v1:training-choice', JSON.stringify(training.value)) }
   catch { warning.value = '训练选择保存失败，刷新后可能丢失。' }
 }
 function ensureTraining() {
-  if (training.value?.date === localDate()) return
-  const problem = drawRandom({}, state.value.completedIds)
-  training.value = { date: localDate(), problemId: problem?.id ?? null, confirmed: false }
+  const next = ensureTrainingChoice(training.value, localDate(), state.value.completedIds)
+  if (next === training.value) return
+  training.value = next
   saveTraining()
 }
 function confirmTraining() {
@@ -56,7 +57,7 @@ function confirmTraining() {
   if (!problem) { trainingMessage.value = '没有符合条件的未完成题目，请调整后再确定。'; return }
   state.value.settings = { ...draftSettings.value }
   training.value = { date: localDate(), problemId: problem.id, confirmed: true, ...draftSettings.value }
-  trainingMessage.value = '已确定训练，下方题目已更新。'
+  trainingMessage.value = '已确定训练：以后每天继续按此专题与难度推荐，直到你主动切换。'
   persist(); saveTraining()
 }
 const trainingReason = computed(() => training.value?.confirmed
@@ -264,22 +265,14 @@ onUnmounted(() => { clearInterval(timer); window.removeEventListener('focus', re
       <p v-if="warning" class="notice" role="alert">{{ warning }}</p>
       <section class="daily-card clickable-card" aria-labelledby="daily-title" :tabindex="dailyProblem ? 0 : undefined" :role="dailyProblem ? 'link' : undefined" @click="showDetail(dailyProblem, 'daily', $event)" @keydown.enter.self.prevent="showDetail(dailyProblem, 'daily', $event)"><div class="card-top"><span class="label"><span class="small-dot"></span>今日推荐</span><span class="sample-tag">{{ isCompleted(dailyProblem) ? '已手动完成' : (training?.confirmed ? '已确定训练' : '随机推荐') }}</span></div>
         <template v-if="dailyProblem"><div v-if="isCompleted(dailyProblem)" class="daily-congrats" role="status"><strong>✦ 今日挑战已完成，真棒！</strong><span>每一次认真思考，都在让你更进一步。</span></div><div class="topic-line">{{ dailyProblem.platform }} · {{ dailyProblem.externalId }}</div><h2 id="daily-title">{{ dailyProblem.title }}</h2><p class="daily-description">{{ dailyProblem.focus }}</p><div class="tags"><span v-for="id in dailyProblem.leafTopicIds" :key="id">{{ topicName(id) }}</span><span>{{ dailyProblem.difficulty }}</span></div><button class="primary-button" @click.stop="showDetail(dailyProblem, 'daily', $event)">开始今日训练 </button><p class="card-footnote">{{ date }} · 刷新保留 · 确定训练可更换题目</p></template>
-        <template v-else><h2 id="daily-title">当前没有可推荐的新题</h2><p class="daily-description">当前专题与难度下没有未完成题目。请调整学习设置，或到随机模式选择其他范围。</p></template>
+        <template v-else><h2 id="daily-title">当前没有可推荐的新题</h2><p class="daily-description">当前训练范围内没有未完成题目。已保留你的专题设置，请切换专题或难度，或前往刷题页练习。</p></template>
       </section>
       <section class="today-overview"><div class="overview-heading"><h2>学习概览</h2><span>真实训练档案</span></div><div class="overview-grid"><article><span class="overview-symbol" aria-hidden="true">✓</span><strong>{{ todayOverview.practiced }}<small>题</small></strong><p>累计已练题目</p><span>同题多次训练只计一次</span></article><article><span class="overview-symbol" aria-hidden="true">◎</span><strong>{{ todayOverview.independent }}<small>题</small></strong><p>独立 AC 题目</p><span>仅统计独立完成的自报结果</span></article></div></section>
       <button class="archive-entry" @click="switchTab('review')"><span class="archive-symbol" aria-hidden="true">▤</span><span><strong>我的训练档案</strong><small>回顾练过的题目和训练结果</small></span><span aria-hidden="true">›</span></button>
-      <details class="settings-card"><summary>调整学习专题与难度</summary><div class="filter-grid"><TopicPicker v-model="draftSettings.topicId" label="学习专题" /><SmoothSelect v-model="draftSettings.difficulty" label="学习难度" :options="difficulties" /></div><button class="primary-button" @click="confirmTraining">确定训练 </button><p v-if="trainingMessage" role="status">{{ trainingMessage }}</p><p>选择专题与难度后，点击确定训练，下方立即推荐对应题目。未确定时默认随机推荐。</p></details>
+      <details class="settings-card"><summary>调整学习专题与难度</summary><div class="filter-grid"><TopicPicker v-model="draftSettings.topicId" label="学习专题" /><SmoothSelect v-model="draftSettings.difficulty" label="学习难度" :options="difficulties" /></div><button class="primary-button" @click="confirmTraining">确定训练 </button><p v-if="trainingMessage" role="status">{{ trainingMessage }}</p><p>确认后每天持续按所选专题与难度推荐，直到你主动切换。未确认时默认随机推荐。</p></details>
       </TodayPage>
-      <PracticePage v-show="activeTab === 'practice'"><section class="greeting"><h1>刷题</h1><p class="intro">选择范围，随机练习。</p></section>
-      <section v-if="panel" id="practice-panel" class="preview" aria-labelledby="panel-title"><div class="preview-top"><span>{{ panel === 'random' ? '随机刷题' : panel === 'daily' ? '今日训练' : '独立错题复习' }}</span><button @click="panel = ''" aria-label="收起练习面板">收起 ×</button></div>
-        <template v-if="panel === 'review'"><h2 id="panel-title">复习功能将在下一步加入</h2><p>本轮只保存简单的手动完成标记，还没有训练结果、错因与复习记录。</p></template>
-        <template v-else>
-          <template v-if="panel === 'random'"><h2 id="panel-title">这次想练什么？</h2><div class="filter-grid"><TopicPicker v-model="randomTopic" label="专题" allow-all @change="resetRandomResult" /><SmoothSelect v-model="randomDifficulty" label="难度" :options="[{ value: '', label: '全部难度' }, ...difficulties]" @change="resetRandomResult" /></div><p>按所选专题与难度抽取未完成的题目。</p><button class="primary-button" @click="randomDraw">{{ randomAttempted ? '再抽一道' : '随机抽题' }} <span aria-hidden="true">⤨</span></button><p v-if="randomRestoreMessage" class="notice" role="status">{{ randomRestoreMessage }}</p><p v-else-if="randomAttempted && !randomProblem" class="notice" role="status">没有符合条件的未完成题目，请更换专题或难度。</p></template>
-          <h2 v-else id="panel-title">题目详情</h2>
-          <button v-if="selectedProblem" class="result-card" @click="showDetail(selectedProblem, panel, $event)"><span class="problem-id">{{ selectedProblem.id }}</span><strong>{{ selectedProblem.title }}</strong><span>{{ selectedProblem.difficulty }} · {{ selectedProblem.platform }}</span><span class="result-action">查看题目详情</span></button>
-        </template>
-      </section>
-      <ProblemLibrary :completed-ids="state.completedIds" @open="problem => showDetail(problem, 'library')" />
+      <PracticePage v-show="activeTab === 'practice'" :topic="randomTopic" :difficulty="randomDifficulty" :problem="randomProblem" :attempted="randomAttempted" :message="randomRestoreMessage" :sessions="state.sessions ?? []" :date="date" @update:topic="value => { randomTopic = value; resetRandomResult() }" @update:difficulty="value => { randomDifficulty = value; resetRandomResult() }" @draw="randomDraw" @open="problem => showDetail(problem, 'random')">
+        <ProblemLibrary :completed-ids="state.completedIds" @open="problem => showDetail(problem, 'library')" />
       </PracticePage>
       <ReviewPage v-show="activeTab === 'review'" :sessions="state.sessions ?? []" @open="problem => showDetail(problem, 'review')" />
       <ProfilePage v-show="activeTab === 'profile'"><section class="greeting"><h1>我的</h1><p class="intro">你的学习档案</p></section><LearningStatistics :sessions="state.sessions ?? []" /><article class="preview"><h2>数据管理</h2><button class="secondary-button" @click="exportArchive">导出训练档案 JSON</button><BackupImport :state="state" @confirm="confirmBackupImport" /><button class="danger-button clear-data-entry" @click="clearError = ''; clearingData = true">清空全部数据</button><p v-if="importNotice" role="status">{{ importNotice }}</p><p>数据只保存在当前浏览器和当前地址，可通过 JSON 备份手动迁移。手动结果不代表 OJ 官方判题。</p></article><section class="more-section"><button class="secondary-button" @click="switchTab('review')">查看训练档案</button></section></ProfilePage>
