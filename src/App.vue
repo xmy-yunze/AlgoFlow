@@ -30,6 +30,9 @@ const state = ref(loaded.state)
 const warning = ref(loaded.warning)
 const date = ref(localDate())
 const panel = ref('')
+const libraryView = ref(null)
+const browsingLibrary = ref(false)
+const trainingSettingsOpen = ref(false)
 const randomTopic = ref('')
 const randomDifficulty = ref('')
 const randomProblem = ref(null)
@@ -56,11 +59,12 @@ function ensureTraining() {
 function confirmTraining() {
   refreshDay()
   const problem = drawRandom(draftSettings.value, state.value.completedIds)
-  if (!problem) { trainingMessage.value = '没有符合条件的未完成题目，请调整后再确定。'; return }
+  if (!problem) { trainingMessage.value = '没有符合条件的未完成题目，请调整后再确定。'; return false }
   state.value.settings = { ...draftSettings.value }
   training.value = { date: localDate(), problemId: problem.id, confirmed: true, ...draftSettings.value }
   trainingMessage.value = '已确定训练：以后每天继续按此专题与难度推荐，直到你主动切换。'
   persist(); saveTraining()
+  return true
 }
 const trainingReason = computed(() => training.value?.confirmed
   ? `按你确认的「${topicPath(training.value.topicId)} / ${training.value.difficulty}」推荐。`
@@ -185,13 +189,14 @@ function routeFor(view = 'root', session = null) {
   return view === 'root' ? routeBase() : `${routeBase()}/${view}?${params}`
 }
 function rememberUI() {
-  window.history.replaceState({ ...window.history.state, ui: { randomTopic:randomTopic.value, randomDifficulty:randomDifficulty.value, randomId:randomProblem.value?.id, randomAttempted:randomAttempted.value, randomResultFilters:randomResultFilters.value ? { ...randomResultFilters.value } : null, scroll:window.scrollY } }, '', window.location.href)
+  window.history.replaceState({ ...window.history.state, ui: { libraryView: libraryView.value ? JSON.parse(JSON.stringify(libraryView.value)) : null, randomTopic:randomTopic.value, randomDifficulty:randomDifficulty.value, randomId:randomProblem.value?.id, randomAttempted:randomAttempted.value, randomResultFilters:randomResultFilters.value ? { ...randomResultFilters.value } : null, scroll:window.scrollY } }, '', window.location.href)
 }
 let restoringUI = false
 function restoreUI() {
   const ui = window.history.state?.ui
   if (!ui) return
   restoringUI = true
+  libraryView.value = ui.libraryView ?? null
   const restored = restoreRandomSnapshot(ui, state.value.completedIds)
   randomTopic.value=restored.topicId; randomDifficulty.value=restored.difficulty
   randomProblem.value=restored.problem; randomAttempted.value=restored.attempted
@@ -205,6 +210,8 @@ function applyRoute() {
   const [path, query=''] = window.location.hash.replace(/^#\/?/,'').split('?')
   const [tab,view] = path.split('/')
   activeTab.value=['today','practice','review','profile'].includes(tab)?tab:'today'
+  browsingLibrary.value=activeTab.value==='practice' && view==='library'
+  trainingSettingsOpen.value=activeTab.value==='today' && view==='settings'
   panel.value=activeTab.value==='practice'?'random':''
   const params=new URLSearchParams(query)
   const problem=problems.find(p=>p.id===params.get('problem'))
@@ -216,7 +223,7 @@ function applyRoute() {
   acceptedUrl=window.location.hash; acceptedState=window.history.state
   nextTick(()=>window.scrollTo(0,window.history.state?.ui?.scroll ?? 0))
 }
-watch(() => [randomTopic.value, randomDifficulty.value, randomProblem.value?.id, randomAttempted.value, JSON.stringify(randomResultFilters.value)], () => {
+watch(() => [randomTopic.value, randomDifficulty.value, randomProblem.value?.id, randomAttempted.value, JSON.stringify(randomResultFilters.value), JSON.stringify(libraryView.value)], () => {
   if (!restoringUI) rememberUI()
 }, { flush: 'sync' })
 function mayLeave() { return !formDirty.value || window.confirm('训练记录尚未保存，确定放弃修改？') }
@@ -224,7 +231,7 @@ function navigate(url) {
   if (!mayLeave()) return
   rememberUI(); window.history.pushState({ui:window.history.state?.ui},'',url); applyRoute(); window.scrollTo(0,0)
 }
-function switchTab(tab) { if(tab!==activeTab.value) navigate(`#/${tab}`) }
+function switchTab(tab) { if(tab!==activeTab.value || browsingLibrary.value || trainingSettingsOpen.value) navigate(`#/${tab}`) }
 function showDetail(problem,source) {
   if(!problem)return
   detail.value={problem,source,explanation:source==='daily'?trainingReason.value+problem.focus:['profile','review','library'].includes(source)?problem.focus:reason.value}
@@ -233,7 +240,7 @@ function showDetail(problem,source) {
 }
 function openRecording(session=null) { recordError.value=''; navigate(routeFor('record',session)) }
 function closeRecording() { navigate(routeFor('problem')) }
-function closeDetail() { navigate(routeBase()) }
+function closeDetail() { navigate(detail.value?.source === 'library' ? '#/practice/library' : routeBase()) }
 function onNavigation() {
   if (!mayLeave()) { window.history.pushState(acceptedState,'',acceptedUrl); return }
   applyRoute()
@@ -258,7 +265,7 @@ onUnmounted(() => { clearInterval(timer); window.removeEventListener('focus', re
       <PracticeForm :session="editingSession" :error="recordError" @dirty="formDirty = $event" @save="savePractice" @cancel="closeRecording" />
     </main>
     <main v-if="detail" v-show="!recording" class="detail-page">
-      <button class="secondary-button back-button" @click="closeDetail">← 返回{{ {today: '今日', practice: '刷题', review: '记录', profile: '我的'}[activeTab] }}</button>
+      <button class="secondary-button back-button" @click="closeDetail">← 返回{{ detail.source === 'library' ? '题库' : {today: '今日', practice: '刷题', review: '记录', profile: '我的'}[activeTab] }}</button>
       <article class="preview">
         <p class="problem-id">{{ detail.problem.id }} · {{ detail.source === 'library' ? '题库选题' : detail.source === 'daily' ? '每日推荐' : ['review','profile'].includes(detail.source) ? '训练档案' : '随机刷题' }}</p>
         <h1 id="detail-title" tabindex="-1">{{ detail.problem.title }}</h1>
@@ -279,7 +286,7 @@ onUnmounted(() => { clearInterval(timer); window.removeEventListener('focus', re
       </article>
     </main>
     <main v-show="!detail">
-      <TodayPage v-show="activeTab === 'today'">
+      <TodayPage v-show="activeTab === 'today' && !trainingSettingsOpen">
       <section class="greeting today-welcome"><h1>今天，也来一道题。</h1><p class="intro">保持思考的节奏，积累算法能力。</p></section>
       <p v-if="warning" class="notice" role="alert">{{ warning }}</p>
       <section class="daily-card today-result clickable-card" aria-labelledby="daily-title" :tabindex="dailyProblem ? 0 : undefined" :role="dailyProblem ? 'link' : undefined" @click="showDetail(dailyProblem, 'daily', $event)" @keydown.enter.self.prevent="showDetail(dailyProblem, 'daily', $event)"><div class="card-top"><span class="label"><span class="small-dot"></span>今日推荐</span><span v-if="isTodayCompleted(dailyProblem)" class="today-completed" role="status" aria-label="今日训练已完成">✅ 已完成</span><span v-else class="sample-tag">{{ training?.confirmed ? '已确定训练' : '随机推荐' }}</span></div>
@@ -287,11 +294,13 @@ onUnmounted(() => { clearInterval(timer); window.removeEventListener('focus', re
         <template v-else><h2 id="daily-title">当前没有可推荐的新题</h2><p class="daily-description">当前训练范围内没有未完成题目。已保留你的专题设置，请切换专题或难度，或前往刷题页练习。</p></template>
       </section>
       <section class="today-overview"><div class="overview-heading"><h2>学习概览</h2><span>真实训练档案</span></div><div class="overview-grid"><article><span class="overview-symbol" aria-hidden="true">✓</span><strong>{{ todayOverview.practiced }}<small>题</small></strong><p>累计已练题目</p><span>同题多次训练只计一次</span></article><article><span class="overview-symbol" aria-hidden="true">◎</span><strong>{{ todayOverview.independent }}<small>题</small></strong><p>独立 AC 题目</p><span>仅统计独立完成的自报结果</span></article></div></section>
-      <details class="settings-card"><summary>调整学习专题与难度</summary><div class="filter-grid"><TopicPicker v-model="draftSettings.topicId" label="学习专题" /><SmoothSelect v-model="draftSettings.difficulty" label="学习难度" :options="difficulties" /></div><button class="primary-button" @click="confirmTraining">确定训练 </button><p v-if="trainingMessage" role="status">{{ trainingMessage }}</p><p>确认后每天持续按所选专题与难度推荐，直到你主动切换。未确认时默认随机推荐。</p></details>
+      <button class="training-settings-entry" @click="navigate('#/today/settings')"><span>调整学习专题与难度</span><span aria-hidden="true">›</span></button>
       </TodayPage>
-      <PracticePage v-show="activeTab === 'practice'" :topic="randomTopic" :difficulty="randomDifficulty" :problem="randomProblem" :attempted="randomAttempted" :message="randomRestoreMessage" :sessions="state.sessions ?? []" :date="date" @update:topic="value => { randomTopic = value; resetRandomResult() }" @update:difficulty="value => { randomDifficulty = value; resetRandomResult() }" @draw="randomDraw" @open="problem => showDetail(problem, 'random')">
-        <ProblemLibrary :completed-ids="state.completedIds" @open="problem => showDetail(problem, 'library')" />
-      </PracticePage>
+      <section v-show="activeTab === 'today' && trainingSettingsOpen" class="training-settings-page" aria-labelledby="training-settings-title"><button class="library-return" @click="navigate('#/today')">← 返回今日</button><h1 id="training-settings-title">训练设置</h1><article class="settings-card"><h2>学习专题与难度</h2><div class="filter-grid"><TopicPicker v-model="draftSettings.topicId" label="学习专题" /><SmoothSelect v-model="draftSettings.difficulty" label="学习难度" :options="difficulties" /></div><button class="primary-button" @click="confirmTraining() && navigate('#/today')">确定训练</button><p v-if="trainingMessage" role="status">{{ trainingMessage }}</p><p>确认后每天持续按所选专题与难度推荐，直到你主动切换。只调整选项或返回不会更改当前训练。</p></article></section>
+      <PracticePage @browse-library="navigate('#/practice/library')" v-show="activeTab === 'practice' && !browsingLibrary" :topic="randomTopic" :difficulty="randomDifficulty" :problem="randomProblem" :attempted="randomAttempted" :message="randomRestoreMessage" :sessions="state.sessions ?? []" :date="date" @update:topic="value => { randomTopic = value; resetRandomResult() }" @update:difficulty="value => { randomDifficulty = value; resetRandomResult() }" @draw="randomDraw" @open="problem => showDetail(problem, 'random')" />
+      <section v-show="activeTab === 'practice' && browsingLibrary" class="library-page"><button class="library-return" @click="navigate('#/practice')">← 返回刷题</button>
+        <ProblemLibrary v-model:view="libraryView" :completed-ids="state.completedIds" @open="problem => showDetail(problem, 'library')" />
+      </section>
       <ReviewPage v-show="activeTab === 'review'" :sessions="state.sessions ?? []" @open="problem => showDetail(problem, 'review')" />
       <ProfilePage v-show="activeTab === 'profile'"><section class="greeting"><h1>我的</h1><p class="intro">你的学习档案</p></section><LearningStatistics :sessions="state.sessions ?? []" :today="date" /><article class="preview"><h2>数据管理</h2><button class="secondary-button" @click="exportArchive">导出训练档案 JSON</button><BackupImport :state="state" @confirm="confirmBackupImport" /><button class="danger-button clear-data-entry" @click="clearError = ''; clearingData = true">清空全部数据</button><p v-if="importNotice" role="status">{{ importNotice }}</p><p>数据只保存在当前浏览器和当前地址，可通过 JSON 备份手动迁移。手动结果不代表 OJ 官方判题。</p></article><section class="more-section"><button class="secondary-button" @click="switchTab('review')">查看训练档案</button></section></ProfilePage>
     </main>
@@ -299,6 +308,10 @@ onUnmounted(() => { clearInterval(timer); window.removeEventListener('focus', re
 </template>
 
 <style scoped>
+.training-settings-entry{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:54px;margin-top:22px;padding:14px 18px;border:1px solid #E2DDF8;border-radius:16px;background:#F0EDFF;color:#6658DB;font-size:14px;font-weight:600;text-align:left}.training-settings-entry>span:last-child{font-size:23px;line-height:1}.training-settings-page{padding-top:24px}.training-settings-page h1{font-size:28px;margin:16px 0 24px}.training-settings-page h2{font-size:16px;margin:0 0 18px}.training-settings-page .primary-button{width:100%;justify-content:center}
+
+.library-page{padding-top:24px}.library-return{min-height:44px;padding:0;border:0;background:transparent;color:#202B3F;font-size:14px}.library-page :deep(.problem-library){margin-top:0;padding-top:16px;border-top:0}
+
 .daily-card.today-result{padding:18px;display:grid;gap:14px;border:1px solid #E8ECF4;border-radius:20px;background:#fff;box-shadow:0 6px 20px #202b3f16;color:#202B3F}
 .today-result .card-top{margin:0;padding:0;background:transparent;border:0;min-height:0;font-size:12px;gap:12px}.today-result .card-top .label{font-size:12px;color:#6658DB;gap:7px}.today-result .small-dot{width:5px;height:5px}.today-result .sample-tag{padding:0;border:0;background:transparent;color:#68768D;font-size:11.5px}
 .today-completed{display:inline-flex;align-items:center;gap:5px;padding:5px 9px;border-radius:12px;background:#DCF7E5;color:#23834B;font-size:12px;font-weight:650;white-space:nowrap}.today-result-meta{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:12px;color:#68768D}.today-result-meta>span:first-child{display:flex;align-items:center;flex-wrap:wrap;gap:7px}.today-platform-mark{font-size:10px;background:#202B3F;color:white;border-radius:4px;padding:4px}.today-result-meta small{font-size:11px;color:#8391A7}.today-difficulty{background:#FDF3E1;color:#A66B12;font-size:11px;border-radius:6px;padding:4px 8px;white-space:nowrap}
