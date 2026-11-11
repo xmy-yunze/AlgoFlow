@@ -1,6 +1,6 @@
 <script setup>
 import { ref, useId, onMounted, onUnmounted, nextTick } from 'vue'
-defineProps({ title: { type: String, required: true } })
+defineProps({ title: { type: String, required: true }, description: { type: String, default: '选择后，点击页面上的确认训练才会保存' } })
 const emit = defineEmits(['close'])
 const dialog = ref(null), closeButton = ref(null), id = useId()
 let previousFocus, scrollX, scrollY, previousStyles
@@ -38,7 +38,7 @@ onUnmounted(async () => {
 <template>
 <Teleport to="body"><dialog ref="dialog" class="bottom-sheet" aria-modal="true" :aria-labelledby="`${id}-title`" @cancel.prevent="emit('close')" @keydown="trapFocus" @click="outsideClick">
   <div class="sheet-handle" aria-hidden="true" />
-  <header class="sheet-header"><div><h2 :id="`${id}-title`">{{ title }}</h2><p>选择后，点击页面上的确认训练才会保存</p></div><button ref="closeButton" type="button" class="sheet-close" aria-label="关闭选择" @click="emit('close')"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 6 8 8M14 6l-8 8" /></svg></button></header>
+  <header class="sheet-header"><div><h2 :id="`${id}-title`">{{ title }}</h2><p v-if="description">{{ description }}</p></div><button ref="closeButton" type="button" class="sheet-close" aria-label="关闭选择" @click="emit('close')"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 6 8 8M14 6l-8 8" /></svg></button></header>
   <div class="sheet-content"><slot /></div>
 </dialog></Teleport>
 </template>

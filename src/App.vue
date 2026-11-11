@@ -12,6 +12,9 @@ import { learningStatistics } from './lib/statistics.js'
 import LearningStatistics from './components/LearningStatistics.vue'
 import AppShell from './components/AppShell.vue'
 import TodayPage from './pages/TodayPage.vue'
+import StudyActivity from './components/StudyActivity.vue'
+import BottomSheet from './components/BottomSheet.vue'
+import TrainingCalendar from './components/TrainingCalendar.vue'
 import ProblemLibrary from './components/ProblemLibrary.vue'
 import PracticePage from './pages/PracticePage.vue'
 import TrainingSettingsPage from './pages/TrainingSettingsPage.vue'
@@ -274,12 +277,15 @@ function onVisible() { if (document.visibilityState === 'visible') resumeDay() }
 function onStorage(event) { if (event.key === null || ['algoflow:v1:learning', 'algoflow:v1:training-choice'].includes(event.key)) resumeDay() }
 onMounted(() => { timer = window.setInterval(refreshDay, 60000); window.addEventListener('focus', resumeDay); window.addEventListener('pageshow', resumeDay); window.addEventListener('storage', onStorage); document.addEventListener('visibilitychange', onVisible) })
 onUnmounted(() => { clearInterval(timer); window.removeEventListener('focus', resumeDay); window.removeEventListener('pageshow', resumeDay); window.removeEventListener('storage', onStorage); document.removeEventListener('visibilitychange', onVisible) })
+const calendarOpen = ref(false)
+watch([activeTab, detail, trainingSettingsOpen], () => { calendarOpen.value = false })
 </script>
 
 <template>
+  <BottomSheet v-if="calendarOpen && activeTab === 'today' && !detail && !trainingSettingsOpen" title="训练日历" description="回顾每一天的学习积累" @close="calendarOpen = false"><TrainingCalendar :sessions="state.sessions ?? []" :today="date" /></BottomSheet>
   <ConfirmDialog v-if="pendingDelete" title="删除训练记录？" description="删除后无法恢复，确定要删除这条记录吗？" confirm-label="删除" danger :error="deleteError" :busy="deletingRecord" :fallback-focus="deleteFocusFallback" @cancel="pendingDelete = null" @confirm="removeRecord" />
   <ClearDataDialog v-if="clearingData" :error="clearError" @cancel="clearingData = false" @confirm="confirmClearData" /><CompletionCelebration v-if="celebrate" @close="celebrate = false" /><AppShell :active="activeTab" :secondary="!!detail" @navigate="switchTab"><div class="page-shell">
-    <header class="brand-row"><a class="brand" :href="routeBase()" @click.prevent="navigate(routeBase())" aria-label="AlgoFlow 首页"><span class="brand-icon"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6" cy="5" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="6" cy="19" r="2"/><path d="M6 7v10M8 14c8 0 10-2 10-6"/></svg></span>AlgoFlow</a><span class="date-pill">{{ todayLabel }}</span></header>
+    <header class="brand-row"><a class="brand" :href="routeBase()" @click.prevent="navigate(routeBase())" aria-label="AlgoFlow 首页"><span class="brand-icon"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6" cy="5" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="6" cy="19" r="2"/><path d="M6 7v10M8 14c8 0 10-2 10-6"/></svg></span>AlgoFlow</a><button v-if="activeTab === 'today' && !detail && !trainingSettingsOpen" class="date-pill calendar-trigger" aria-label="查看训练日历" aria-haspopup="dialog" :aria-expanded="calendarOpen" @click="calendarOpen = true">{{ todayLabel }}</button><span v-else class="date-pill">{{ todayLabel }}</span></header>
     <main v-if="recording && detail" class="detail-page">
       <button class="secondary-button back-button" @click="closeRecording">← 返回题目详情</button>
       <p class="problem-id">{{ detail.problem.externalId }} · {{ detail.problem.title }}</p>
@@ -309,6 +315,7 @@ onUnmounted(() => { clearInterval(timer); window.removeEventListener('focus', re
       <TodayPage v-show="activeTab === 'today' && !trainingSettingsOpen">
       <section class="greeting today-welcome"><h1>今天，也来一道题。</h1><p class="intro">保持思考的节奏，积累算法能力。</p></section>
       <p v-if="warning" class="notice" role="alert">{{ warning }}</p>
+      <StudyActivity :sessions="state.sessions ?? []" :date="date" />
       <section class="daily-card today-result clickable-card" aria-labelledby="daily-title" :tabindex="dailyProblem ? 0 : undefined" :role="dailyProblem ? 'link' : undefined" @click="showDetail(dailyProblem, 'daily', $event)" @keydown.enter.self.prevent="showDetail(dailyProblem, 'daily', $event)"><div class="card-top"><span class="label"><span class="small-dot"></span>今日推荐</span><span v-if="isTodayCompleted(dailyProblem)" class="today-completed" role="status" aria-label="今日训练已完成">✅ 已完成</span><span v-else class="sample-tag">{{ training?.confirmed ? '已确定训练' : '随机推荐' }}</span></div>
         <template v-if="dailyProblem"><div v-if="isTodayCompleted(dailyProblem)" class="daily-congrats" role="status"><strong>✦ 今日挑战已完成，真棒！</strong><span>每一次认真思考，都在让你更进一步。</span></div><div class="today-result-meta"><span><span class="today-platform-mark">{{ dailyProblem.platform === '洛谷' ? 'LG' : 'OJ' }}</span>{{ dailyProblem.platform }} <small>{{ dailyProblem.externalId }}</small></span><span class="today-difficulty">{{ dailyProblem.difficulty }}</span></div><h2 id="daily-title">{{ dailyProblem.title }}</h2><p class="daily-description">{{ dailyProblem.focus }}</p><div class="tags"><span v-for="id in dailyProblem.leafTopicIds" :key="id">{{ topicName(id) }}</span></div><div class="today-result-status"><span>{{ training?.confirmed ? '按确认的专题与难度推荐' : '全部专题随机推荐' }}</span><span>{{ isTodayCompleted(dailyProblem) ? '已完成' : '未完成' }}</span></div><button class="primary-button" @click.stop="showDetail(dailyProblem, 'daily', $event)">开始今日训练 </button><p class="card-footnote">{{ date }} · 刷新保留 · 确定训练可更换题目</p></template>
         <template v-else><h2 id="daily-title">当前没有可推荐的新题</h2><p class="daily-description">当前训练范围内没有未完成题目。已保留你的专题设置，请切换专题或难度，或前往刷题页练习。</p></template>
@@ -317,7 +324,7 @@ onUnmounted(() => { clearInterval(timer); window.removeEventListener('focus', re
       <button class="training-settings-entry" @click="navigate('#/today/settings')"><span>调整学习专题与难度</span><span aria-hidden="true">›</span></button>
       </TodayPage>
       <TrainingSettingsPage v-if="activeTab === 'today' && trainingSettingsOpen" v-model:settings="draftSettings" :message="trainingMessage" @back="navigate('#/today')" @confirm="confirmTraining() && navigate('#/today')" />
-      <PracticePage @browse-library="navigate('#/practice/library')" v-show="activeTab === 'practice' && !browsingLibrary" :topic="randomTopic" :difficulty="randomDifficulty" :problem="randomProblem" :attempted="randomAttempted" :message="randomRestoreMessage" :sessions="state.sessions ?? []" :date="date" @update:topic="value => { randomTopic = value; resetRandomResult() }" @update:difficulty="value => { randomDifficulty = value; resetRandomResult() }" @draw="randomDraw" @open="problem => showDetail(problem, 'random')" />
+      <PracticePage @browse-library="navigate('#/practice/library')" v-show="activeTab === 'practice' && !browsingLibrary" :topic="randomTopic" :difficulty="randomDifficulty" :problem="randomProblem" :attempted="randomAttempted" :message="randomRestoreMessage" @update:topic="value => { randomTopic = value; resetRandomResult() }" @update:difficulty="value => { randomDifficulty = value; resetRandomResult() }" @draw="randomDraw" @open="problem => showDetail(problem, 'random')" />
       <section v-show="activeTab === 'practice' && browsingLibrary" class="library-page"><button class="library-return" @click="navigate('#/practice')">← 返回刷题</button>
         <ProblemLibrary v-model:view="libraryView" :completed-ids="state.completedIds" @open="problem => showDetail(problem, 'library')" />
       </section>
