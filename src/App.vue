@@ -200,6 +200,7 @@ function exportArchive() {
 }
 const todayOverview = computed(() => learningStatistics(state.value.sessions ?? [], date.value))
 const detail = ref(null)
+const topicStatsOpen = ref(false)
 const activeTab = ref('today')
 const formDirty = ref(false)
 const routeBase = () => `#/${activeTab.value}`
@@ -232,6 +233,7 @@ function applyRoute() {
   const [tab,view] = path.split('/')
   activeTab.value=['today','practice','review','profile'].includes(tab)?tab:'today'
   browsingLibrary.value=activeTab.value==='practice' && view==='library'
+  topicStatsOpen.value=activeTab.value==='profile' && view==='topics'
   const enteringSettings = activeTab.value==='today' && view==='settings'
   if (enteringSettings && !trainingSettingsOpen.value) trainingMessage.value = ''
   trainingSettingsOpen.value=enteringSettings
@@ -254,7 +256,7 @@ function navigate(url) {
   if (!mayLeave()) return
   rememberUI(); window.history.pushState({ui:window.history.state?.ui},'',url); applyRoute(); window.scrollTo(0,0)
 }
-function switchTab(tab) { if(tab!==activeTab.value || browsingLibrary.value || trainingSettingsOpen.value) navigate(`#/${tab}`) }
+function switchTab(tab) { if(tab!==activeTab.value || browsingLibrary.value || trainingSettingsOpen.value || topicStatsOpen.value) navigate(`#/${tab}`) }
 function showDetail(problem,source) {
   if(!problem)return
   detail.value={problem,source,explanation:source==='daily'?trainingReason.value+problem.focus:['profile','review','library'].includes(source)?problem.focus:reason.value}
@@ -284,7 +286,7 @@ watch([activeTab, detail, trainingSettingsOpen], () => { calendarOpen.value = fa
 <template>
   <BottomSheet v-if="calendarOpen && activeTab === 'today' && !detail && !trainingSettingsOpen" title="训练日历" description="回顾每一天的学习积累" @close="calendarOpen = false"><TrainingCalendar :sessions="state.sessions ?? []" :today="date" /></BottomSheet>
   <ConfirmDialog v-if="pendingDelete" title="删除训练记录？" description="删除后无法恢复，确定要删除这条记录吗？" confirm-label="删除" danger :error="deleteError" :busy="deletingRecord" :fallback-focus="deleteFocusFallback" @cancel="pendingDelete = null" @confirm="removeRecord" />
-  <ClearDataDialog v-if="clearingData" :error="clearError" @cancel="clearingData = false" @confirm="confirmClearData" /><CompletionCelebration v-if="celebrate" @close="celebrate = false" /><AppShell :active="activeTab" :secondary="!!detail" @navigate="switchTab"><div class="page-shell">
+  <ClearDataDialog v-if="clearingData" :error="clearError" @cancel="clearingData = false" @confirm="confirmClearData" /><CompletionCelebration v-if="celebrate" @close="celebrate = false" /><AppShell :active="activeTab" :secondary="!!detail || topicStatsOpen" @navigate="switchTab"><div class="page-shell">
     <header class="brand-row"><a class="brand" :href="routeBase()" @click.prevent="navigate(routeBase())" aria-label="AlgoFlow 首页"><span class="brand-icon"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6" cy="5" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="6" cy="19" r="2"/><path d="M6 7v10M8 14c8 0 10-2 10-6"/></svg></span>AlgoFlow</a><button v-if="activeTab === 'today' && !detail && !trainingSettingsOpen" class="date-pill calendar-trigger" aria-label="查看训练日历" aria-haspopup="dialog" :aria-expanded="calendarOpen" @click="calendarOpen = true">{{ todayLabel }}</button><span v-else class="date-pill">{{ todayLabel }}</span></header>
     <main v-if="recording && detail" class="detail-page">
       <button class="secondary-button back-button" @click="closeRecording">← 返回题目详情</button>
@@ -329,7 +331,8 @@ watch([activeTab, detail, trainingSettingsOpen], () => { calendarOpen.value = fa
         <ProblemLibrary v-model:view="libraryView" :completed-ids="state.completedIds" @open="problem => showDetail(problem, 'library')" />
       </section>
       <ReviewPage v-show="activeTab === 'review'" :sessions="state.sessions ?? []" @open="problem => showDetail(problem, 'review')" />
-      <ProfilePage v-show="activeTab === 'profile'"><section class="greeting"><h1>我的</h1><p class="intro">你的学习档案</p></section><LearningStatistics :sessions="state.sessions ?? []" :today="date" /><article class="preview"><h2>数据管理</h2><button class="secondary-button" @click="exportArchive">导出训练档案 JSON</button><BackupImport :state="state" @confirm="confirmBackupImport" /><button class="danger-button clear-data-entry" @click="clearError = ''; clearingData = true">清空全部数据</button><p v-if="importNotice" role="status">{{ importNotice }}</p><p>数据只保存在当前浏览器和当前地址，可通过 JSON 备份手动迁移。手动结果不代表 OJ 官方判题。</p></article><section class="more-section"><button class="secondary-button" @click="switchTab('review')">查看训练档案</button></section></ProfilePage>
+      <section v-if="topicStatsOpen" class="topic-stats-page"><button class="library-return" @click="navigate('#/profile')">← 返回我的</button><h1>专题训练统计</h1><LearningStatistics all-topics :sessions="state.sessions ?? []" :today="date" /></section>
+      <ProfilePage v-show="activeTab === 'profile' && !topicStatsOpen"><section class="greeting"><h1>我的</h1><p class="intro">你的学习档案</p></section><LearningStatistics :sessions="state.sessions ?? []" :today="date" :current-topic="training?.confirmed ? training.topicId : undefined" @view-all="navigate('#/profile/topics')" @settings="navigate('#/today/settings')" /><article class="preview"><h2>数据管理</h2><button class="secondary-button" @click="exportArchive">导出训练档案 JSON</button><BackupImport :state="state" @confirm="confirmBackupImport" /><button class="danger-button clear-data-entry" @click="clearError = ''; clearingData = true">清空全部数据</button><p v-if="importNotice" role="status">{{ importNotice }}</p><p>数据只保存在当前浏览器和当前地址，可通过 JSON 备份手动迁移。手动结果不代表 OJ 官方判题。</p></article><section class="more-section"><button class="secondary-button" @click="switchTab('review')">查看训练档案</button></section></ProfilePage>
     </main>
   </div></AppShell>
 </template>
