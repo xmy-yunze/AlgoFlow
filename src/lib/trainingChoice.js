@@ -7,6 +7,6 @@ export function ensureTrainingChoice(saved, date, completedIds, rng = Math.rando
   const filters = confirmed ? { topicId: saved.topicId, difficulty: saved.difficulty } : {}
   const validProblem = saved?.problemId == null || problems.some(p => p.id === saved.problemId)
   if (saved?.date === date && validProblem && (confirmed || saved.confirmed === false)) return saved
-  const problem = drawRandom(filters, completedIds, '', rng)
+  const problem = drawRandom(filters, completedIds, saved?.date !== date ? saved?.problemId ?? '' : '', rng)
   return { date, problemId: problem?.id ?? null, confirmed, ...filters }
 }

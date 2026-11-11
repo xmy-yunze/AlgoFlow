@@ -1,5 +1,6 @@
 <script setup>
 import { computed } from 'vue'
+import { dailyActivity } from '../lib/dailyActivity.js'
 import { topicName, topics, topicGroups, difficulties } from '../data/problems.js'
 const props = defineProps({ topic: String, difficulty: String, problem: Object, attempted: Boolean, message: String, sessions: { type: Array, default: () => [] }, date: String })
 const emit = defineEmits(['update:topic', 'update:difficulty', 'draw', 'open'])
@@ -15,7 +16,7 @@ const topicLevels = computed(() => {
   }
   return levels
 })
-const todayCount = computed(() => new Set(props.sessions.filter(s => { const d = new Date(s.recordedAt); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}` === props.date }).map(s => s.problemId)).size)
+const activity = computed(() => dailyActivity(props.sessions, props.date))
 const conditions = computed(() => `${props.topic ? topicName(props.topic) : '全部专题'} · ${props.difficulty || '全部难度'}`)
 </script>
 <template>
@@ -53,7 +54,7 @@ const conditions = computed(() => `${props.topic ? topicName(props.topic) : '全
     <p>{{ attempted ? '请更换专题或难度，再重新抽题。已完成的题目会自动排除。' : '设置好专题与难度后，点击上方按钮，为你从题库中随机抽取一道练习题。' }}</p>
     <span class="current-conditions">当前条件：{{ conditions }}</span>
   </section>
-  <aside class="study-tip"><span class="tip-icon" aria-hidden="true">◎</span><div><strong>今日已练习 {{ todayCount }} 道</strong><p>保持节奏，认真理解每一道题。</p></div></aside>
+  <aside class="study-tip"><span class="tip-icon" aria-hidden="true">◎</span><div><strong>今日已练习 {{ activity.todayPracticed }} 道 · 连续 {{ activity.streak }} 天</strong><p>保持节奏，认真理解每一道题。</p></div></aside>
   <details class="training-library"><summary>按分类浏览题库</summary><slot /></details>
 </section>
 </template>

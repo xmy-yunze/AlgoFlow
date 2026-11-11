@@ -1,10 +1,17 @@
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, ref, watch } from 'vue'
+import { localDate } from '../lib/recommendations.js'
 import { learningStatistics } from '../lib/statistics.js'
-const props=defineProps({sessions:{type:Array,default:()=>[]}})
-const stats=computed(()=>learningStatistics(props.sessions))
-const now=new Date()
+const props=defineProps({sessions:{type:Array,default:()=>[]},today:{type:String,default:()=>localDate()}})
+const stats=computed(()=>learningStatistics(props.sessions, props.today))
+const now=new Date(`${props.today}T12:00:00`)
 const month=ref(new Date(now.getFullYear(),now.getMonth(),1))
+watch(() => props.today, (today, previous) => {
+ if (previous && month.value.getFullYear() === Number(previous.slice(0,4)) && month.value.getMonth() === Number(previous.slice(5,7))-1) {
+   const current = new Date(`${today}T12:00:00`)
+   month.value = new Date(current.getFullYear(), current.getMonth(), 1)
+ }
+})
 const monthLabel=computed(()=>`${month.value.getFullYear()}年${month.value.getMonth()+1}月`)
 const cells=computed(()=>{
  const year=month.value.getFullYear(),m=month.value.getMonth(),offset=(new Date(year,m,1).getDay()+6)%7
@@ -17,7 +24,7 @@ function changeMonth(delta){month.value=new Date(month.value.getFullYear(),month
 <div class="stats-grid"><article><strong>{{ stats.total }}</strong><span>累计训练次数</span></article><article><strong>{{ stats.practiced }}</strong><span>已练题目</span></article><article><strong>{{ stats.independent }}</strong><span>独立 AC 题目</span></article></div>
 <p class="stats-explanation">同题多次训练只计一题；独立 AC 仅计独立完成且自报 AC 的题目。</p><p v-if="!stats.total" class="stats-empty">还没有训练记录。练习后记录一次训练，这里就会显示你的学习积累。</p>
 <article class="stats-panel"><h3>专题训练进度</h3><p class="stats-explanation">按当前题库计算已练覆盖率；同题可属于多个专题，各专题不相加。覆盖率不代表掌握度。</p><div v-for="topic in stats.topics" :key="topic.id" class="topic-progress"><div><strong>{{ topic.name }}</strong><span>{{ topic.total ? Math.round(topic.practiced/topic.total*100)+'%' : '暂未收录' }}</span></div><progress :value="topic.practiced" :max="topic.total || 1" :aria-label="topic.name+'已练覆盖率'" /><small>{{ topic.practiced }} 题已练 · {{ topic.independent }} 题独立 AC</small></div></article>
-<article class="stats-panel"><div class="calendar-heading"><button aria-label="上个月" @click="changeMonth(-1)">‹</button><h3>{{ monthLabel }}</h3><button aria-label="下个月" @click="changeMonth(1)">›</button></div><div class="training-calendar"><span v-for="day in ['一','二','三','四','五','六','日']" :key="day" class="weekday">{{ day }}</span><span v-for="(cell,index) in cells" :key="index" class="calendar-day" :class="{trained:cell && stats.dates.has(cell.key)}" :aria-label="cell ? cell.key+'，'+(stats.dates.get(cell.key)??0)+' 次训练' : undefined">{{ cell?.day }}<i v-if="cell && stats.dates.has(cell.key)" /></span></div><p class="stats-explanation">紫色日期表示有训练记录，按设备本地日期显示。未记录耗时的训练也会计入。</p></article>
+<article class="stats-panel"><div class="calendar-heading"><button aria-label="上个月" @click="changeMonth(-1)">‹</button><h3>{{ monthLabel }}</h3><button aria-label="下个月" @click="changeMonth(1)">›</button></div><div class="training-calendar"><span v-for="day in ['一','二','三','四','五','六','日']" :key="day" class="weekday">{{ day }}</span><span v-for="(cell,index) in cells" :key="index" class="calendar-day" :class="{trained:cell && stats.dates.has(cell.key)}" :aria-label="cell ? cell.key+'，'+(stats.dates.get(cell.key)??0)+' 次训练' : undefined">{{ cell?.day }}<i v-if="cell && stats.dates.has(cell.key)" /></span></div><p class="stats-explanation">紫色日期表示有训练记录，按设备本地日期显示。今日 {{ stats.todayPracticed }} 题，连续 {{ stats.streak }} 天；当天保存任意结果算一次打卡，今日尚未训练时接续昨日连续天数。</p></article>
 </section>
 </template>
 <style scoped>

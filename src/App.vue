@@ -1,4 +1,5 @@
 <script setup>
+import { dailyActivity } from './lib/dailyActivity.js'
 import { ensureTrainingChoice } from './lib/trainingChoice.js'
 import { restoreRandomSnapshot } from './lib/randomSnapshot.js'
 import ClearDataDialog from './components/ClearDataDialog.vue'
@@ -53,6 +54,7 @@ function ensureTraining() {
   saveTraining()
 }
 function confirmTraining() {
+  refreshDay()
   const problem = drawRandom(draftSettings.value, state.value.completedIds)
   if (!problem) { trainingMessage.value = '没有符合条件的未完成题目，请调整后再确定。'; return }
   state.value.settings = { ...draftSettings.value }
@@ -72,17 +74,31 @@ const topicCount = id => problems.filter(p => p.topicIds.includes(id)).length
 const optionLabel = topic => `${'　'.repeat(Math.max(0, topic.depth - 1))}${topic.depth === 0 ? '全部' + topic.name : topic.name}`
 const remaining = computed(() => candidates({ topicId: randomTopic.value, difficulty: randomDifficulty.value }, state.value.completedIds).length)
 const todayLabel = computed(() => new Intl.DateTimeFormat('zh-CN', { month: 'long', day: 'numeric', weekday: 'long' }).format(new Date(`${date.value}T12:00:00`)))
-const isCompleted = p => p && state.value.completedIds.includes(p.id)
+const activity = computed(() => dailyActivity(state.value.sessions ?? [], date.value))
+const isTodayCompleted = p => !!p && training.value?.date === date.value && activity.value.completedIds.includes(p.id)
 function persist() {
   const error = saveState(storage, state.value)
   if (error) warning.value = error
 }
+function syncStoredState() {
+  const saved = loadState(storage)
+  if (saved.warning) { warning.value = saved.warning; return }
+  state.value = saved.state
+  try { training.value = JSON.parse(storage.getItem('algoflow:v1:training-choice')) } catch {}
+}
 function refreshDay() {
+  const today = localDate()
+  if (today !== date.value) {
+    syncStoredState()
+    date.value = today
+    celebrate.value = false
+    trainingMessage.value = ''
+  }
   ensureTraining()
-  date.value = localDate()
   state.value = ensureDaily(state.value, date.value)
   persist()
 }
+function resumeDay() { syncStoredState(); refreshDay() }
 function updateSettings() { refreshDay() }
 function openPanel(value) { refreshDay(); panel.value = value }
 function randomDraw() {
@@ -111,14 +127,15 @@ let lastCelebrationDay = ''
 try { lastCelebrationDay = storage.getItem('algoflow:celebration-day') ?? '' } catch {}
 function celebrateDailyCompletion() {
   const today = localDate()
-  if (!dailyProblem.value || !isCompleted(dailyProblem.value) || lastCelebrationDay === today) return
+  if (!dailyProblem.value || !isTodayCompleted(dailyProblem.value) || lastCelebrationDay === today) return
   lastCelebrationDay = today
   try { storage.setItem('algoflow:celebration-day', today) } catch {}
   celebrate.value = true
 }
-watch(() => [dailyProblem.value?.id, isCompleted(dailyProblem.value), date.value], celebrateDailyCompletion, { immediate: true })
+watch(() => [dailyProblem.value?.id, isTodayCompleted(dailyProblem.value), date.value], celebrateDailyCompletion, { immediate: true })
 function savePractice(form) {
   try {
+    refreshDay()
     const next = editingSession.value ? editSession(state.value, editingSession.value.id, form) : appendSession(state.value, detail.value.problem.id, form, crypto.randomUUID(), new Date().toISOString())
     const error = saveState(storage, next)
     if (error) { recordError.value = error; return }
@@ -156,7 +173,7 @@ function exportArchive() {
   const url = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }))
   const a = document.createElement('a'); a.href = url; a.download = `AlgoFlow-${localDate()}.json`; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000)
 }
-const todayOverview = computed(() => learningStatistics(state.value.sessions ?? []))
+const todayOverview = computed(() => learningStatistics(state.value.sessions ?? [], date.value))
 const detail = ref(null)
 const activeTab = ref('today')
 const formDirty = ref(false)
@@ -184,6 +201,7 @@ function restoreUI() {
 let acceptedUrl = window.location.hash
 let acceptedState = window.history.state
 function applyRoute() {
+  refreshDay()
   const [path, query=''] = window.location.hash.replace(/^#\/?/,'').split('?')
   const [tab,view] = path.split('/')
   activeTab.value=['today','practice','review','profile'].includes(tab)?tab:'today'
@@ -225,9 +243,10 @@ onMounted(()=>{applyRoute();window.addEventListener('popstate',onNavigation);win
 onUnmounted(()=>{window.removeEventListener('popstate',onNavigation);window.removeEventListener('beforeunload',beforeUnload)})
 refreshDay()
 let timer
-function onVisible() { if (document.visibilityState === 'visible') refreshDay() }
-onMounted(() => { timer = window.setInterval(refreshDay, 60000); window.addEventListener('focus', refreshDay); document.addEventListener('visibilitychange', onVisible) })
-onUnmounted(() => { clearInterval(timer); window.removeEventListener('focus', refreshDay); document.removeEventListener('visibilitychange', onVisible) })
+function onVisible() { if (document.visibilityState === 'visible') resumeDay() }
+function onStorage(event) { if (event.key === null || ['algoflow:v1:learning', 'algoflow:v1:training-choice'].includes(event.key)) resumeDay() }
+onMounted(() => { timer = window.setInterval(refreshDay, 60000); window.addEventListener('focus', resumeDay); window.addEventListener('pageshow', resumeDay); window.addEventListener('storage', onStorage); document.addEventListener('visibilitychange', onVisible) })
+onUnmounted(() => { clearInterval(timer); window.removeEventListener('focus', resumeDay); window.removeEventListener('pageshow', resumeDay); window.removeEventListener('storage', onStorage); document.removeEventListener('visibilitychange', onVisible) })
 </script>
 
 <template>
@@ -263,8 +282,8 @@ onUnmounted(() => { clearInterval(timer); window.removeEventListener('focus', re
       <TodayPage v-show="activeTab === 'today'">
       <section class="greeting today-welcome"><h1>今天，也来一道题。</h1><p class="intro">保持思考的节奏，积累算法能力。</p></section>
       <p v-if="warning" class="notice" role="alert">{{ warning }}</p>
-      <section class="daily-card today-result clickable-card" aria-labelledby="daily-title" :tabindex="dailyProblem ? 0 : undefined" :role="dailyProblem ? 'link' : undefined" @click="showDetail(dailyProblem, 'daily', $event)" @keydown.enter.self.prevent="showDetail(dailyProblem, 'daily', $event)"><div class="card-top"><span class="label"><span class="small-dot"></span>今日推荐</span><span v-if="isCompleted(dailyProblem)" class="today-completed" role="status" aria-label="今日训练已完成">✅ 已完成</span><span v-else class="sample-tag">{{ training?.confirmed ? '已确定训练' : '随机推荐' }}</span></div>
-        <template v-if="dailyProblem"><div v-if="isCompleted(dailyProblem)" class="daily-congrats" role="status"><strong>✦ 今日挑战已完成，真棒！</strong><span>每一次认真思考，都在让你更进一步。</span></div><div class="today-result-meta"><span><span class="today-platform-mark">{{ dailyProblem.platform === '洛谷' ? 'LG' : 'OJ' }}</span>{{ dailyProblem.platform }} <small>{{ dailyProblem.externalId }}</small></span><span class="today-difficulty">{{ dailyProblem.difficulty }}</span></div><h2 id="daily-title">{{ dailyProblem.title }}</h2><p class="daily-description">{{ dailyProblem.focus }}</p><div class="tags"><span v-for="id in dailyProblem.leafTopicIds" :key="id">{{ topicName(id) }}</span></div><div class="today-result-status"><span>{{ training?.confirmed ? '按确认的专题与难度推荐' : '全部专题随机推荐' }}</span><span>{{ isCompleted(dailyProblem) ? '已完成' : '未完成' }}</span></div><button class="primary-button" @click.stop="showDetail(dailyProblem, 'daily', $event)">开始今日训练 </button><p class="card-footnote">{{ date }} · 刷新保留 · 确定训练可更换题目</p></template>
+      <section class="daily-card today-result clickable-card" aria-labelledby="daily-title" :tabindex="dailyProblem ? 0 : undefined" :role="dailyProblem ? 'link' : undefined" @click="showDetail(dailyProblem, 'daily', $event)" @keydown.enter.self.prevent="showDetail(dailyProblem, 'daily', $event)"><div class="card-top"><span class="label"><span class="small-dot"></span>今日推荐</span><span v-if="isTodayCompleted(dailyProblem)" class="today-completed" role="status" aria-label="今日训练已完成">✅ 已完成</span><span v-else class="sample-tag">{{ training?.confirmed ? '已确定训练' : '随机推荐' }}</span></div>
+        <template v-if="dailyProblem"><div v-if="isTodayCompleted(dailyProblem)" class="daily-congrats" role="status"><strong>✦ 今日挑战已完成，真棒！</strong><span>每一次认真思考，都在让你更进一步。</span></div><div class="today-result-meta"><span><span class="today-platform-mark">{{ dailyProblem.platform === '洛谷' ? 'LG' : 'OJ' }}</span>{{ dailyProblem.platform }} <small>{{ dailyProblem.externalId }}</small></span><span class="today-difficulty">{{ dailyProblem.difficulty }}</span></div><h2 id="daily-title">{{ dailyProblem.title }}</h2><p class="daily-description">{{ dailyProblem.focus }}</p><div class="tags"><span v-for="id in dailyProblem.leafTopicIds" :key="id">{{ topicName(id) }}</span></div><div class="today-result-status"><span>{{ training?.confirmed ? '按确认的专题与难度推荐' : '全部专题随机推荐' }}</span><span>{{ isTodayCompleted(dailyProblem) ? '已完成' : '未完成' }}</span></div><button class="primary-button" @click.stop="showDetail(dailyProblem, 'daily', $event)">开始今日训练 </button><p class="card-footnote">{{ date }} · 刷新保留 · 确定训练可更换题目</p></template>
         <template v-else><h2 id="daily-title">当前没有可推荐的新题</h2><p class="daily-description">当前训练范围内没有未完成题目。已保留你的专题设置，请切换专题或难度，或前往刷题页练习。</p></template>
       </section>
       <section class="today-overview"><div class="overview-heading"><h2>学习概览</h2><span>真实训练档案</span></div><div class="overview-grid"><article><span class="overview-symbol" aria-hidden="true">✓</span><strong>{{ todayOverview.practiced }}<small>题</small></strong><p>累计已练题目</p><span>同题多次训练只计一次</span></article><article><span class="overview-symbol" aria-hidden="true">◎</span><strong>{{ todayOverview.independent }}<small>题</small></strong><p>独立 AC 题目</p><span>仅统计独立完成的自报结果</span></article></div></section>
@@ -274,7 +293,7 @@ onUnmounted(() => { clearInterval(timer); window.removeEventListener('focus', re
         <ProblemLibrary :completed-ids="state.completedIds" @open="problem => showDetail(problem, 'library')" />
       </PracticePage>
       <ReviewPage v-show="activeTab === 'review'" :sessions="state.sessions ?? []" @open="problem => showDetail(problem, 'review')" />
-      <ProfilePage v-show="activeTab === 'profile'"><section class="greeting"><h1>我的</h1><p class="intro">你的学习档案</p></section><LearningStatistics :sessions="state.sessions ?? []" /><article class="preview"><h2>数据管理</h2><button class="secondary-button" @click="exportArchive">导出训练档案 JSON</button><BackupImport :state="state" @confirm="confirmBackupImport" /><button class="danger-button clear-data-entry" @click="clearError = ''; clearingData = true">清空全部数据</button><p v-if="importNotice" role="status">{{ importNotice }}</p><p>数据只保存在当前浏览器和当前地址，可通过 JSON 备份手动迁移。手动结果不代表 OJ 官方判题。</p></article><section class="more-section"><button class="secondary-button" @click="switchTab('review')">查看训练档案</button></section></ProfilePage>
+      <ProfilePage v-show="activeTab === 'profile'"><section class="greeting"><h1>我的</h1><p class="intro">你的学习档案</p></section><LearningStatistics :sessions="state.sessions ?? []" :today="date" /><article class="preview"><h2>数据管理</h2><button class="secondary-button" @click="exportArchive">导出训练档案 JSON</button><BackupImport :state="state" @confirm="confirmBackupImport" /><button class="danger-button clear-data-entry" @click="clearError = ''; clearingData = true">清空全部数据</button><p v-if="importNotice" role="status">{{ importNotice }}</p><p>数据只保存在当前浏览器和当前地址，可通过 JSON 备份手动迁移。手动结果不代表 OJ 官方判题。</p></article><section class="more-section"><button class="secondary-button" @click="switchTab('review')">查看训练档案</button></section></ProfilePage>
     </main>
   </div></AppShell>
 </template>
