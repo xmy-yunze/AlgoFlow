@@ -14,6 +14,7 @@ import AppShell from './components/AppShell.vue'
 import TodayPage from './pages/TodayPage.vue'
 import ProblemLibrary from './components/ProblemLibrary.vue'
 import PracticePage from './pages/PracticePage.vue'
+import TrainingSettingsPage from './pages/TrainingSettingsPage.vue'
 import ReviewPage from './pages/ReviewPage.vue'
 import ProfilePage from './pages/ProfilePage.vue'
 import PracticeForm from './components/PracticeForm.vue'
@@ -228,7 +229,9 @@ function applyRoute() {
   const [tab,view] = path.split('/')
   activeTab.value=['today','practice','review','profile'].includes(tab)?tab:'today'
   browsingLibrary.value=activeTab.value==='practice' && view==='library'
-  trainingSettingsOpen.value=activeTab.value==='today' && view==='settings'
+  const enteringSettings = activeTab.value==='today' && view==='settings'
+  if (enteringSettings && !trainingSettingsOpen.value) trainingMessage.value = ''
+  trainingSettingsOpen.value=enteringSettings
   panel.value=activeTab.value==='practice'?'random':''
   const params=new URLSearchParams(query)
   const problem=problems.find(p=>p.id===params.get('problem'))
@@ -313,7 +316,7 @@ onUnmounted(() => { clearInterval(timer); window.removeEventListener('focus', re
       <section class="today-overview"><div class="overview-heading"><h2>学习概览</h2><span>真实训练档案</span></div><div class="overview-grid"><article><span class="overview-symbol" aria-hidden="true">✓</span><strong>{{ todayOverview.practiced }}<small>题</small></strong><p>累计已练题目</p><span>同题多次训练只计一次</span></article><article><span class="overview-symbol" aria-hidden="true">◎</span><strong>{{ todayOverview.independent }}<small>题</small></strong><p>独立 AC 题目</p><span>仅统计独立完成的自报结果</span></article></div></section>
       <button class="training-settings-entry" @click="navigate('#/today/settings')"><span>调整学习专题与难度</span><span aria-hidden="true">›</span></button>
       </TodayPage>
-      <section v-show="activeTab === 'today' && trainingSettingsOpen" class="training-settings-page" aria-labelledby="training-settings-title"><button class="library-return" @click="navigate('#/today')">← 返回今日</button><h1 id="training-settings-title">训练设置</h1><article class="settings-card"><h2>学习专题与难度</h2><div class="filter-grid"><TopicPicker v-model="draftSettings.topicId" label="学习专题" /><SmoothSelect v-model="draftSettings.difficulty" label="学习难度" :options="difficulties" /></div><button class="primary-button" @click="confirmTraining() && navigate('#/today')">确定训练</button><p v-if="trainingMessage" role="status">{{ trainingMessage }}</p><p>确认后每天持续按所选专题与难度推荐，直到你主动切换。只调整选项或返回不会更改当前训练。</p></article></section>
+      <TrainingSettingsPage v-if="activeTab === 'today' && trainingSettingsOpen" v-model:settings="draftSettings" :message="trainingMessage" @back="navigate('#/today')" @confirm="confirmTraining() && navigate('#/today')" />
       <PracticePage @browse-library="navigate('#/practice/library')" v-show="activeTab === 'practice' && !browsingLibrary" :topic="randomTopic" :difficulty="randomDifficulty" :problem="randomProblem" :attempted="randomAttempted" :message="randomRestoreMessage" :sessions="state.sessions ?? []" :date="date" @update:topic="value => { randomTopic = value; resetRandomResult() }" @update:difficulty="value => { randomDifficulty = value; resetRandomResult() }" @draw="randomDraw" @open="problem => showDetail(problem, 'random')" />
       <section v-show="activeTab === 'practice' && browsingLibrary" class="library-page"><button class="library-return" @click="navigate('#/practice')">← 返回刷题</button>
         <ProblemLibrary v-model:view="libraryView" :completed-ids="state.completedIds" @open="problem => showDetail(problem, 'library')" />
@@ -327,7 +330,7 @@ onUnmounted(() => { clearInterval(timer); window.removeEventListener('focus', re
 <style scoped>
 .detail-page .record-feedback{position:fixed;z-index:40;left:50%;bottom:calc(24px + env(safe-area-inset-bottom));transform:translateX(-50%);width:max-content;max-width:calc(100vw - 40px);margin:0;padding:12px 18px;border:1px solid #D3EDE0;border-radius:14px;background:#E8F7F0;color:#237A45;box-shadow:0 4px 18px #202b3f15;font-size:13px;line-height:1.6;text-align:center}
 
-.training-settings-entry{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:54px;margin-top:22px;padding:14px 18px;border:1px solid #E2DDF8;border-radius:16px;background:#F0EDFF;color:#6658DB;font-size:14px;font-weight:600;text-align:left}.training-settings-entry>span:last-child{font-size:23px;line-height:1}.training-settings-page{padding-top:24px}.training-settings-page h1{font-size:28px;margin:16px 0 24px}.training-settings-page h2{font-size:16px;margin:0 0 18px}.training-settings-page .primary-button{width:100%;justify-content:center}
+.training-settings-entry{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:54px;margin-top:22px;padding:14px 18px;border:1px solid #E2DDF8;border-radius:16px;background:#F0EDFF;color:#6658DB;font-size:14px;font-weight:600;text-align:left}.training-settings-entry>span:last-child{font-size:23px;line-height:1}
 
 .library-page{padding-top:24px}.library-return{min-height:44px;padding:0;border:0;background:transparent;color:#202B3F;font-size:14px}.library-page :deep(.problem-library){margin-top:0;padding-top:16px;border-top:0}
 
