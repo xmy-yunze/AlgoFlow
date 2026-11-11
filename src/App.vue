@@ -2,6 +2,7 @@
 import { dailyActivity } from './lib/dailyActivity.js'
 import { ensureTrainingChoice } from './lib/trainingChoice.js'
 import { restoreRandomSnapshot } from './lib/randomSnapshot.js'
+import ConfirmDialog from './components/ConfirmDialog.vue'
 import ClearDataDialog from './components/ClearDataDialog.vue'
 import { clearAppData } from './lib/clearData.js'
 import BackupImport from './components/BackupImport.vue'
@@ -124,8 +125,15 @@ const recording = ref(false)
 const editingSession = ref(null)
 const viewingSession = ref(null)
 const pendingDelete = ref(null)
+const deleteError = ref('')
+const deletingRecord = ref(false)
+const detailBackButton = ref(null)
+const deleteFocusFallback = () => detailBackButton.value
+function requestRecordDelete(session) { deleteError.value = ''; recordNotice.value = ''; pendingDelete.value = session }
 const recordError = ref('')
 const recordNotice = ref('')
+let recordNoticeTimer
+onUnmounted(() => clearTimeout(recordNoticeTimer))
 const celebrate = ref(false)
 let lastCelebrationDay = ''
 try { lastCelebrationDay = storage.getItem('algoflow:celebration-day') ?? '' } catch {}
@@ -149,10 +157,19 @@ function savePractice(form) {
 }
 const detailSessions = computed(() => (state.value.sessions ?? []).filter(s => s.problemId === detail.value?.problem.id).slice().reverse())
 function removeRecord() {
-  const next = deleteSession(state.value, pendingDelete.value.id)
-  const error = saveState(storage, next)
-  if (error) { warning.value = error; recordNotice.value = error; return }
-  state.value = next; pendingDelete.value = null; viewingSession.value = null; recordNotice.value = '记录已删除。'
+  if (!pendingDelete.value || deletingRecord.value) return
+  deletingRecord.value = true
+  deleteError.value = ''
+  try {
+    if (!(state.value.sessions ?? []).some(s => s.id === pendingDelete.value.id)) throw new Error('这条记录已不存在，请取消后重新查看。')
+    const next = deleteSession(state.value, pendingDelete.value.id)
+    const error = saveState(storage, next)
+    if (error) { deleteError.value = '删除失败，记录尚未更改。请检查浏览器存储权限后重试。'; return }
+    state.value = next; pendingDelete.value = null; viewingSession.value = null; recordNotice.value = '记录已删除。'
+    clearTimeout(recordNoticeTimer)
+    recordNoticeTimer = setTimeout(() => { if (recordNotice.value === '记录已删除。') recordNotice.value = '' }, 3000)
+  } catch (error) { deleteError.value = error.message || '删除失败，请重试。' }
+  finally { deletingRecord.value = false }
 }
 const assistanceName = value => ({ INDEPENDENT: '独立完成 / 尝试', HINT: '查看提示', SOLUTION: '参考题解' })[value] ?? value
 const clearingData = ref(false)
@@ -257,6 +274,7 @@ onUnmounted(() => { clearInterval(timer); window.removeEventListener('focus', re
 </script>
 
 <template>
+  <ConfirmDialog v-if="pendingDelete" title="删除训练记录？" description="删除后无法恢复，确定要删除这条记录吗？" confirm-label="删除" danger :error="deleteError" :busy="deletingRecord" :fallback-focus="deleteFocusFallback" @cancel="pendingDelete = null" @confirm="removeRecord" />
   <ClearDataDialog v-if="clearingData" :error="clearError" @cancel="clearingData = false" @confirm="confirmClearData" /><CompletionCelebration v-if="celebrate" @close="celebrate = false" /><AppShell :active="activeTab" :secondary="!!detail" @navigate="switchTab"><div class="page-shell">
     <header class="brand-row"><a class="brand" :href="routeBase()" @click.prevent="navigate(routeBase())" aria-label="AlgoFlow 首页"><span class="brand-icon"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6" cy="5" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="6" cy="19" r="2"/><path d="M6 7v10M8 14c8 0 10-2 10-6"/></svg></span>AlgoFlow</a><span class="date-pill">{{ todayLabel }}</span></header>
     <main v-if="recording && detail" class="detail-page">
@@ -265,7 +283,7 @@ onUnmounted(() => { clearInterval(timer); window.removeEventListener('focus', re
       <PracticeForm :session="editingSession" :error="recordError" @dirty="formDirty = $event" @save="savePractice" @cancel="closeRecording" />
     </main>
     <main v-if="detail" v-show="!recording" class="detail-page">
-      <button class="secondary-button back-button" @click="closeDetail">← 返回{{ detail.source === 'library' ? '题库' : {today: '今日', practice: '刷题', review: '记录', profile: '我的'}[activeTab] }}</button>
+      <button ref="detailBackButton" class="secondary-button back-button" @click="closeDetail">← 返回{{ detail.source === 'library' ? '题库' : {today: '今日', practice: '刷题', review: '记录', profile: '我的'}[activeTab] }}</button>
       <article class="preview">
         <p class="problem-id">{{ detail.problem.id }} · {{ detail.source === 'library' ? '题库选题' : detail.source === 'daily' ? '每日推荐' : ['review','profile'].includes(detail.source) ? '训练档案' : '随机刷题' }}</p>
         <h1 id="detail-title" tabindex="-1">{{ detail.problem.title }}</h1>
@@ -273,15 +291,14 @@ onUnmounted(() => { clearInterval(timer); window.removeEventListener('focus', re
         <h2>推荐理由</h2><p>{{ detail.explanation }}</p><section class="ai-placeholder"><h2>AI 解题教练</h2><p>后续提供思路提示与解题引导，本版本尚未接入。</p></section>
         <a class="primary-button problem-link" :href="detail.problem.url" target="_blank" rel="noopener noreferrer">查看完整题目 </a>
         <button class="secondary-button" @click="openRecording()">{{ detailSessions.length ? '重新训练' : '记录训练' }}</button>
-        <p v-if="recordNotice" role="status">{{ recordNotice }}</p>
+        <p v-if="recordNotice" class="record-feedback" role="status">{{ recordNotice }}</p>
         <section v-if="detailSessions.length && ['review', 'profile'].includes(detail.source)"><h2>训练历史 · {{ detailSessions.length }} 次</h2>
           <article v-for="session in detailSessions" :key="session.id" class="history-record">
             <p>{{ new Date(session.recordedAt).toLocaleString('zh-CN') }} · {{ session.verdict === 'UNFINISHED' ? '未完成' : session.verdict }}（手动自报）· 掌握 {{ session.masteryPercent ?? session.selfRating * 20 }}%</p>
-            <div class="record-actions"><button @click="viewingSession = viewingSession?.id === session.id ? null : session">{{ viewingSession?.id === session.id ? '收起' : '查看' }}</button><button @click="openRecording(session)">编辑</button><button @click="pendingDelete = session">删除</button></div>
+            <div class="record-actions"><button @click="viewingSession = viewingSession?.id === session.id ? null : session">{{ viewingSession?.id === session.id ? '收起' : '查看' }}</button><button @click="openRecording(session)">编辑</button><button @click="requestRecordDelete(session)">删除</button></div>
             <div v-if="viewingSession?.id === session.id"><p>完成方式：{{ assistanceName(session.assistanceLevel) }}</p><p>耗时：{{ session.durationSeconds == null ? '未填写' : session.durationSeconds / 60 + ' 分钟' }}</p><p>错因：{{ session.errorTypes?.join('、') || '未填写' }}</p><p class="record-note">笔记：{{ session.note || '未填写' }}</p><section class="ai-placeholder"><h3>AI 复盘分析</h3><p>后续用于分析本次训练与错因，本版本尚未接入。</p></section></div>
           </article>
         </section>
-        <div v-if="pendingDelete" class="notice" role="alert"><p>确定删除 {{ new Date(pendingDelete.recordedAt).toLocaleString('zh-CN') }} 的训练记录？删除后无法恢复。</p><div class="record-actions"><button @click="removeRecord">确认删除</button><button @click="pendingDelete = null">取消删除</button></div></div>
         <p v-if="['review', 'profile'].includes(detail.source)">已完成以最近一次训练结果为准：AC 计为完成；其他结果重新进入未完成候选。尚无训练记录的题目保留旧版手动标记。</p>
       </article>
     </main>
@@ -308,6 +325,8 @@ onUnmounted(() => { clearInterval(timer); window.removeEventListener('focus', re
 </template>
 
 <style scoped>
+.detail-page .record-feedback{position:fixed;z-index:40;left:50%;bottom:calc(24px + env(safe-area-inset-bottom));transform:translateX(-50%);width:max-content;max-width:calc(100vw - 40px);margin:0;padding:12px 18px;border:1px solid #D3EDE0;border-radius:14px;background:#E8F7F0;color:#237A45;box-shadow:0 4px 18px #202b3f15;font-size:13px;line-height:1.6;text-align:center}
+
 .training-settings-entry{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:54px;margin-top:22px;padding:14px 18px;border:1px solid #E2DDF8;border-radius:16px;background:#F0EDFF;color:#6658DB;font-size:14px;font-weight:600;text-align:left}.training-settings-entry>span:last-child{font-size:23px;line-height:1}.training-settings-page{padding-top:24px}.training-settings-page h1{font-size:28px;margin:16px 0 24px}.training-settings-page h2{font-size:16px;margin:0 0 18px}.training-settings-page .primary-button{width:100%;justify-content:center}
 
 .library-page{padding-top:24px}.library-return{min-height:44px;padding:0;border:0;background:transparent;color:#202B3F;font-size:14px}.library-page :deep(.problem-library){margin-top:0;padding-top:16px;border-top:0}
