@@ -5361,5 +5361,26 @@
     ],
     "focus": "练习Dijkstra 算法相关的建模、边界和实现。",
     "url": "https://leetcode.cn/problems/reachable-nodes-in-subdivided-graph/"
+  },
+  {
+    "id": "LEETCODE:209",
+    "platform": "LeetCode",
+    "externalId": "209",
+    "title": "长度最小的子数组",
+    "leafTopicIds": [
+      "two-pointers",
+      "prefix-1d",
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers",
+      "prefix-sum",
+      "prefix-1d",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习滑动窗口的收缩边界，也可用前缀和配合二分查找求解。",
+    "url": "https://leetcode.cn/problems/minimum-size-subarray-sum/"
   }
 ]
