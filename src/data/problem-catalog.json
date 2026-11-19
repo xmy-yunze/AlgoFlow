@@ -5382,5 +5382,7149 @@
     "difficulty": "进阶",
     "focus": "练习滑动窗口的收缩边界，也可用前缀和配合二分查找求解。",
     "url": "https://leetcode.cn/problems/minimum-size-subarray-sum/"
+  },
+  {
+    "id": "LEETCODE:479",
+    "platform": "LeetCode",
+    "externalId": "479",
+    "title": "最大回文数乘积",
+    "leafTopicIds": [
+      "enumeration"
+    ],
+    "topicIds": [
+      "basics",
+      "enumeration"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习枚举相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/largest-palindrome-product/"
+  },
+  {
+    "id": "LEETCODE:218",
+    "platform": "LeetCode",
+    "externalId": "218",
+    "title": "天际线问题",
+    "leafTopicIds": [
+      "segment-tree",
+      "sorting",
+      "heap"
+    ],
+    "topicIds": [
+      "data-structures",
+      "segment-tree",
+      "basics",
+      "sorting",
+      "heap"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习线段树、排序、堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/the-skyline-problem/"
+  },
+  {
+    "id": "LEETCODE:241",
+    "platform": "LeetCode",
+    "externalId": "241",
+    "title": "为运算表达式设计优先级",
+    "leafTopicIds": [
+      "recursion",
+      "memoization"
+    ],
+    "topicIds": [
+      "search",
+      "recursion",
+      "dp",
+      "memoization"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习递归、记忆化搜索相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/different-ways-to-add-parentheses/"
+  },
+  {
+    "id": "LEETCODE:225",
+    "platform": "LeetCode",
+    "externalId": "225",
+    "title": "用队列实现栈",
+    "leafTopicIds": [
+      "stack",
+      "queue"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "queue"
+    ],
+    "difficulty": "基础",
+    "focus": "练习栈、队列相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/implement-stack-using-queues/"
+  },
+  {
+    "id": "LEETCODE:211",
+    "platform": "LeetCode",
+    "externalId": "211",
+    "title": "添加与搜索单词 - 数据结构设计",
+    "leafTopicIds": [
+      "trie"
+    ],
+    "topicIds": [
+      "strings",
+      "trie"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习字典树相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/design-add-and-search-words-data-structure/"
+  },
+  {
+    "id": "LEETCODE:352",
+    "platform": "LeetCode",
+    "externalId": "352",
+    "title": "将数据流变为多个不相交区间",
+    "leafTopicIds": [
+      "union-find",
+      "hash-table",
+      "binary-search"
+    ],
+    "topicIds": [
+      "data-structures",
+      "union-find",
+      "hash-table",
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习并查集、哈希表、二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/data-stream-as-disjoint-intervals/"
+  },
+  {
+    "id": "LEETCODE:258",
+    "platform": "LeetCode",
+    "externalId": "258",
+    "title": "各位相加",
+    "leafTopicIds": [
+      "simulation"
+    ],
+    "topicIds": [
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "基础",
+    "focus": "练习模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/add-digits/"
+  },
+  {
+    "id": "LEETCODE:190",
+    "platform": "LeetCode",
+    "externalId": "190",
+    "title": "颠倒二进制位",
+    "leafTopicIds": [
+      "bitwise"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise"
+    ],
+    "difficulty": "基础",
+    "focus": "练习位运算相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/reverse-bits/"
+  },
+  {
+    "id": "LEETCODE:316",
+    "platform": "LeetCode",
+    "externalId": "316",
+    "title": "去除重复字母",
+    "leafTopicIds": [
+      "stack",
+      "greedy"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/remove-duplicate-letters/"
+  },
+  {
+    "id": "LEETCODE:199",
+    "platform": "LeetCode",
+    "externalId": "199",
+    "title": "二叉树的右视图",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/binary-tree-right-side-view/"
+  },
+  {
+    "id": "LEETCODE:203",
+    "platform": "LeetCode",
+    "externalId": "203",
+    "title": "移除链表元素",
+    "leafTopicIds": [
+      "recursion",
+      "linked-list"
+    ],
+    "topicIds": [
+      "search",
+      "recursion",
+      "data-structures",
+      "linked-list"
+    ],
+    "difficulty": "基础",
+    "focus": "练习递归、链表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/remove-linked-list-elements/"
+  },
+  {
+    "id": "LEETCODE:189",
+    "platform": "LeetCode",
+    "externalId": "189",
+    "title": "轮转数组",
+    "leafTopicIds": [
+      "two-pointers"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/rotate-array/"
+  },
+  {
+    "id": "LEETCODE:264",
+    "platform": "LeetCode",
+    "externalId": "264",
+    "title": "丑数 II",
+    "leafTopicIds": [
+      "hash-table",
+      "heap"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "heap"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习哈希表、堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/ugly-number-ii/"
+  },
+  {
+    "id": "LEETCODE:397",
+    "platform": "LeetCode",
+    "externalId": "397",
+    "title": "整数替换",
+    "leafTopicIds": [
+      "bitwise",
+      "memoization",
+      "greedy"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "dp",
+      "memoization",
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习位运算、记忆化搜索、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/integer-replacement/"
+  },
+  {
+    "id": "LEETCODE:341",
+    "platform": "LeetCode",
+    "externalId": "341",
+    "title": "扁平化嵌套列表迭代器",
+    "leafTopicIds": [
+      "stack",
+      "queue"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "queue"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈、队列相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/flatten-nested-list-iterator/"
+  },
+  {
+    "id": "LEETCODE:315",
+    "platform": "LeetCode",
+    "externalId": "315",
+    "title": "计算右侧小于当前元素的个数",
+    "leafTopicIds": [
+      "segment-tree",
+      "binary-search"
+    ],
+    "topicIds": [
+      "data-structures",
+      "segment-tree",
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习线段树、二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/count-of-smaller-numbers-after-self/"
+  },
+  {
+    "id": "LEETCODE:336",
+    "platform": "LeetCode",
+    "externalId": "336",
+    "title": "回文对",
+    "leafTopicIds": [
+      "trie",
+      "hash-table"
+    ],
+    "topicIds": [
+      "strings",
+      "trie",
+      "data-structures",
+      "hash-table"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习字典树、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/palindrome-pairs/"
+  },
+  {
+    "id": "LEETCODE:399",
+    "platform": "LeetCode",
+    "externalId": "399",
+    "title": "除法求值",
+    "leafTopicIds": [
+      "bfs",
+      "union-find"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "union-find"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）、并查集相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/evaluate-division/"
+  },
+  {
+    "id": "LEETCODE:289",
+    "platform": "LeetCode",
+    "externalId": "289",
+    "title": "生命游戏",
+    "leafTopicIds": [
+      "simulation"
+    ],
+    "topicIds": [
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/game-of-life/"
+  },
+  {
+    "id": "LEETCODE:217",
+    "platform": "LeetCode",
+    "externalId": "217",
+    "title": "存在重复元素",
+    "leafTopicIds": [
+      "hash-table",
+      "sorting"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "sorting"
+    ],
+    "difficulty": "基础",
+    "focus": "练习哈希表、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/contains-duplicate/"
+  },
+  {
+    "id": "LEETCODE:206",
+    "platform": "LeetCode",
+    "externalId": "206",
+    "title": "反转链表",
+    "leafTopicIds": [
+      "recursion",
+      "linked-list"
+    ],
+    "topicIds": [
+      "search",
+      "recursion",
+      "data-structures",
+      "linked-list"
+    ],
+    "difficulty": "基础",
+    "focus": "练习递归、链表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/reverse-linked-list/"
+  },
+  {
+    "id": "LEETCODE:202",
+    "platform": "LeetCode",
+    "externalId": "202",
+    "title": "快乐数",
+    "leafTopicIds": [
+      "hash-table",
+      "two-pointers"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "基础",
+    "focus": "练习哈希表、双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/happy-number/"
+  },
+  {
+    "id": "LEETCODE:295",
+    "platform": "LeetCode",
+    "externalId": "295",
+    "title": "数据流的中位数",
+    "leafTopicIds": [
+      "two-pointers",
+      "sorting",
+      "heap"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers",
+      "sorting",
+      "data-structures",
+      "heap"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习双指针、排序、堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/find-median-from-data-stream/"
+  },
+  {
+    "id": "LEETCODE:488",
+    "platform": "LeetCode",
+    "externalId": "488",
+    "title": "祖玛游戏",
+    "leafTopicIds": [
+      "stack",
+      "bfs",
+      "memoization"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "search",
+      "bfs",
+      "dp",
+      "memoization"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习栈、广度优先搜索（BFS）、记忆化搜索相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/zuma-game/"
+  },
+  {
+    "id": "LEETCODE:387",
+    "platform": "LeetCode",
+    "externalId": "387",
+    "title": "字符串中的第一个唯一字符",
+    "leafTopicIds": [
+      "queue",
+      "hash-table"
+    ],
+    "topicIds": [
+      "data-structures",
+      "queue",
+      "hash-table"
+    ],
+    "difficulty": "基础",
+    "focus": "练习队列、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/first-unique-character-in-a-string/"
+  },
+  {
+    "id": "LEETCODE:406",
+    "platform": "LeetCode",
+    "externalId": "406",
+    "title": "根据身高重建队列",
+    "leafTopicIds": [
+      "segment-tree",
+      "sorting"
+    ],
+    "topicIds": [
+      "data-structures",
+      "segment-tree",
+      "basics",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习线段树、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/queue-reconstruction-by-height/"
+  },
+  {
+    "id": "LEETCODE:386",
+    "platform": "LeetCode",
+    "externalId": "386",
+    "title": "字典序排数",
+    "leafTopicIds": [
+      "trie"
+    ],
+    "topicIds": [
+      "strings",
+      "trie"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习字典树相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/lexicographical-numbers/"
+  },
+  {
+    "id": "LEETCODE:547",
+    "platform": "LeetCode",
+    "externalId": "547",
+    "title": "省份数量",
+    "leafTopicIds": [
+      "bfs",
+      "union-find"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "union-find"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）、并查集相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/number-of-provinces/"
+  },
+  {
+    "id": "LEETCODE:412",
+    "platform": "LeetCode",
+    "externalId": "412",
+    "title": "Fizz Buzz",
+    "leafTopicIds": [
+      "simulation"
+    ],
+    "topicIds": [
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "基础",
+    "focus": "练习模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/fizz-buzz/"
+  },
+  {
+    "id": "LEETCODE:191",
+    "platform": "LeetCode",
+    "externalId": "191",
+    "title": "位1的个数",
+    "leafTopicIds": [
+      "bitwise"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise"
+    ],
+    "difficulty": "基础",
+    "focus": "练习位运算相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/number-of-1-bits/"
+  },
+  {
+    "id": "LEETCODE:321",
+    "platform": "LeetCode",
+    "externalId": "321",
+    "title": "拼接最大数",
+    "leafTopicIds": [
+      "stack",
+      "two-pointers",
+      "greedy"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "basics",
+      "two-pointers",
+      "greedy"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习栈、双指针、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/create-maximum-number/"
+  },
+  {
+    "id": "LEETCODE:234",
+    "platform": "LeetCode",
+    "externalId": "234",
+    "title": "回文链表",
+    "leafTopicIds": [
+      "stack",
+      "recursion",
+      "linked-list",
+      "two-pointers"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "search",
+      "recursion",
+      "linked-list",
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "基础",
+    "focus": "练习栈、递归、链表、双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/palindrome-linked-list/"
+  },
+  {
+    "id": "LEETCODE:332",
+    "platform": "LeetCode",
+    "externalId": "332",
+    "title": "重新安排行程",
+    "leafTopicIds": [
+      "sorting",
+      "heap"
+    ],
+    "topicIds": [
+      "basics",
+      "sorting",
+      "data-structures",
+      "heap"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习排序、堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/reconstruct-itinerary/"
+  },
+  {
+    "id": "LEETCODE:546",
+    "platform": "LeetCode",
+    "externalId": "546",
+    "title": "移除盒子",
+    "leafTopicIds": [
+      "memoization"
+    ],
+    "topicIds": [
+      "dp",
+      "memoization"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习记忆化搜索相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/remove-boxes/"
+  },
+  {
+    "id": "LEETCODE:649",
+    "platform": "LeetCode",
+    "externalId": "649",
+    "title": "Dota2 参议院",
+    "leafTopicIds": [
+      "queue",
+      "greedy"
+    ],
+    "topicIds": [
+      "data-structures",
+      "queue",
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习队列、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/dota2-senate/"
+  },
+  {
+    "id": "LEETCODE:715",
+    "platform": "LeetCode",
+    "externalId": "715",
+    "title": "Range 模块",
+    "leafTopicIds": [
+      "segment-tree"
+    ],
+    "topicIds": [
+      "data-structures",
+      "segment-tree"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习线段树相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/range-module/"
+  },
+  {
+    "id": "LEETCODE:421",
+    "platform": "LeetCode",
+    "externalId": "421",
+    "title": "数组中两个数的最大异或值",
+    "leafTopicIds": [
+      "bitwise",
+      "trie",
+      "hash-table"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "strings",
+      "trie",
+      "data-structures",
+      "hash-table"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习位运算、字典树、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/maximum-xor-of-two-numbers-in-an-array/"
+  },
+  {
+    "id": "LEETCODE:685",
+    "platform": "LeetCode",
+    "externalId": "685",
+    "title": "冗余连接 II",
+    "leafTopicIds": [
+      "bfs",
+      "union-find"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "union-find"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习广度优先搜索（BFS）、并查集相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/redundant-connection-ii/"
+  },
+  {
+    "id": "LEETCODE:495",
+    "platform": "LeetCode",
+    "externalId": "495",
+    "title": "提莫攻击",
+    "leafTopicIds": [
+      "simulation"
+    ],
+    "topicIds": [
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "基础",
+    "focus": "练习模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/teemo-attacking/"
+  },
+  {
+    "id": "LEETCODE:222",
+    "platform": "LeetCode",
+    "externalId": "222",
+    "title": "完全二叉树的节点个数",
+    "leafTopicIds": [
+      "bitwise",
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习位运算、二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/count-complete-tree-nodes/"
+  },
+  {
+    "id": "LEETCODE:237",
+    "platform": "LeetCode",
+    "externalId": "237",
+    "title": "删除链表中的节点",
+    "leafTopicIds": [
+      "linked-list"
+    ],
+    "topicIds": [
+      "data-structures",
+      "linked-list"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习链表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/delete-node-in-a-linked-list/"
+  },
+  {
+    "id": "LEETCODE:355",
+    "platform": "LeetCode",
+    "externalId": "355",
+    "title": "设计推特",
+    "leafTopicIds": [
+      "hash-table",
+      "linked-list",
+      "heap"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "linked-list",
+      "heap"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习哈希表、链表、堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/design-twitter/"
+  },
+  {
+    "id": "LEETCODE:638",
+    "platform": "LeetCode",
+    "externalId": "638",
+    "title": "大礼包",
+    "leafTopicIds": [
+      "bitwise",
+      "memoization"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "dp",
+      "memoization"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习位运算、记忆化搜索相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/shopping-offers/"
+  },
+  {
+    "id": "LEETCODE:729",
+    "platform": "LeetCode",
+    "externalId": "729",
+    "title": "我的日程安排表 I",
+    "leafTopicIds": [
+      "segment-tree",
+      "binary-search"
+    ],
+    "topicIds": [
+      "data-structures",
+      "segment-tree",
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习线段树、二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/my-calendar-i/"
+  },
+  {
+    "id": "LEETCODE:440",
+    "platform": "LeetCode",
+    "externalId": "440",
+    "title": "字典序的第K小数字",
+    "leafTopicIds": [
+      "trie"
+    ],
+    "topicIds": [
+      "strings",
+      "trie"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习字典树相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/k-th-smallest-in-lexicographical-order/"
+  },
+  {
+    "id": "LEETCODE:695",
+    "platform": "LeetCode",
+    "externalId": "695",
+    "title": "岛屿的最大面积",
+    "leafTopicIds": [
+      "bfs",
+      "union-find"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "union-find"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）、并查集相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/max-area-of-island/"
+  },
+  {
+    "id": "LEETCODE:498",
+    "platform": "LeetCode",
+    "externalId": "498",
+    "title": "对角线遍历",
+    "leafTopicIds": [
+      "simulation"
+    ],
+    "topicIds": [
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/diagonal-traverse/"
+  },
+  {
+    "id": "LEETCODE:224",
+    "platform": "LeetCode",
+    "externalId": "224",
+    "title": "基本计算器",
+    "leafTopicIds": [
+      "stack",
+      "recursion"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "search",
+      "recursion"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习栈、递归相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/basic-calculator/"
+  },
+  {
+    "id": "LEETCODE:324",
+    "platform": "LeetCode",
+    "externalId": "324",
+    "title": "摆动排序 II",
+    "leafTopicIds": [
+      "sorting",
+      "greedy"
+    ],
+    "topicIds": [
+      "basics",
+      "sorting",
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习排序、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/wiggle-sort-ii/"
+  },
+  {
+    "id": "LEETCODE:373",
+    "platform": "LeetCode",
+    "externalId": "373",
+    "title": "查找和最小的 K 对数字",
+    "leafTopicIds": [
+      "heap"
+    ],
+    "topicIds": [
+      "data-structures",
+      "heap"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/"
+  },
+  {
+    "id": "LEETCODE:691",
+    "platform": "LeetCode",
+    "externalId": "691",
+    "title": "贴纸拼词",
+    "leafTopicIds": [
+      "bitwise",
+      "memoization",
+      "hash-table"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "dp",
+      "memoization",
+      "data-structures",
+      "hash-table"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习位运算、记忆化搜索、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/stickers-to-spell-word/"
+  },
+  {
+    "id": "LEETCODE:731",
+    "platform": "LeetCode",
+    "externalId": "731",
+    "title": "我的日程安排表 II",
+    "leafTopicIds": [
+      "segment-tree",
+      "binary-search"
+    ],
+    "topicIds": [
+      "data-structures",
+      "segment-tree",
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习线段树、二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/my-calendar-ii/"
+  },
+  {
+    "id": "LEETCODE:472",
+    "platform": "LeetCode",
+    "externalId": "472",
+    "title": "连接词",
+    "leafTopicIds": [
+      "trie",
+      "sorting"
+    ],
+    "topicIds": [
+      "strings",
+      "trie",
+      "basics",
+      "sorting"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习字典树、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/concatenated-words/"
+  },
+  {
+    "id": "LEETCODE:721",
+    "platform": "LeetCode",
+    "externalId": "721",
+    "title": "账户合并",
+    "leafTopicIds": [
+      "bfs",
+      "union-find",
+      "hash-table",
+      "sorting"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "union-find",
+      "hash-table",
+      "basics",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）、并查集、哈希表、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/accounts-merge/"
+  },
+  {
+    "id": "LEETCODE:537",
+    "platform": "LeetCode",
+    "externalId": "537",
+    "title": "复数乘法",
+    "leafTopicIds": [
+      "simulation"
+    ],
+    "topicIds": [
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/complex-number-multiplication/"
+  },
+  {
+    "id": "LEETCODE:231",
+    "platform": "LeetCode",
+    "externalId": "231",
+    "title": "2 的幂",
+    "leafTopicIds": [
+      "bitwise",
+      "recursion"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "search",
+      "recursion"
+    ],
+    "difficulty": "基础",
+    "focus": "练习位运算、递归相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/power-of-two/"
+  },
+  {
+    "id": "LEETCODE:402",
+    "platform": "LeetCode",
+    "externalId": "402",
+    "title": "移掉 K 位数字",
+    "leafTopicIds": [
+      "stack",
+      "greedy"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/remove-k-digits/"
+  },
+  {
+    "id": "LEETCODE:328",
+    "platform": "LeetCode",
+    "externalId": "328",
+    "title": "奇偶链表",
+    "leafTopicIds": [
+      "linked-list"
+    ],
+    "topicIds": [
+      "data-structures",
+      "linked-list"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习链表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/odd-even-linked-list/"
+  },
+  {
+    "id": "LEETCODE:287",
+    "platform": "LeetCode",
+    "externalId": "287",
+    "title": "寻找重复数",
+    "leafTopicIds": [
+      "bitwise",
+      "two-pointers",
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "two-pointers",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习位运算、双指针、二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/find-the-duplicate-number/"
+  },
+  {
+    "id": "LEETCODE:378",
+    "platform": "LeetCode",
+    "externalId": "378",
+    "title": "有序矩阵中第 K 小的元素",
+    "leafTopicIds": [
+      "binary-search",
+      "sorting",
+      "heap"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search",
+      "sorting",
+      "data-structures",
+      "heap"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习二分、排序、堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/kth-smallest-element-in-a-sorted-matrix/"
+  },
+  {
+    "id": "LEETCODE:732",
+    "platform": "LeetCode",
+    "externalId": "732",
+    "title": "我的日程安排表 III",
+    "leafTopicIds": [
+      "segment-tree",
+      "binary-search"
+    ],
+    "topicIds": [
+      "data-structures",
+      "segment-tree",
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习线段树、二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/my-calendar-iii/"
+  },
+  {
+    "id": "LEETCODE:676",
+    "platform": "LeetCode",
+    "externalId": "676",
+    "title": "实现一个魔法字典",
+    "leafTopicIds": [
+      "trie",
+      "hash-table"
+    ],
+    "topicIds": [
+      "strings",
+      "trie",
+      "data-structures",
+      "hash-table"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习字典树、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/implement-magic-dictionary/"
+  },
+  {
+    "id": "LEETCODE:770",
+    "platform": "LeetCode",
+    "externalId": "765",
+    "title": "情侣牵手",
+    "leafTopicIds": [
+      "bfs",
+      "union-find",
+      "greedy"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "union-find",
+      "greedy"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习广度优先搜索（BFS）、并查集、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/couples-holding-hands/"
+  },
+  {
+    "id": "LEETCODE:566",
+    "platform": "LeetCode",
+    "externalId": "566",
+    "title": "重塑矩阵",
+    "leafTopicIds": [
+      "simulation"
+    ],
+    "topicIds": [
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "基础",
+    "focus": "练习模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/reshape-the-matrix/"
+  },
+  {
+    "id": "LEETCODE:273",
+    "platform": "LeetCode",
+    "externalId": "273",
+    "title": "整数转换英文表示",
+    "leafTopicIds": [
+      "recursion"
+    ],
+    "topicIds": [
+      "search",
+      "recursion"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习递归相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/integer-to-english-words/"
+  },
+  {
+    "id": "LEETCODE:382",
+    "platform": "LeetCode",
+    "externalId": "382",
+    "title": "链表随机节点",
+    "leafTopicIds": [
+      "linked-list"
+    ],
+    "topicIds": [
+      "data-structures",
+      "linked-list"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习链表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/linked-list-random-node/"
+  },
+  {
+    "id": "LEETCODE:344",
+    "platform": "LeetCode",
+    "externalId": "344",
+    "title": "反转字符串",
+    "leafTopicIds": [
+      "two-pointers"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "基础",
+    "focus": "练习双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/reverse-string/"
+  },
+  {
+    "id": "LEETCODE:407",
+    "platform": "LeetCode",
+    "externalId": "407",
+    "title": "接雨水 II",
+    "leafTopicIds": [
+      "bfs",
+      "heap"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "heap"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习广度优先搜索（BFS）、堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/trapping-rain-water-ii/"
+  },
+  {
+    "id": "LEETCODE:677",
+    "platform": "LeetCode",
+    "externalId": "677",
+    "title": "键值映射",
+    "leafTopicIds": [
+      "trie",
+      "hash-table"
+    ],
+    "topicIds": [
+      "strings",
+      "trie",
+      "data-structures",
+      "hash-table"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习字典树、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/map-sum-pairs/"
+  },
+  {
+    "id": "LEETCODE:592",
+    "platform": "LeetCode",
+    "externalId": "592",
+    "title": "分数加减运算",
+    "leafTopicIds": [
+      "simulation"
+    ],
+    "topicIds": [
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/fraction-addition-and-subtraction/"
+  },
+  {
+    "id": "LEETCODE:326",
+    "platform": "LeetCode",
+    "externalId": "326",
+    "title": "3 的幂",
+    "leafTopicIds": [
+      "recursion"
+    ],
+    "topicIds": [
+      "search",
+      "recursion"
+    ],
+    "difficulty": "基础",
+    "focus": "练习递归相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/power-of-three/"
+  },
+  {
+    "id": "LEETCODE:409",
+    "platform": "LeetCode",
+    "externalId": "409",
+    "title": "最长回文串",
+    "leafTopicIds": [
+      "hash-table",
+      "greedy"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "greedy"
+    ],
+    "difficulty": "基础",
+    "focus": "练习哈希表、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/longest-palindrome/"
+  },
+  {
+    "id": "LEETCODE:432",
+    "platform": "LeetCode",
+    "externalId": "432",
+    "title": "全 O(1) 的数据结构",
+    "leafTopicIds": [
+      "hash-table",
+      "linked-list"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "linked-list"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习哈希表、链表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/all-oone-data-structure/"
+  },
+  {
+    "id": "LEETCODE:345",
+    "platform": "LeetCode",
+    "externalId": "345",
+    "title": "反转字符串中的元音字母",
+    "leafTopicIds": [
+      "two-pointers"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "基础",
+    "focus": "练习双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/reverse-vowels-of-a-string/"
+  },
+  {
+    "id": "LEETCODE:420",
+    "platform": "LeetCode",
+    "externalId": "420",
+    "title": "强密码检验器",
+    "leafTopicIds": [
+      "heap",
+      "greedy"
+    ],
+    "topicIds": [
+      "data-structures",
+      "heap",
+      "greedy"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习堆、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/strong-password-checker/"
+  },
+  {
+    "id": "LEETCODE:692",
+    "platform": "LeetCode",
+    "externalId": "692",
+    "title": "前K个高频单词",
+    "leafTopicIds": [
+      "trie",
+      "hash-table",
+      "sorting",
+      "heap"
+    ],
+    "topicIds": [
+      "strings",
+      "trie",
+      "data-structures",
+      "hash-table",
+      "basics",
+      "sorting",
+      "heap"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习字典树、哈希表、排序、堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/top-k-frequent-words/"
+  },
+  {
+    "id": "LEETCODE:640",
+    "platform": "LeetCode",
+    "externalId": "640",
+    "title": "求解方程",
+    "leafTopicIds": [
+      "simulation"
+    ],
+    "topicIds": [
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/solve-the-equation/"
+  },
+  {
+    "id": "LEETCODE:342",
+    "platform": "LeetCode",
+    "externalId": "342",
+    "title": "4的幂",
+    "leafTopicIds": [
+      "bitwise",
+      "recursion"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "search",
+      "recursion"
+    ],
+    "difficulty": "基础",
+    "focus": "练习位运算、递归相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/power-of-four/"
+  },
+  {
+    "id": "LEETCODE:227",
+    "platform": "LeetCode",
+    "externalId": "227",
+    "title": "基本计算器 II",
+    "leafTopicIds": [
+      "stack"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/basic-calculator-ii/"
+  },
+  {
+    "id": "LEETCODE:445",
+    "platform": "LeetCode",
+    "externalId": "445",
+    "title": "两数相加 II",
+    "leafTopicIds": [
+      "stack",
+      "linked-list"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "linked-list"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈、链表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/add-two-numbers-ii/"
+  },
+  {
+    "id": "LEETCODE:349",
+    "platform": "LeetCode",
+    "externalId": "349",
+    "title": "两个数组的交集",
+    "leafTopicIds": [
+      "hash-table",
+      "two-pointers",
+      "binary-search",
+      "sorting"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "two-pointers",
+      "binary-search",
+      "sorting"
+    ],
+    "difficulty": "基础",
+    "focus": "练习哈希表、双指针、二分、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/intersection-of-two-arrays/"
+  },
+  {
+    "id": "LEETCODE:720",
+    "platform": "LeetCode",
+    "externalId": "720",
+    "title": "词典中最长的单词",
+    "leafTopicIds": [
+      "trie",
+      "hash-table",
+      "sorting"
+    ],
+    "topicIds": [
+      "strings",
+      "trie",
+      "data-structures",
+      "hash-table",
+      "basics",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习字典树、哈希表、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/longest-word-in-dictionary/"
+  },
+  {
+    "id": "LEETCODE:657",
+    "platform": "LeetCode",
+    "externalId": "657",
+    "title": "机器人能否返回原点",
+    "leafTopicIds": [
+      "simulation"
+    ],
+    "topicIds": [
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "基础",
+    "focus": "练习模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/robot-return-to-origin/"
+  },
+  {
+    "id": "LEETCODE:390",
+    "platform": "LeetCode",
+    "externalId": "390",
+    "title": "消除游戏",
+    "leafTopicIds": [
+      "recursion"
+    ],
+    "topicIds": [
+      "search",
+      "recursion"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习递归相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/elimination-game/"
+  },
+  {
+    "id": "LEETCODE:410",
+    "platform": "LeetCode",
+    "externalId": "410",
+    "title": "分割数组的最大值",
+    "leafTopicIds": [
+      "binary-search",
+      "greedy"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search",
+      "greedy"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习二分、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/split-array-largest-sum/"
+  },
+  {
+    "id": "LEETCODE:207",
+    "platform": "LeetCode",
+    "externalId": "207",
+    "title": "课程表",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/course-schedule/"
+  },
+  {
+    "id": "LEETCODE:460",
+    "platform": "LeetCode",
+    "externalId": "460",
+    "title": "LFU 缓存",
+    "leafTopicIds": [
+      "hash-table",
+      "linked-list"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "linked-list"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习哈希表、链表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/lfu-cache/"
+  },
+  {
+    "id": "LEETCODE:350",
+    "platform": "LeetCode",
+    "externalId": "350",
+    "title": "两个数组的交集 II",
+    "leafTopicIds": [
+      "hash-table",
+      "two-pointers",
+      "binary-search",
+      "sorting"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "two-pointers",
+      "binary-search",
+      "sorting"
+    ],
+    "difficulty": "基础",
+    "focus": "练习哈希表、双指针、二分、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/intersection-of-two-arrays-ii/"
+  },
+  {
+    "id": "LEETCODE:451",
+    "platform": "LeetCode",
+    "externalId": "451",
+    "title": "根据字符出现频率排序",
+    "leafTopicIds": [
+      "hash-table",
+      "sorting",
+      "heap"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "sorting",
+      "heap"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习哈希表、排序、堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/sort-characters-by-frequency/"
+  },
+  {
+    "id": "LEETCODE:746",
+    "platform": "LeetCode",
+    "externalId": "745",
+    "title": "前缀和后缀搜索",
+    "leafTopicIds": [
+      "trie",
+      "hash-table"
+    ],
+    "topicIds": [
+      "strings",
+      "trie",
+      "data-structures",
+      "hash-table"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习字典树、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/prefix-and-suffix-search/"
+  },
+  {
+    "id": "LEETCODE:682",
+    "platform": "LeetCode",
+    "externalId": "682",
+    "title": "棒球比赛",
+    "leafTopicIds": [
+      "stack",
+      "simulation"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "基础",
+    "focus": "练习栈、模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/baseball-game/"
+  },
+  {
+    "id": "LEETCODE:201",
+    "platform": "LeetCode",
+    "externalId": "201",
+    "title": "数字范围按位与",
+    "leafTopicIds": [
+      "bitwise"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习位运算相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/bitwise-and-of-numbers-range/"
+  },
+  {
+    "id": "LEETCODE:394",
+    "platform": "LeetCode",
+    "externalId": "394",
+    "title": "字符串解码",
+    "leafTopicIds": [
+      "stack",
+      "recursion"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "search",
+      "recursion"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈、递归相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/decode-string/"
+  },
+  {
+    "id": "LEETCODE:435",
+    "platform": "LeetCode",
+    "externalId": "435",
+    "title": "无重叠区间",
+    "leafTopicIds": [
+      "sorting",
+      "greedy"
+    ],
+    "topicIds": [
+      "basics",
+      "sorting",
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习排序、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/non-overlapping-intervals/"
+  },
+  {
+    "id": "LEETCODE:210",
+    "platform": "LeetCode",
+    "externalId": "210",
+    "title": "课程表 II",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/course-schedule-ii/"
+  },
+  {
+    "id": "LEETCODE:528",
+    "platform": "LeetCode",
+    "externalId": "1721",
+    "title": "交换链表中的节点",
+    "leafTopicIds": [
+      "linked-list",
+      "two-pointers"
+    ],
+    "topicIds": [
+      "data-structures",
+      "linked-list",
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习链表、双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/swapping-nodes-in-a-linked-list/"
+  },
+  {
+    "id": "LEETCODE:480",
+    "platform": "LeetCode",
+    "externalId": "480",
+    "title": "滑动窗口中位数",
+    "leafTopicIds": [
+      "hash-table",
+      "heap"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "heap"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习哈希表、堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/sliding-window-median/"
+  },
+  {
+    "id": "LEETCODE:735",
+    "platform": "LeetCode",
+    "externalId": "735",
+    "title": "小行星碰撞",
+    "leafTopicIds": [
+      "stack",
+      "simulation"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈、模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/asteroid-collision/"
+  },
+  {
+    "id": "LEETCODE:260",
+    "platform": "LeetCode",
+    "externalId": "260",
+    "title": "只出现一次的数字 III",
+    "leafTopicIds": [
+      "bitwise"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习位运算相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/single-number-iii/"
+  },
+  {
+    "id": "LEETCODE:486",
+    "platform": "LeetCode",
+    "externalId": "486",
+    "title": "预测赢家",
+    "leafTopicIds": [
+      "recursion"
+    ],
+    "topicIds": [
+      "search",
+      "recursion"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习递归相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/predict-the-winner/"
+  },
+  {
+    "id": "LEETCODE:452",
+    "platform": "LeetCode",
+    "externalId": "452",
+    "title": "用最少数量的箭引爆气球",
+    "leafTopicIds": [
+      "sorting",
+      "greedy"
+    ],
+    "topicIds": [
+      "basics",
+      "sorting",
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习排序、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/minimum-number-of-arrows-to-burst-balloons/"
+  },
+  {
+    "id": "LEETCODE:279",
+    "platform": "LeetCode",
+    "externalId": "279",
+    "title": "完全平方数",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/perfect-squares/"
+  },
+  {
+    "id": "LEETCODE:725",
+    "platform": "LeetCode",
+    "externalId": "725",
+    "title": "分隔链表",
+    "leafTopicIds": [
+      "linked-list"
+    ],
+    "topicIds": [
+      "data-structures",
+      "linked-list"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习链表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/split-linked-list-in-parts/"
+  },
+  {
+    "id": "LEETCODE:392",
+    "platform": "LeetCode",
+    "externalId": "392",
+    "title": "判断子序列",
+    "leafTopicIds": [
+      "two-pointers"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "基础",
+    "focus": "练习双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/is-subsequence/"
+  },
+  {
+    "id": "LEETCODE:502",
+    "platform": "LeetCode",
+    "externalId": "502",
+    "title": "IPO",
+    "leafTopicIds": [
+      "sorting",
+      "heap",
+      "greedy"
+    ],
+    "topicIds": [
+      "basics",
+      "sorting",
+      "data-structures",
+      "heap",
+      "greedy"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习排序、堆、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/ipo/"
+  },
+  {
+    "id": "LEETCODE:750",
+    "platform": "LeetCode",
+    "externalId": "749",
+    "title": "隔离病毒",
+    "leafTopicIds": [
+      "bfs",
+      "simulation"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习广度优先搜索（BFS）、模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/contain-virus/"
+  },
+  {
+    "id": "LEETCODE:268",
+    "platform": "LeetCode",
+    "externalId": "268",
+    "title": "丢失的数字",
+    "leafTopicIds": [
+      "bitwise",
+      "hash-table",
+      "binary-search",
+      "sorting"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "data-structures",
+      "hash-table",
+      "binary-search",
+      "sorting"
+    ],
+    "difficulty": "基础",
+    "focus": "练习位运算、哈希表、二分、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/missing-number/"
+  },
+  {
+    "id": "LEETCODE:736",
+    "platform": "LeetCode",
+    "externalId": "736",
+    "title": "Lisp 语法解析",
+    "leafTopicIds": [
+      "stack",
+      "recursion",
+      "hash-table"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "search",
+      "recursion",
+      "hash-table"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习栈、递归、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/parse-lisp-expression/"
+  },
+  {
+    "id": "LEETCODE:766",
+    "platform": "LeetCode",
+    "externalId": "430",
+    "title": "扁平化多级双向链表",
+    "leafTopicIds": [
+      "linked-list"
+    ],
+    "topicIds": [
+      "data-structures",
+      "linked-list"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习链表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/flatten-a-multilevel-doubly-linked-list/"
+  },
+  {
+    "id": "LEETCODE:443",
+    "platform": "LeetCode",
+    "externalId": "443",
+    "title": "压缩字符串",
+    "leafTopicIds": [
+      "two-pointers"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/string-compression/"
+  },
+  {
+    "id": "LEETCODE:506",
+    "platform": "LeetCode",
+    "externalId": "506",
+    "title": "相对名次",
+    "leafTopicIds": [
+      "sorting",
+      "heap"
+    ],
+    "topicIds": [
+      "basics",
+      "sorting",
+      "data-structures",
+      "heap"
+    ],
+    "difficulty": "基础",
+    "focus": "练习排序、堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/relative-ranks/"
+  },
+  {
+    "id": "LEETCODE:318",
+    "platform": "LeetCode",
+    "externalId": "318",
+    "title": "最大单词长度乘积",
+    "leafTopicIds": [
+      "bitwise"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习位运算相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/maximum-product-of-word-lengths/"
+  },
+  {
+    "id": "LEETCODE:455",
+    "platform": "LeetCode",
+    "externalId": "455",
+    "title": "分发饼干",
+    "leafTopicIds": [
+      "two-pointers",
+      "sorting",
+      "greedy"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers",
+      "sorting",
+      "greedy"
+    ],
+    "difficulty": "基础",
+    "focus": "练习双指针、排序、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/assign-cookies/"
+  },
+  {
+    "id": "LEETCODE:297",
+    "platform": "LeetCode",
+    "externalId": "297",
+    "title": "二叉树的序列化与反序列化",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/"
+  },
+  {
+    "id": "LEETCODE:240",
+    "platform": "LeetCode",
+    "externalId": "240",
+    "title": "搜索二维矩阵 II",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/search-a-2d-matrix-ii/"
+  },
+  {
+    "id": "LEETCODE:621",
+    "platform": "LeetCode",
+    "externalId": "621",
+    "title": "任务调度器",
+    "leafTopicIds": [
+      "hash-table",
+      "sorting",
+      "heap",
+      "greedy"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "sorting",
+      "heap",
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习哈希表、排序、堆、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/task-scheduler/"
+  },
+  {
+    "id": "LEETCODE:371",
+    "platform": "LeetCode",
+    "externalId": "371",
+    "title": "两整数之和",
+    "leafTopicIds": [
+      "bitwise"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习位运算相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/sum-of-two-integers/"
+  },
+  {
+    "id": "LEETCODE:331",
+    "platform": "LeetCode",
+    "externalId": "331",
+    "title": "验证二叉树的前序序列化",
+    "leafTopicIds": [
+      "stack"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/verify-preorder-serialization-of-a-binary-tree/"
+  },
+  {
+    "id": "LEETCODE:301",
+    "platform": "LeetCode",
+    "externalId": "301",
+    "title": "删除无效的括号",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/remove-invalid-parentheses/"
+  },
+  {
+    "id": "LEETCODE:275",
+    "platform": "LeetCode",
+    "externalId": "275",
+    "title": "H 指数 II",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/h-index-ii/"
+  },
+  {
+    "id": "LEETCODE:457",
+    "platform": "LeetCode",
+    "externalId": "457",
+    "title": "环形数组是否存在循环",
+    "leafTopicIds": [
+      "hash-table",
+      "two-pointers"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习哈希表、双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/circular-array-loop/"
+  },
+  {
+    "id": "LEETCODE:630",
+    "platform": "LeetCode",
+    "externalId": "630",
+    "title": "课程表 III",
+    "leafTopicIds": [
+      "sorting",
+      "heap",
+      "greedy"
+    ],
+    "topicIds": [
+      "basics",
+      "sorting",
+      "data-structures",
+      "heap",
+      "greedy"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习排序、堆、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/course-schedule-iii/"
+  },
+  {
+    "id": "LEETCODE:389",
+    "platform": "LeetCode",
+    "externalId": "389",
+    "title": "找不同",
+    "leafTopicIds": [
+      "bitwise",
+      "hash-table",
+      "sorting"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "data-structures",
+      "hash-table",
+      "sorting"
+    ],
+    "difficulty": "基础",
+    "focus": "练习位运算、哈希表、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/find-the-difference/"
+  },
+  {
+    "id": "LEETCODE:385",
+    "platform": "LeetCode",
+    "externalId": "385",
+    "title": "迷你语法分析器",
+    "leafTopicIds": [
+      "stack"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/mini-parser/"
+  },
+  {
+    "id": "LEETCODE:310",
+    "platform": "LeetCode",
+    "externalId": "310",
+    "title": "最小高度树",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/minimum-height-trees/"
+  },
+  {
+    "id": "LEETCODE:278",
+    "platform": "LeetCode",
+    "externalId": "278",
+    "title": "第一个错误的版本",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "基础",
+    "focus": "练习二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/first-bad-version/"
+  },
+  {
+    "id": "LEETCODE:466",
+    "platform": "LeetCode",
+    "externalId": "466",
+    "title": "统计重复个数",
+    "leafTopicIds": [
+      "two-pointers"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/count-the-repetitions/"
+  },
+  {
+    "id": "LEETCODE:632",
+    "platform": "LeetCode",
+    "externalId": "632",
+    "title": "最小区间",
+    "leafTopicIds": [
+      "hash-table",
+      "sorting",
+      "heap",
+      "greedy"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "sorting",
+      "heap",
+      "greedy"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习哈希表、排序、堆、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/smallest-range-covering-elements-from-k-lists/"
+  },
+  {
+    "id": "LEETCODE:393",
+    "platform": "LeetCode",
+    "externalId": "393",
+    "title": "UTF-8 编码验证",
+    "leafTopicIds": [
+      "bitwise"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习位运算相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/utf-8-validation/"
+  },
+  {
+    "id": "LEETCODE:388",
+    "platform": "LeetCode",
+    "externalId": "388",
+    "title": "文件的最长绝对路径",
+    "leafTopicIds": [
+      "stack"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/longest-absolute-file-path/"
+  },
+  {
+    "id": "LEETCODE:322",
+    "platform": "LeetCode",
+    "externalId": "322",
+    "title": "零钱兑换",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/coin-change/"
+  },
+  {
+    "id": "LEETCODE:363",
+    "platform": "LeetCode",
+    "externalId": "363",
+    "title": "矩形区域不超过 K 的最大数值和",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/max-sum-of-rectangle-no-larger-than-k/"
+  },
+  {
+    "id": "LEETCODE:475",
+    "platform": "LeetCode",
+    "externalId": "475",
+    "title": "供暖器",
+    "leafTopicIds": [
+      "two-pointers",
+      "binary-search",
+      "sorting"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers",
+      "binary-search",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习双指针、二分、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/heaters/"
+  },
+  {
+    "id": "LEETCODE:658",
+    "platform": "LeetCode",
+    "externalId": "658",
+    "title": "找到 K 个最接近的元素",
+    "leafTopicIds": [
+      "two-pointers",
+      "binary-search",
+      "sorting",
+      "heap"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers",
+      "binary-search",
+      "sorting",
+      "data-structures",
+      "heap"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习双指针、二分、排序、堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/find-k-closest-elements/"
+  },
+  {
+    "id": "LEETCODE:401",
+    "platform": "LeetCode",
+    "externalId": "401",
+    "title": "二进制手表",
+    "leafTopicIds": [
+      "bitwise"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise"
+    ],
+    "difficulty": "基础",
+    "focus": "练习位运算相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/binary-watch/"
+  },
+  {
+    "id": "LEETCODE:561",
+    "platform": "LeetCode",
+    "externalId": "561",
+    "title": "数组拆分",
+    "leafTopicIds": [
+      "sorting",
+      "greedy"
+    ],
+    "topicIds": [
+      "basics",
+      "sorting",
+      "greedy"
+    ],
+    "difficulty": "基础",
+    "focus": "练习排序、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/array-partition/"
+  },
+  {
+    "id": "LEETCODE:456",
+    "platform": "LeetCode",
+    "externalId": "456",
+    "title": "132 模式",
+    "leafTopicIds": [
+      "stack",
+      "binary-search"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈、二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/132-pattern/"
+  },
+  {
+    "id": "LEETCODE:365",
+    "platform": "LeetCode",
+    "externalId": "365",
+    "title": "水壶问题",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/water-and-jug-problem/"
+  },
+  {
+    "id": "LEETCODE:659",
+    "platform": "LeetCode",
+    "externalId": "659",
+    "title": "分割数组为连续子序列",
+    "leafTopicIds": [
+      "hash-table",
+      "heap",
+      "greedy"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "heap",
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习哈希表、堆、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/split-array-into-consecutive-subsequences/"
+  },
+  {
+    "id": "LEETCODE:461",
+    "platform": "LeetCode",
+    "externalId": "461",
+    "title": "汉明距离",
+    "leafTopicIds": [
+      "bitwise"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise"
+    ],
+    "difficulty": "基础",
+    "focus": "练习位运算相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/hamming-distance/"
+  },
+  {
+    "id": "LEETCODE:496",
+    "platform": "LeetCode",
+    "externalId": "496",
+    "title": "下一个更大元素 I",
+    "leafTopicIds": [
+      "stack",
+      "hash-table"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "hash-table"
+    ],
+    "difficulty": "基础",
+    "focus": "练习栈、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/next-greater-element-i/"
+  },
+  {
+    "id": "LEETCODE:404",
+    "platform": "LeetCode",
+    "externalId": "404",
+    "title": "左叶子之和",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "基础",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/sum-of-left-leaves/"
+  },
+  {
+    "id": "LEETCODE:481",
+    "platform": "LeetCode",
+    "externalId": "481",
+    "title": "神奇字符串",
+    "leafTopicIds": [
+      "two-pointers"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/magical-string/"
+  },
+  {
+    "id": "LEETCODE:675",
+    "platform": "LeetCode",
+    "externalId": "675",
+    "title": "为高尔夫比赛砍树",
+    "leafTopicIds": [
+      "bfs",
+      "heap"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "heap"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习广度优先搜索（BFS）、堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/cut-off-trees-for-golf-event/"
+  },
+  {
+    "id": "LEETCODE:473",
+    "platform": "LeetCode",
+    "externalId": "473",
+    "title": "火柴拼正方形",
+    "leafTopicIds": [
+      "bitwise"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习位运算相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/matchsticks-to-square/"
+  },
+  {
+    "id": "LEETCODE:581",
+    "platform": "LeetCode",
+    "externalId": "581",
+    "title": "最短无序连续子数组",
+    "leafTopicIds": [
+      "stack",
+      "two-pointers",
+      "sorting",
+      "greedy"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "basics",
+      "two-pointers",
+      "sorting",
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈、双指针、排序、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/shortest-unsorted-continuous-subarray/"
+  },
+  {
+    "id": "LEETCODE:778",
+    "platform": "LeetCode",
+    "externalId": "767",
+    "title": "重构字符串",
+    "leafTopicIds": [
+      "hash-table",
+      "sorting",
+      "heap",
+      "greedy"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "sorting",
+      "heap",
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习哈希表、排序、堆、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/reorganize-string/"
+  },
+  {
+    "id": "LEETCODE:476",
+    "platform": "LeetCode",
+    "externalId": "476",
+    "title": "数字的补数",
+    "leafTopicIds": [
+      "bitwise"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise"
+    ],
+    "difficulty": "基础",
+    "focus": "练习位运算相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/number-complement/"
+  },
+  {
+    "id": "LEETCODE:503",
+    "platform": "LeetCode",
+    "externalId": "503",
+    "title": "下一个更大元素 II",
+    "leafTopicIds": [
+      "stack"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/next-greater-element-ii/"
+  },
+  {
+    "id": "LEETCODE:417",
+    "platform": "LeetCode",
+    "externalId": "417",
+    "title": "太平洋大西洋水流问题",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/pacific-atlantic-water-flow/"
+  },
+  {
+    "id": "LEETCODE:367",
+    "platform": "LeetCode",
+    "externalId": "367",
+    "title": "有效的完全平方数",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "基础",
+    "focus": "练习二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/valid-perfect-square/"
+  },
+  {
+    "id": "LEETCODE:522",
+    "platform": "LeetCode",
+    "externalId": "522",
+    "title": "最长特殊序列 II",
+    "leafTopicIds": [
+      "hash-table",
+      "two-pointers",
+      "sorting"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "two-pointers",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习哈希表、双指针、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/longest-uncommon-subsequence-ii/"
+  },
+  {
+    "id": "LEETCODE:477",
+    "platform": "LeetCode",
+    "externalId": "477",
+    "title": "汉明距离总和",
+    "leafTopicIds": [
+      "bitwise"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习位运算相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/total-hamming-distance/"
+  },
+  {
+    "id": "LEETCODE:611",
+    "platform": "LeetCode",
+    "externalId": "611",
+    "title": "有效三角形的个数",
+    "leafTopicIds": [
+      "two-pointers",
+      "binary-search",
+      "sorting",
+      "greedy"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers",
+      "binary-search",
+      "sorting",
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习双指针、二分、排序、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/valid-triangle-number/"
+  },
+  {
+    "id": "LEETCODE:591",
+    "platform": "LeetCode",
+    "externalId": "591",
+    "title": "标签验证器",
+    "leafTopicIds": [
+      "stack"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习栈相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/tag-validator/"
+  },
+  {
+    "id": "LEETCODE:433",
+    "platform": "LeetCode",
+    "externalId": "433",
+    "title": "最小基因变化",
+    "leafTopicIds": [
+      "bfs",
+      "hash-table"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "hash-table"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/minimum-genetic-mutation/"
+  },
+  {
+    "id": "LEETCODE:491",
+    "platform": "LeetCode",
+    "externalId": "491",
+    "title": "非递减子序列",
+    "leafTopicIds": [
+      "bitwise",
+      "hash-table"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "data-structures",
+      "hash-table"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习位运算、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/non-decreasing-subsequences/"
+  },
+  {
+    "id": "LEETCODE:646",
+    "platform": "LeetCode",
+    "externalId": "646",
+    "title": "最长数对链",
+    "leafTopicIds": [
+      "sorting",
+      "greedy"
+    ],
+    "topicIds": [
+      "basics",
+      "sorting",
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习排序、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/maximum-length-of-pair-chain/"
+  },
+  {
+    "id": "LEETCODE:636",
+    "platform": "LeetCode",
+    "externalId": "636",
+    "title": "函数的独占时间",
+    "leafTopicIds": [
+      "stack"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/exclusive-time-of-functions/"
+  },
+  {
+    "id": "LEETCODE:449",
+    "platform": "LeetCode",
+    "externalId": "449",
+    "title": "序列化和反序列化二叉搜索树",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/serialize-and-deserialize-bst/"
+  },
+  {
+    "id": "LEETCODE:374",
+    "platform": "LeetCode",
+    "externalId": "374",
+    "title": "猜数字大小",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "基础",
+    "focus": "练习二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/guess-number-higher-or-lower/"
+  },
+  {
+    "id": "LEETCODE:524",
+    "platform": "LeetCode",
+    "externalId": "524",
+    "title": "通过删除字母匹配到字典里最长单词",
+    "leafTopicIds": [
+      "two-pointers",
+      "sorting"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习双指针、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/"
+  },
+  {
+    "id": "LEETCODE:645",
+    "platform": "LeetCode",
+    "externalId": "645",
+    "title": "错误的集合",
+    "leafTopicIds": [
+      "bitwise",
+      "hash-table",
+      "sorting"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "data-structures",
+      "hash-table",
+      "sorting"
+    ],
+    "difficulty": "基础",
+    "focus": "练习位运算、哈希表、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/set-mismatch/"
+  },
+  {
+    "id": "LEETCODE:678",
+    "platform": "LeetCode",
+    "externalId": "678",
+    "title": "有效的括号字符串",
+    "leafTopicIds": [
+      "stack",
+      "greedy"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/valid-parenthesis-string/"
+  },
+  {
+    "id": "LEETCODE:463",
+    "platform": "LeetCode",
+    "externalId": "463",
+    "title": "岛屿的周长",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "基础",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/island-perimeter/"
+  },
+  {
+    "id": "LEETCODE:400",
+    "platform": "LeetCode",
+    "externalId": "400",
+    "title": "第 N 位数字",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/nth-digit/"
+  },
+  {
+    "id": "LEETCODE:532",
+    "platform": "LeetCode",
+    "externalId": "532",
+    "title": "数组中的 k-diff 数对",
+    "leafTopicIds": [
+      "hash-table",
+      "two-pointers",
+      "binary-search",
+      "sorting"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "two-pointers",
+      "binary-search",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习哈希表、双指针、二分、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/k-diff-pairs-in-an-array/"
+  },
+  {
+    "id": "LEETCODE:672",
+    "platform": "LeetCode",
+    "externalId": "672",
+    "title": "灯泡开关 Ⅱ",
+    "leafTopicIds": [
+      "bitwise",
+      "bfs"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "search",
+      "bfs"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习位运算、广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/bulb-switcher-ii/"
+  },
+  {
+    "id": "LEETCODE:680",
+    "platform": "LeetCode",
+    "externalId": "680",
+    "title": "验证回文串 II",
+    "leafTopicIds": [
+      "two-pointers",
+      "greedy"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers",
+      "greedy"
+    ],
+    "difficulty": "基础",
+    "focus": "练习双指针、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/valid-palindrome-ii/"
+  },
+  {
+    "id": "LEETCODE:654",
+    "platform": "LeetCode",
+    "externalId": "654",
+    "title": "最大二叉树",
+    "leafTopicIds": [
+      "stack"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/maximum-binary-tree/"
+  },
+  {
+    "id": "LEETCODE:693",
+    "platform": "LeetCode",
+    "externalId": "693",
+    "title": "交替位二进制数",
+    "leafTopicIds": [
+      "bitwise"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise"
+    ],
+    "difficulty": "基础",
+    "focus": "练习位运算相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/binary-number-with-alternating-bits/"
+  },
+  {
+    "id": "LEETCODE:759",
+    "platform": "LeetCode",
+    "externalId": "757",
+    "title": "设置交集大小至少为2",
+    "leafTopicIds": [
+      "sorting",
+      "greedy"
+    ],
+    "topicIds": [
+      "basics",
+      "sorting",
+      "greedy"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习排序、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/set-intersection-size-at-least-two/"
+  },
+  {
+    "id": "LEETCODE:726",
+    "platform": "LeetCode",
+    "externalId": "726",
+    "title": "原子的数量",
+    "leafTopicIds": [
+      "stack",
+      "hash-table",
+      "sorting"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "hash-table",
+      "basics",
+      "sorting"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习栈、哈希表、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/number-of-atoms/"
+  },
+  {
+    "id": "LEETCODE:513",
+    "platform": "LeetCode",
+    "externalId": "513",
+    "title": "找树左下角的值",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/find-bottom-left-tree-value/"
+  },
+  {
+    "id": "LEETCODE:436",
+    "platform": "LeetCode",
+    "externalId": "436",
+    "title": "寻找右区间",
+    "leafTopicIds": [
+      "binary-search",
+      "sorting"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习二分、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/find-right-interval/"
+  },
+  {
+    "id": "LEETCODE:541",
+    "platform": "LeetCode",
+    "externalId": "541",
+    "title": "反转字符串 II",
+    "leafTopicIds": [
+      "two-pointers"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "基础",
+    "focus": "练习双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/reverse-string-ii/"
+  },
+  {
+    "id": "LEETCODE:757",
+    "platform": "LeetCode",
+    "externalId": "756",
+    "title": "金字塔转换矩阵",
+    "leafTopicIds": [
+      "bitwise",
+      "hash-table"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "data-structures",
+      "hash-table"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习位运算、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/pyramid-transition-matrix/"
+  },
+  {
+    "id": "LEETCODE:768",
+    "platform": "LeetCode",
+    "externalId": "763",
+    "title": "划分字母区间",
+    "leafTopicIds": [
+      "hash-table",
+      "two-pointers",
+      "greedy"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "two-pointers",
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习哈希表、双指针、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/partition-labels/"
+  },
+  {
+    "id": "LEETCODE:739",
+    "platform": "LeetCode",
+    "externalId": "739",
+    "title": "每日温度",
+    "leafTopicIds": [
+      "stack"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/daily-temperatures/"
+  },
+  {
+    "id": "LEETCODE:514",
+    "platform": "LeetCode",
+    "externalId": "514",
+    "title": "自由之路",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/freedom-trail/"
+  },
+  {
+    "id": "LEETCODE:441",
+    "platform": "LeetCode",
+    "externalId": "441",
+    "title": "排列硬币",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "基础",
+    "focus": "练习二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/arranging-coins/"
+  },
+  {
+    "id": "LEETCODE:779",
+    "platform": "LeetCode",
+    "externalId": "768",
+    "title": "最多能完成排序的块 II",
+    "leafTopicIds": [
+      "stack",
+      "sorting",
+      "greedy"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "basics",
+      "sorting",
+      "greedy"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习栈、排序、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/max-chunks-to-make-sorted-ii/"
+  },
+  {
+    "id": "LEETCODE:515",
+    "platform": "LeetCode",
+    "externalId": "515",
+    "title": "在每个树行中找最大值",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/find-largest-value-in-each-tree-row/"
+  },
+  {
+    "id": "LEETCODE:483",
+    "platform": "LeetCode",
+    "externalId": "483",
+    "title": "最小好进制",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/smallest-good-base/"
+  },
+  {
+    "id": "LEETCODE:556",
+    "platform": "LeetCode",
+    "externalId": "556",
+    "title": "下一个更大元素 III",
+    "leafTopicIds": [
+      "two-pointers"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/next-greater-element-iii/"
+  },
+  {
+    "id": "LEETCODE:780",
+    "platform": "LeetCode",
+    "externalId": "769",
+    "title": "最多能完成排序的块",
+    "leafTopicIds": [
+      "stack",
+      "sorting",
+      "greedy"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "basics",
+      "sorting",
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈、排序、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/max-chunks-to-make-sorted/"
+  },
+  {
+    "id": "LEETCODE:529",
+    "platform": "LeetCode",
+    "externalId": "529",
+    "title": "扫雷游戏",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/minesweeper/"
+  },
+  {
+    "id": "LEETCODE:540",
+    "platform": "LeetCode",
+    "externalId": "540",
+    "title": "有序数组中的单一元素",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/single-element-in-a-sorted-array/"
+  },
+  {
+    "id": "LEETCODE:557",
+    "platform": "LeetCode",
+    "externalId": "557",
+    "title": "反转字符串中的单词 III",
+    "leafTopicIds": [
+      "two-pointers"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "基础",
+    "focus": "练习双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/reverse-words-in-a-string-iii/"
+  },
+  {
+    "id": "LEETCODE:376",
+    "platform": "LeetCode",
+    "externalId": "376",
+    "title": "摆动序列",
+    "leafTopicIds": [
+      "greedy"
+    ],
+    "topicIds": [
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/wiggle-subsequence/"
+  },
+  {
+    "id": "LEETCODE:775",
+    "platform": "LeetCode",
+    "externalId": "589",
+    "title": "N 叉树的前序遍历",
+    "leafTopicIds": [
+      "stack"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack"
+    ],
+    "difficulty": "基础",
+    "focus": "练习栈相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/n-ary-tree-preorder-traversal/"
+  },
+  {
+    "id": "LEETCODE:530",
+    "platform": "LeetCode",
+    "externalId": "530",
+    "title": "二叉搜索树的最小绝对差",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "基础",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/minimum-absolute-difference-in-bst/"
+  },
+  {
+    "id": "LEETCODE:633",
+    "platform": "LeetCode",
+    "externalId": "633",
+    "title": "平方数之和",
+    "leafTopicIds": [
+      "two-pointers",
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习双指针、二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/sum-of-square-numbers/"
+  },
+  {
+    "id": "LEETCODE:330",
+    "platform": "LeetCode",
+    "externalId": "330",
+    "title": "按要求补齐数组",
+    "leafTopicIds": [
+      "greedy"
+    ],
+    "topicIds": [
+      "greedy"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/patching-array/"
+  },
+  {
+    "id": "LEETCODE:776",
+    "platform": "LeetCode",
+    "externalId": "590",
+    "title": "N 叉树的后序遍历",
+    "leafTopicIds": [
+      "stack"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack"
+    ],
+    "difficulty": "基础",
+    "focus": "练习栈相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/n-ary-tree-postorder-traversal/"
+  },
+  {
+    "id": "LEETCODE:542",
+    "platform": "LeetCode",
+    "externalId": "542",
+    "title": "01 矩阵",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/01-matrix/"
+  },
+  {
+    "id": "LEETCODE:668",
+    "platform": "LeetCode",
+    "externalId": "668",
+    "title": "乘法表中第k小的数",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/kth-smallest-number-in-multiplication-table/"
+  },
+  {
+    "id": "LEETCODE:567",
+    "platform": "LeetCode",
+    "externalId": "567",
+    "title": "字符串的排列",
+    "leafTopicIds": [
+      "hash-table",
+      "two-pointers"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习哈希表、双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/permutation-in-string/"
+  },
+  {
+    "id": "LEETCODE:738",
+    "platform": "LeetCode",
+    "externalId": "738",
+    "title": "单调递增的数字",
+    "leafTopicIds": [
+      "greedy"
+    ],
+    "topicIds": [
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/monotone-increasing-digits/"
+  },
+  {
+    "id": "LEETCODE:834",
+    "platform": "LeetCode",
+    "externalId": "816",
+    "title": "模糊坐标",
+    "leafTopicIds": [
+      "enumeration"
+    ],
+    "topicIds": [
+      "basics",
+      "enumeration"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习枚举相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/ambiguous-coordinates/"
+  },
+  {
+    "id": "LEETCODE:892",
+    "platform": "LeetCode",
+    "externalId": "862",
+    "title": "和至少为 K 的最短子数组",
+    "leafTopicIds": [
+      "queue",
+      "binary-search",
+      "heap"
+    ],
+    "topicIds": [
+      "data-structures",
+      "queue",
+      "basics",
+      "binary-search",
+      "heap"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习队列、二分、堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/shortest-subarray-with-sum-at-least-k/"
+  },
+  {
+    "id": "LEETCODE:787",
+    "platform": "LeetCode",
+    "externalId": "773",
+    "title": "滑动谜题",
+    "leafTopicIds": [
+      "bfs",
+      "memoization"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "dp",
+      "memoization"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习广度优先搜索（BFS）、记忆化搜索相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/sliding-puzzle/"
+  },
+  {
+    "id": "LEETCODE:1262",
+    "platform": "LeetCode",
+    "externalId": "1157",
+    "title": "子数组中占绝大多数的元素",
+    "leafTopicIds": [
+      "segment-tree",
+      "binary-search"
+    ],
+    "topicIds": [
+      "data-structures",
+      "segment-tree",
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习线段树、二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/online-majority-element-in-subarray/"
+  },
+  {
+    "id": "LEETCODE:794",
+    "platform": "LeetCode",
+    "externalId": "778",
+    "title": "水位上升的泳池中游泳",
+    "leafTopicIds": [
+      "bfs",
+      "union-find",
+      "binary-search",
+      "heap"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "union-find",
+      "basics",
+      "binary-search",
+      "heap"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习广度优先搜索（BFS）、并查集、二分、堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/swim-in-rising-water/"
+  },
+  {
+    "id": "LEETCODE:808",
+    "platform": "LeetCode",
+    "externalId": "792",
+    "title": "匹配子序列的单词数",
+    "leafTopicIds": [
+      "trie",
+      "hash-table",
+      "binary-search",
+      "sorting"
+    ],
+    "topicIds": [
+      "strings",
+      "trie",
+      "data-structures",
+      "hash-table",
+      "basics",
+      "binary-search",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习字典树、哈希表、二分、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/number-of-matching-subsequences/"
+  },
+  {
+    "id": "LEETCODE:861",
+    "platform": "LeetCode",
+    "externalId": "832",
+    "title": "翻转图像",
+    "leafTopicIds": [
+      "bitwise",
+      "two-pointers",
+      "simulation"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "two-pointers",
+      "simulation"
+    ],
+    "difficulty": "基础",
+    "focus": "练习位运算、双指针、模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/flipping-an-image/"
+  },
+  {
+    "id": "LEETCODE:781",
+    "platform": "LeetCode",
+    "externalId": "770",
+    "title": "基本计算器 IV",
+    "leafTopicIds": [
+      "stack",
+      "recursion",
+      "hash-table"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "search",
+      "recursion",
+      "hash-table"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习栈、递归、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/basic-calculator-iv/"
+  },
+  {
+    "id": "LEETCODE:816",
+    "platform": "LeetCode",
+    "externalId": "705",
+    "title": "设计哈希集合",
+    "leafTopicIds": [
+      "hash-table",
+      "linked-list"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "linked-list"
+    ],
+    "difficulty": "基础",
+    "focus": "练习哈希表、链表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/design-hashset/"
+  },
+  {
+    "id": "LEETCODE:714",
+    "platform": "LeetCode",
+    "externalId": "714",
+    "title": "买卖股票的最佳时机含手续费",
+    "leafTopicIds": [
+      "greedy"
+    ],
+    "topicIds": [
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/"
+  },
+  {
+    "id": "LEETCODE:875",
+    "platform": "LeetCode",
+    "externalId": "845",
+    "title": "数组中的最长山脉",
+    "leafTopicIds": [
+      "two-pointers",
+      "enumeration"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers",
+      "enumeration"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习双指针、枚举相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/longest-mountain-in-array/"
+  },
+  {
+    "id": "LEETCODE:954",
+    "platform": "LeetCode",
+    "externalId": "918",
+    "title": "环形子数组的最大和",
+    "leafTopicIds": [
+      "queue"
+    ],
+    "topicIds": [
+      "data-structures",
+      "queue"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习队列相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/maximum-sum-circular-subarray/"
+  },
+  {
+    "id": "LEETCODE:930",
+    "platform": "LeetCode",
+    "externalId": "894",
+    "title": "所有可能的真二叉树",
+    "leafTopicIds": [
+      "recursion",
+      "memoization"
+    ],
+    "topicIds": [
+      "search",
+      "recursion",
+      "dp",
+      "memoization"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习递归、记忆化搜索相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/all-possible-full-binary-trees/"
+  },
+  {
+    "id": "LEETCODE:1294",
+    "platform": "LeetCode",
+    "externalId": "2080",
+    "title": "区间内查询数字的频率",
+    "leafTopicIds": [
+      "segment-tree",
+      "hash-table",
+      "binary-search"
+    ],
+    "topicIds": [
+      "data-structures",
+      "segment-tree",
+      "hash-table",
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习线段树、哈希表、二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/range-frequency-queries/"
+  },
+  {
+    "id": "LEETCODE:801",
+    "platform": "LeetCode",
+    "externalId": "785",
+    "title": "判断二分图",
+    "leafTopicIds": [
+      "bfs",
+      "union-find"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "union-find"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）、并查集相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/is-graph-bipartite/"
+  },
+  {
+    "id": "LEETCODE:839",
+    "platform": "LeetCode",
+    "externalId": "820",
+    "title": "单词的压缩编码",
+    "leafTopicIds": [
+      "trie",
+      "hash-table"
+    ],
+    "topicIds": [
+      "strings",
+      "trie",
+      "data-structures",
+      "hash-table"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习字典树、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/short-encoding-of-words/"
+  },
+  {
+    "id": "LEETCODE:874",
+    "platform": "LeetCode",
+    "externalId": "844",
+    "title": "比较含退格的字符串",
+    "leafTopicIds": [
+      "stack",
+      "two-pointers",
+      "simulation"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "basics",
+      "two-pointers",
+      "simulation"
+    ],
+    "difficulty": "基础",
+    "focus": "练习栈、双指针、模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/backspace-string-compare/"
+  },
+  {
+    "id": "LEETCODE:795",
+    "platform": "LeetCode",
+    "externalId": "779",
+    "title": "第K个语法符号",
+    "leafTopicIds": [
+      "bitwise",
+      "recursion"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "search",
+      "recursion"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习位运算、递归相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/k-th-symbol-in-grammar/"
+  },
+  {
+    "id": "LEETCODE:817",
+    "platform": "LeetCode",
+    "externalId": "706",
+    "title": "设计哈希映射",
+    "leafTopicIds": [
+      "hash-table",
+      "linked-list"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "linked-list"
+    ],
+    "difficulty": "基础",
+    "focus": "练习哈希表、链表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/design-hashmap/"
+  },
+  {
+    "id": "LEETCODE:334",
+    "platform": "LeetCode",
+    "externalId": "334",
+    "title": "递增的三元子序列",
+    "leafTopicIds": [
+      "greedy"
+    ],
+    "topicIds": [
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/increasing-triplet-subsequence/"
+  },
+  {
+    "id": "LEETCODE:220",
+    "platform": "LeetCode",
+    "externalId": "220",
+    "title": "存在重复元素 III",
+    "leafTopicIds": [
+      "sorting"
+    ],
+    "topicIds": [
+      "basics",
+      "sorting"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/contains-duplicate-iii/"
+  },
+  {
+    "id": "LEETCODE:900",
+    "platform": "LeetCode",
+    "externalId": "869",
+    "title": "重新排序得到 2 的幂",
+    "leafTopicIds": [
+      "hash-table",
+      "enumeration",
+      "sorting"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "enumeration",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习哈希表、枚举、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/reordered-power-of-2/"
+  },
+  {
+    "id": "LEETCODE:969",
+    "platform": "LeetCode",
+    "externalId": "933",
+    "title": "最近的请求次数",
+    "leafTopicIds": [
+      "queue"
+    ],
+    "topicIds": [
+      "data-structures",
+      "queue"
+    ],
+    "difficulty": "基础",
+    "focus": "练习队列相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/number-of-recent-calls/"
+  },
+  {
+    "id": "LEETCODE:949",
+    "platform": "LeetCode",
+    "externalId": "913",
+    "title": "猫和老鼠",
+    "leafTopicIds": [
+      "memoization"
+    ],
+    "topicIds": [
+      "dp",
+      "memoization"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习记忆化搜索相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/cat-and-mouse/"
+  },
+  {
+    "id": "LEETCODE:821",
+    "platform": "LeetCode",
+    "externalId": "803",
+    "title": "打砖块",
+    "leafTopicIds": [
+      "union-find"
+    ],
+    "topicIds": [
+      "data-structures",
+      "union-find"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习并查集相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/bricks-falling-when-hit/"
+  },
+  {
+    "id": "LEETCODE:1080",
+    "platform": "LeetCode",
+    "externalId": "1023",
+    "title": "驼峰式匹配",
+    "leafTopicIds": [
+      "trie",
+      "two-pointers"
+    ],
+    "topicIds": [
+      "strings",
+      "trie",
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习字典树、双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/camelcase-matching/"
+  },
+  {
+    "id": "LEETCODE:898",
+    "platform": "LeetCode",
+    "externalId": "867",
+    "title": "转置矩阵",
+    "leafTopicIds": [
+      "simulation"
+    ],
+    "topicIds": [
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "基础",
+    "focus": "练习模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/transpose-matrix/"
+  },
+  {
+    "id": "LEETCODE:789",
+    "platform": "LeetCode",
+    "externalId": "703",
+    "title": "数据流中的第 K 大元素",
+    "leafTopicIds": [
+      "heap"
+    ],
+    "topicIds": [
+      "data-structures",
+      "heap"
+    ],
+    "difficulty": "基础",
+    "focus": "练习堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/kth-largest-element-in-a-stream/"
+  },
+  {
+    "id": "LEETCODE:798",
+    "platform": "LeetCode",
+    "externalId": "782",
+    "title": "变为棋盘",
+    "leafTopicIds": [
+      "bitwise"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习位运算相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/transform-to-chessboard/"
+  },
+  {
+    "id": "LEETCODE:835",
+    "platform": "LeetCode",
+    "externalId": "817",
+    "title": "链表组件",
+    "leafTopicIds": [
+      "hash-table",
+      "linked-list"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "linked-list"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习哈希表、链表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/linked-list-components/"
+  },
+  {
+    "id": "LEETCODE:624",
+    "platform": "LeetCode",
+    "externalId": "624",
+    "title": "数组列表中的最大距离",
+    "leafTopicIds": [
+      "greedy"
+    ],
+    "topicIds": [
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/maximum-distance-in-arrays/"
+  },
+  {
+    "id": "LEETCODE:883",
+    "platform": "LeetCode",
+    "externalId": "853",
+    "title": "车队",
+    "leafTopicIds": [
+      "stack",
+      "sorting"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "basics",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/car-fleet/"
+  },
+  {
+    "id": "LEETCODE:942",
+    "platform": "LeetCode",
+    "externalId": "906",
+    "title": "超级回文数",
+    "leafTopicIds": [
+      "enumeration"
+    ],
+    "topicIds": [
+      "basics",
+      "enumeration"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习枚举相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/super-palindromes/"
+  },
+  {
+    "id": "LEETCODE:973",
+    "platform": "LeetCode",
+    "externalId": "936",
+    "title": "戳印序列",
+    "leafTopicIds": [
+      "stack",
+      "greedy",
+      "queue"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "greedy",
+      "queue"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习栈、贪心与思维、队列相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/stamping-the-sequence/"
+  },
+  {
+    "id": "LEETCODE:1004",
+    "platform": "LeetCode",
+    "externalId": "964",
+    "title": "表示数字的最少运算符",
+    "leafTopicIds": [
+      "memoization"
+    ],
+    "topicIds": [
+      "dp",
+      "memoization"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习记忆化搜索相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/least-operators-to-express-number/"
+  },
+  {
+    "id": "LEETCODE:854",
+    "platform": "LeetCode",
+    "externalId": "827",
+    "title": "最大人工岛",
+    "leafTopicIds": [
+      "bfs",
+      "union-find"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "union-find"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习广度优先搜索（BFS）、并查集相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/making-a-large-island/"
+  },
+  {
+    "id": "LEETCODE:1097",
+    "platform": "LeetCode",
+    "externalId": "1032",
+    "title": "字符流",
+    "leafTopicIds": [
+      "trie"
+    ],
+    "topicIds": [
+      "strings",
+      "trie"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习字典树相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/stream-of-characters/"
+  },
+  {
+    "id": "LEETCODE:906",
+    "platform": "LeetCode",
+    "externalId": "874",
+    "title": "模拟行走机器人",
+    "leafTopicIds": [
+      "hash-table",
+      "simulation"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习哈希表、模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/walking-robot-simulation/"
+  },
+  {
+    "id": "LEETCODE:1013",
+    "platform": "LeetCode",
+    "externalId": "509",
+    "title": "斐波那契数",
+    "leafTopicIds": [
+      "recursion",
+      "memoization"
+    ],
+    "topicIds": [
+      "search",
+      "recursion",
+      "dp",
+      "memoization"
+    ],
+    "difficulty": "基础",
+    "focus": "练习递归、记忆化搜索相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/fibonacci-number/"
+  },
+  {
+    "id": "LEETCODE:802",
+    "platform": "LeetCode",
+    "externalId": "786",
+    "title": "第 K 个最小的质数分数",
+    "leafTopicIds": [
+      "two-pointers",
+      "binary-search",
+      "sorting",
+      "heap"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers",
+      "binary-search",
+      "sorting",
+      "data-structures",
+      "heap"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习双指针、二分、排序、堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/k-th-smallest-prime-fraction/"
+  },
+  {
+    "id": "LEETCODE:823",
+    "platform": "LeetCode",
+    "externalId": "805",
+    "title": "数组的均值分割",
+    "leafTopicIds": [
+      "bitwise",
+      "hash-table"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "data-structures",
+      "hash-table"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习位运算、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/split-array-with-same-average/"
+  },
+  {
+    "id": "LEETCODE:838",
+    "platform": "LeetCode",
+    "externalId": "707",
+    "title": "设计链表",
+    "leafTopicIds": [
+      "linked-list"
+    ],
+    "topicIds": [
+      "data-structures",
+      "linked-list"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习链表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/design-linked-list/"
+  },
+  {
+    "id": "LEETCODE:986",
+    "platform": "LeetCode",
+    "externalId": "949",
+    "title": "给定数字能组成的最大时间",
+    "leafTopicIds": [
+      "enumeration"
+    ],
+    "topicIds": [
+      "basics",
+      "enumeration"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习枚举相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/largest-time-for-given-digits/"
+  },
+  {
+    "id": "LEETCODE:987",
+    "platform": "LeetCode",
+    "externalId": "950",
+    "title": "按递增顺序显示卡牌",
+    "leafTopicIds": [
+      "queue",
+      "sorting",
+      "simulation"
+    ],
+    "topicIds": [
+      "data-structures",
+      "queue",
+      "basics",
+      "sorting",
+      "simulation"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习队列、排序、模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/reveal-cards-in-increasing-order/"
+  },
+  {
+    "id": "LEETCODE:869",
+    "platform": "LeetCode",
+    "externalId": "839",
+    "title": "相似字符串组",
+    "leafTopicIds": [
+      "bfs",
+      "union-find",
+      "hash-table"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "union-find",
+      "hash-table"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习广度优先搜索（BFS）、并查集、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/similar-string-groups/"
+  },
+  {
+    "id": "LEETCODE:1282",
+    "platform": "LeetCode",
+    "externalId": "1178",
+    "title": "猜字谜",
+    "leafTopicIds": [
+      "bitwise",
+      "trie",
+      "hash-table"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "strings",
+      "trie",
+      "data-structures",
+      "hash-table"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习位运算、字典树、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/number-of-valid-words-for-each-puzzle/"
+  },
+  {
+    "id": "LEETCODE:1197",
+    "platform": "LeetCode",
+    "externalId": "1106",
+    "title": "解析布尔表达式",
+    "leafTopicIds": [
+      "stack",
+      "recursion"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "search",
+      "recursion"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习栈、递归相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/parsing-a-boolean-expression/"
+  },
+  {
+    "id": "LEETCODE:803",
+    "platform": "LeetCode",
+    "externalId": "787",
+    "title": "K 站中转内最便宜的航班",
+    "leafTopicIds": [
+      "bfs",
+      "heap"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "heap"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）、堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/cheapest-flights-within-k-stops/"
+  },
+  {
+    "id": "LEETCODE:908",
+    "platform": "LeetCode",
+    "externalId": "876",
+    "title": "链表的中间结点",
+    "leafTopicIds": [
+      "linked-list",
+      "two-pointers"
+    ],
+    "topicIds": [
+      "data-structures",
+      "linked-list",
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "基础",
+    "focus": "练习链表、双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/middle-of-the-linked-list/"
+  },
+  {
+    "id": "LEETCODE:605",
+    "platform": "LeetCode",
+    "externalId": "605",
+    "title": "种花问题",
+    "leafTopicIds": [
+      "greedy"
+    ],
+    "topicIds": [
+      "greedy"
+    ],
+    "difficulty": "基础",
+    "focus": "练习贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/can-place-flowers/"
+  },
+  {
+    "id": "LEETCODE:1010",
+    "platform": "LeetCode",
+    "externalId": "970",
+    "title": "强整数",
+    "leafTopicIds": [
+      "hash-table",
+      "enumeration"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "enumeration"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习哈希表、枚举相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/powerful-integers/"
+  },
+  {
+    "id": "LEETCODE:1037",
+    "platform": "LeetCode",
+    "externalId": "995",
+    "title": "K 连续位的最小翻转次数",
+    "leafTopicIds": [
+      "bitwise",
+      "queue"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "data-structures",
+      "queue"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习位运算、队列相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/minimum-number-of-k-consecutive-bit-flips/"
+  },
+  {
+    "id": "LEETCODE:1236",
+    "platform": "LeetCode",
+    "externalId": "1137",
+    "title": "第 N 个泰波那契数",
+    "leafTopicIds": [
+      "memoization"
+    ],
+    "topicIds": [
+      "dp",
+      "memoization"
+    ],
+    "difficulty": "基础",
+    "focus": "练习记忆化搜索相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/n-th-tribonacci-number/"
+  },
+  {
+    "id": "LEETCODE:922",
+    "platform": "LeetCode",
+    "externalId": "886",
+    "title": "可能的二分法",
+    "leafTopicIds": [
+      "bfs",
+      "union-find"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "union-find"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）、并查集相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/possible-bipartition/"
+  },
+  {
+    "id": "LEETCODE:921",
+    "platform": "LeetCode",
+    "externalId": "885",
+    "title": "螺旋矩阵 III",
+    "leafTopicIds": [
+      "simulation"
+    ],
+    "topicIds": [
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/spiral-matrix-iii/"
+  },
+  {
+    "id": "LEETCODE:885",
+    "platform": "LeetCode",
+    "externalId": "855",
+    "title": "考场就座",
+    "leafTopicIds": [
+      "heap"
+    ],
+    "topicIds": [
+      "data-structures",
+      "heap"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/exam-room/"
+  },
+  {
+    "id": "LEETCODE:1072",
+    "platform": "LeetCode",
+    "externalId": "1019",
+    "title": "链表中的下一个更大节点",
+    "leafTopicIds": [
+      "stack",
+      "linked-list"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "linked-list"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈、链表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/next-greater-node-in-linked-list/"
+  },
+  {
+    "id": "LEETCODE:517",
+    "platform": "LeetCode",
+    "externalId": "517",
+    "title": "超级洗衣机",
+    "leafTopicIds": [
+      "greedy"
+    ],
+    "topicIds": [
+      "greedy"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/super-washing-machines/"
+  },
+  {
+    "id": "LEETCODE:1212",
+    "platform": "LeetCode",
+    "externalId": "1291",
+    "title": "顺次数",
+    "leafTopicIds": [
+      "enumeration"
+    ],
+    "topicIds": [
+      "basics",
+      "enumeration"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习枚举相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/sequential-digits/"
+  },
+  {
+    "id": "LEETCODE:960",
+    "platform": "LeetCode",
+    "externalId": "924",
+    "title": "尽量减少恶意软件的传播",
+    "leafTopicIds": [
+      "bfs",
+      "union-find",
+      "hash-table"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "union-find",
+      "hash-table"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习广度优先搜索（BFS）、并查集、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/minimize-malware-spread/"
+  },
+  {
+    "id": "LEETCODE:983",
+    "platform": "LeetCode",
+    "externalId": "946",
+    "title": "验证栈序列",
+    "leafTopicIds": [
+      "stack",
+      "simulation"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈、模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/validate-stack-sequences/"
+  },
+  {
+    "id": "LEETCODE:887",
+    "platform": "LeetCode",
+    "externalId": "857",
+    "title": "雇佣 K 名工人的最低成本",
+    "leafTopicIds": [
+      "greedy",
+      "sorting",
+      "heap"
+    ],
+    "topicIds": [
+      "greedy",
+      "basics",
+      "sorting",
+      "data-structures",
+      "heap"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习贪心与思维、排序、堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/minimum-cost-to-hire-k-workers/"
+  },
+  {
+    "id": "LEETCODE:828",
+    "platform": "LeetCode",
+    "externalId": "810",
+    "title": "黑板异或游戏",
+    "leafTopicIds": [
+      "bitwise"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习位运算相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/chalkboard-xor-game/"
+  },
+  {
+    "id": "LEETCODE:1267",
+    "platform": "LeetCode",
+    "externalId": "1171",
+    "title": "从链表中删去总和值为零的连续节点",
+    "leafTopicIds": [
+      "hash-table",
+      "linked-list"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "linked-list"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习哈希表、链表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/remove-zero-sum-consecutive-nodes-from-linked-list/"
+  },
+  {
+    "id": "LEETCODE:713",
+    "platform": "LeetCode",
+    "externalId": "713",
+    "title": "乘积小于 K 的子数组",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/subarray-product-less-than-k/"
+  },
+  {
+    "id": "LEETCODE:647",
+    "platform": "LeetCode",
+    "externalId": "647",
+    "title": "回文子串",
+    "leafTopicIds": [
+      "two-pointers"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/palindromic-substrings/"
+  },
+  {
+    "id": "LEETCODE:964",
+    "platform": "LeetCode",
+    "externalId": "928",
+    "title": "尽量减少恶意软件的传播 II",
+    "leafTopicIds": [
+      "bfs",
+      "union-find",
+      "hash-table"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "union-find",
+      "hash-table"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习广度优先搜索（BFS）、并查集、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/minimize-malware-spread-ii/"
+  },
+  {
+    "id": "LEETCODE:1027",
+    "platform": "LeetCode",
+    "externalId": "985",
+    "title": "查询后的偶数和",
+    "leafTopicIds": [
+      "simulation"
+    ],
+    "topicIds": [
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/sum-of-even-numbers-after-queries/"
+  },
+  {
+    "id": "LEETCODE:902",
+    "platform": "LeetCode",
+    "externalId": "871",
+    "title": "最低加油次数",
+    "leafTopicIds": [
+      "greedy",
+      "heap"
+    ],
+    "topicIds": [
+      "greedy",
+      "data-structures",
+      "heap"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习贪心与思维、堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/minimum-number-of-refueling-stops/"
+  },
+  {
+    "id": "LEETCODE:891",
+    "platform": "LeetCode",
+    "externalId": "861",
+    "title": "翻转矩阵后的得分",
+    "leafTopicIds": [
+      "greedy",
+      "bitwise"
+    ],
+    "topicIds": [
+      "greedy",
+      "basics",
+      "bitwise"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习贪心与思维、位运算相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/score-after-flipping-matrix/"
+  },
+  {
+    "id": "LEETCODE:886",
+    "platform": "LeetCode",
+    "externalId": "856",
+    "title": "括号的分数",
+    "leafTopicIds": [
+      "stack"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/score-of-parentheses/"
+  },
+  {
+    "id": "LEETCODE:718",
+    "platform": "LeetCode",
+    "externalId": "718",
+    "title": "最长重复子数组",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/maximum-length-of-repeated-subarray/"
+  },
+  {
+    "id": "LEETCODE:229",
+    "platform": "LeetCode",
+    "externalId": "229",
+    "title": "多数元素 II",
+    "leafTopicIds": [
+      "hash-table",
+      "sorting"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习哈希表、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/majority-element-ii/"
+  },
+  {
+    "id": "LEETCODE:653",
+    "platform": "LeetCode",
+    "externalId": "653",
+    "title": "两数之和 IV - 输入二叉搜索树",
+    "leafTopicIds": [
+      "bfs",
+      "hash-table",
+      "two-pointers"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "hash-table",
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "基础",
+    "focus": "练习广度优先搜索（BFS）、哈希表、双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/two-sum-iv-input-is-a-bst/"
+  },
+  {
+    "id": "LEETCODE:984",
+    "platform": "LeetCode",
+    "externalId": "947",
+    "title": "移除最多的同行或同列石头",
+    "leafTopicIds": [
+      "union-find",
+      "hash-table"
+    ],
+    "topicIds": [
+      "data-structures",
+      "union-find",
+      "hash-table"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习并查集、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/most-stones-removed-with-same-row-or-column/"
+  },
+  {
+    "id": "LEETCODE:1041",
+    "platform": "LeetCode",
+    "externalId": "999",
+    "title": "可以被一步捕获的棋子数",
+    "leafTopicIds": [
+      "simulation"
+    ],
+    "topicIds": [
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "基础",
+    "focus": "练习模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/available-captures-for-rook/"
+  },
+  {
+    "id": "LEETCODE:948",
+    "platform": "LeetCode",
+    "externalId": "912",
+    "title": "排序数组",
+    "leafTopicIds": [
+      "sorting",
+      "heap"
+    ],
+    "topicIds": [
+      "basics",
+      "sorting",
+      "data-structures",
+      "heap"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习排序、堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/sort-an-array/"
+  },
+  {
+    "id": "LEETCODE:895",
+    "platform": "LeetCode",
+    "externalId": "864",
+    "title": "获取所有钥匙的最短路径",
+    "leafTopicIds": [
+      "bitwise",
+      "bfs"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "search",
+      "bfs"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习位运算、广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/shortest-path-to-get-all-keys/"
+  },
+  {
+    "id": "LEETCODE:916",
+    "platform": "LeetCode",
+    "externalId": "880",
+    "title": "索引处的解码字符串",
+    "leafTopicIds": [
+      "stack"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/decoded-string-at-index/"
+  },
+  {
+    "id": "LEETCODE:719",
+    "platform": "LeetCode",
+    "externalId": "719",
+    "title": "找出第 K 小的数对距离",
+    "leafTopicIds": [
+      "two-pointers",
+      "binary-search",
+      "sorting"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers",
+      "binary-search",
+      "sorting"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习双指针、二分、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/find-k-th-smallest-pair-distance/"
+  },
+  {
+    "id": "LEETCODE:989",
+    "platform": "LeetCode",
+    "externalId": "952",
+    "title": "按公因数计算最大组件大小",
+    "leafTopicIds": [
+      "union-find",
+      "hash-table"
+    ],
+    "topicIds": [
+      "data-structures",
+      "union-find",
+      "hash-table"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习并查集、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/largest-component-size-by-common-factor/"
+  },
+  {
+    "id": "LEETCODE:1048",
+    "platform": "LeetCode",
+    "externalId": "1006",
+    "title": "笨阶乘",
+    "leafTopicIds": [
+      "stack",
+      "simulation"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈、模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/clumsy-factorial/"
+  },
+  {
+    "id": "LEETCODE:1014",
+    "platform": "LeetCode",
+    "externalId": "973",
+    "title": "最接近原点的 K 个点",
+    "leafTopicIds": [
+      "sorting",
+      "heap"
+    ],
+    "topicIds": [
+      "basics",
+      "sorting",
+      "data-structures",
+      "heap"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习排序、堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/k-closest-points-to-origin/"
+  },
+  {
+    "id": "LEETCODE:899",
+    "platform": "LeetCode",
+    "externalId": "868",
+    "title": "二进制间距",
+    "leafTopicIds": [
+      "bitwise"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise"
+    ],
+    "difficulty": "基础",
+    "focus": "练习位运算相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/binary-gap/"
+  },
+  {
+    "id": "LEETCODE:670",
+    "platform": "LeetCode",
+    "externalId": "670",
+    "title": "最大交换",
+    "leafTopicIds": [
+      "greedy"
+    ],
+    "topicIds": [
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/maximum-swap/"
+  },
+  {
+    "id": "LEETCODE:745",
+    "platform": "LeetCode",
+    "externalId": "744",
+    "title": "寻找比目标字母大的最小字母",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "基础",
+    "focus": "练习二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/find-smallest-letter-greater-than-target/"
+  },
+  {
+    "id": "LEETCODE:696",
+    "platform": "LeetCode",
+    "externalId": "696",
+    "title": "计数二进制子串",
+    "leafTopicIds": [
+      "two-pointers"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "基础",
+    "focus": "练习双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/count-binary-substrings/"
+  },
+  {
+    "id": "LEETCODE:999",
+    "platform": "LeetCode",
+    "externalId": "959",
+    "title": "由斜杠划分区域",
+    "leafTopicIds": [
+      "bfs",
+      "union-find",
+      "hash-table"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "union-find",
+      "hash-table"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）、并查集、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/regions-cut-by-slashes/"
+  },
+  {
+    "id": "LEETCODE:1119",
+    "platform": "LeetCode",
+    "externalId": "1041",
+    "title": "困于环中的机器人",
+    "leafTopicIds": [
+      "simulation"
+    ],
+    "topicIds": [
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/robot-bounded-in-circle/"
+  },
+  {
+    "id": "LEETCODE:1140",
+    "platform": "LeetCode",
+    "externalId": "1054",
+    "title": "距离相等的条形码",
+    "leafTopicIds": [
+      "greedy",
+      "hash-table",
+      "sorting",
+      "heap"
+    ],
+    "topicIds": [
+      "greedy",
+      "data-structures",
+      "hash-table",
+      "basics",
+      "sorting",
+      "heap"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习贪心与思维、哈希表、排序、堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/distant-barcodes/"
+  },
+  {
+    "id": "LEETCODE:934",
+    "platform": "LeetCode",
+    "externalId": "898",
+    "title": "子数组按位或操作",
+    "leafTopicIds": [
+      "bitwise"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习位运算相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/bitwise-ors-of-subarrays/"
+  },
+  {
+    "id": "LEETCODE:931",
+    "platform": "LeetCode",
+    "externalId": "895",
+    "title": "最大频率栈",
+    "leafTopicIds": [
+      "stack",
+      "hash-table"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "hash-table"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习栈、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/maximum-frequency-stack/"
+  },
+  {
+    "id": "LEETCODE:755",
+    "platform": "LeetCode",
+    "externalId": "754",
+    "title": "到达终点数字",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/reach-a-number/"
+  },
+  {
+    "id": "LEETCODE:793",
+    "platform": "LeetCode",
+    "externalId": "777",
+    "title": "在 LR 字符串中交换相邻字符",
+    "leafTopicIds": [
+      "two-pointers"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/swap-adjacent-in-lr-string/"
+  },
+  {
+    "id": "LEETCODE:1032",
+    "platform": "LeetCode",
+    "externalId": "990",
+    "title": "等式方程的可满足性",
+    "leafTopicIds": [
+      "union-find"
+    ],
+    "topicIds": [
+      "data-structures",
+      "union-find"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习并查集相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/satisfiability-of-equality-equations/"
+  },
+  {
+    "id": "LEETCODE:1195",
+    "platform": "LeetCode",
+    "externalId": "1103",
+    "title": "分糖果 II",
+    "leafTopicIds": [
+      "simulation"
+    ],
+    "topicIds": [
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "基础",
+    "focus": "练习模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/distribute-candies-to-people/"
+  },
+  {
+    "id": "LEETCODE:1270",
+    "platform": "LeetCode",
+    "externalId": "1172",
+    "title": "餐盘栈",
+    "leafTopicIds": [
+      "stack",
+      "hash-table",
+      "heap"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "hash-table",
+      "heap"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习栈、哈希表、堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/dinner-plate-stacks/"
+  },
+  {
+    "id": "LEETCODE:980",
+    "platform": "LeetCode",
+    "externalId": "943",
+    "title": "最短超级串",
+    "leafTopicIds": [
+      "bitwise"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习位运算相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/find-the-shortest-superstring/"
+  },
+  {
+    "id": "LEETCODE:797",
+    "platform": "LeetCode",
+    "externalId": "781",
+    "title": "森林中的兔子",
+    "leafTopicIds": [
+      "greedy",
+      "hash-table"
+    ],
+    "topicIds": [
+      "greedy",
+      "data-structures",
+      "hash-table"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习贪心与思维、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/rabbits-in-forest/"
+  },
+  {
+    "id": "LEETCODE:809",
+    "platform": "LeetCode",
+    "externalId": "793",
+    "title": "阶乘函数后 K 个零",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/preimage-size-of-factorial-zeroes-function/"
+  },
+  {
+    "id": "LEETCODE:811",
+    "platform": "LeetCode",
+    "externalId": "795",
+    "title": "区间子数组个数",
+    "leafTopicIds": [
+      "two-pointers"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/number-of-subarrays-with-bounded-maximum/"
+  },
+  {
+    "id": "LEETCODE:1058",
+    "platform": "LeetCode",
+    "externalId": "1061",
+    "title": "按字典序排列最小的等效字符串",
+    "leafTopicIds": [
+      "union-find"
+    ],
+    "topicIds": [
+      "data-structures",
+      "union-find"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习并查集相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/lexicographically-smallest-equivalent-string/"
+  },
+  {
+    "id": "LEETCODE:1310",
+    "platform": "LeetCode",
+    "externalId": "2079",
+    "title": "给植物浇水",
+    "leafTopicIds": [
+      "simulation"
+    ],
+    "topicIds": [
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/watering-plants/"
+  },
+  {
+    "id": "LEETCODE:1304",
+    "platform": "LeetCode",
+    "externalId": "1405",
+    "title": "最长快乐字符串",
+    "leafTopicIds": [
+      "greedy",
+      "heap"
+    ],
+    "topicIds": [
+      "greedy",
+      "data-structures",
+      "heap"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习贪心与思维、堆相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/longest-happy-string/"
+  },
+  {
+    "id": "LEETCODE:994",
+    "platform": "LeetCode",
+    "externalId": "957",
+    "title": "N 天后的牢房",
+    "leafTopicIds": [
+      "bitwise",
+      "hash-table"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "data-structures",
+      "hash-table"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习位运算、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/prison-cells-after-n-days/"
+  },
+  {
+    "id": "LEETCODE:933",
+    "platform": "LeetCode",
+    "externalId": "897",
+    "title": "递增顺序搜索树",
+    "leafTopicIds": [
+      "stack"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack"
+    ],
+    "difficulty": "基础",
+    "focus": "练习栈相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/increasing-order-search-tree/"
+  },
+  {
+    "id": "LEETCODE:617",
+    "platform": "LeetCode",
+    "externalId": "617",
+    "title": "合并二叉树",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "基础",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/merge-two-binary-trees/"
+  },
+  {
+    "id": "LEETCODE:852",
+    "platform": "LeetCode",
+    "externalId": "825",
+    "title": "适龄的朋友",
+    "leafTopicIds": [
+      "two-pointers",
+      "binary-search",
+      "sorting"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers",
+      "binary-search",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习双指针、二分、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/friends-of-appropriate-ages/"
+  },
+  {
+    "id": "LEETCODE:1073",
+    "platform": "LeetCode",
+    "externalId": "1020",
+    "title": "飞地的数量",
+    "leafTopicIds": [
+      "bfs",
+      "union-find"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "union-find"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）、并查集相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/number-of-enclaves/"
+  },
+  {
+    "id": "LEETCODE:1312",
+    "platform": "LeetCode",
+    "externalId": "2201",
+    "title": "统计可以提取的工件",
+    "leafTopicIds": [
+      "hash-table",
+      "simulation"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习哈希表、模拟相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/count-artifacts-that-can-be-extracted/"
+  },
+  {
+    "id": "LEETCODE:1022",
+    "platform": "LeetCode",
+    "externalId": "980",
+    "title": "不同路径 III",
+    "leafTopicIds": [
+      "bitwise"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习位运算相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/unique-paths-iii/"
+  },
+  {
+    "id": "LEETCODE:825",
+    "platform": "LeetCode",
+    "externalId": "807",
+    "title": "保持城市天际线",
+    "leafTopicIds": [
+      "greedy"
+    ],
+    "topicIds": [
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/max-increase-to-keep-city-skyline/"
+  },
+  {
+    "id": "LEETCODE:937",
+    "platform": "LeetCode",
+    "externalId": "901",
+    "title": "股票价格跨度",
+    "leafTopicIds": [
+      "stack"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/online-stock-span/"
+  },
+  {
+    "id": "LEETCODE:853",
+    "platform": "LeetCode",
+    "externalId": "826",
+    "title": "安排工作以达到最大收益",
+    "leafTopicIds": [
+      "greedy",
+      "two-pointers",
+      "binary-search",
+      "sorting"
+    ],
+    "topicIds": [
+      "greedy",
+      "basics",
+      "two-pointers",
+      "binary-search",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习贪心与思维、双指针、二分、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/most-profit-assigning-work/"
+  },
+  {
+    "id": "LEETCODE:1223",
+    "platform": "LeetCode",
+    "externalId": "1627",
+    "title": "带阈值的图连通性",
+    "leafTopicIds": [
+      "union-find"
+    ],
+    "topicIds": [
+      "data-structures",
+      "union-find"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习并查集相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/graph-connectivity-with-threshold/"
+  },
+  {
+    "id": "LEETCODE:1024",
+    "platform": "LeetCode",
+    "externalId": "982",
+    "title": "按位与为零的三元组",
+    "leafTopicIds": [
+      "bitwise",
+      "hash-table"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "data-structures",
+      "hash-table"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习位运算、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/triples-with-bitwise-and-equal-to-zero/"
+  },
+  {
+    "id": "LEETCODE:943",
+    "platform": "LeetCode",
+    "externalId": "907",
+    "title": "子数组的最小值之和",
+    "leafTopicIds": [
+      "stack"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/sum-of-subarray-minimums/"
+  },
+  {
+    "id": "LEETCODE:623",
+    "platform": "LeetCode",
+    "externalId": "623",
+    "title": "在二叉树中增加一行",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/add-one-row-to-tree/"
+  },
+  {
+    "id": "LEETCODE:882",
+    "platform": "LeetCode",
+    "externalId": "852",
+    "title": "山脉数组的峰顶索引",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/peak-index-in-a-mountain-array/"
+  },
+  {
+    "id": "LEETCODE:242",
+    "platform": "LeetCode",
+    "externalId": "242",
+    "title": "有效的字母异位词",
+    "leafTopicIds": [
+      "hash-table",
+      "sorting"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "sorting"
+    ],
+    "difficulty": "基础",
+    "focus": "练习哈希表、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/valid-anagram/"
+  },
+  {
+    "id": "LEETCODE:827",
+    "platform": "LeetCode",
+    "externalId": "809",
+    "title": "情感丰富的文字",
+    "leafTopicIds": [
+      "two-pointers"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/expressive-words/"
+  },
+  {
+    "id": "LEETCODE:1275",
+    "platform": "LeetCode",
+    "externalId": "1361",
+    "title": "验证二叉树",
+    "leafTopicIds": [
+      "bfs",
+      "union-find"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "union-find"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）、并查集相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/validate-binary-tree-nodes/"
+  },
+  {
+    "id": "LEETCODE:1038",
+    "platform": "LeetCode",
+    "externalId": "996",
+    "title": "平方数组的数目",
+    "leafTopicIds": [
+      "bitwise",
+      "hash-table"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "data-structures",
+      "hash-table"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习位运算、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/number-of-squareful-arrays/"
+  },
+  {
+    "id": "LEETCODE:876",
+    "platform": "LeetCode",
+    "externalId": "846",
+    "title": "一手顺子",
+    "leafTopicIds": [
+      "greedy",
+      "hash-table",
+      "sorting"
+    ],
+    "topicIds": [
+      "greedy",
+      "data-structures",
+      "hash-table",
+      "basics",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习贪心与思维、哈希表、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/hand-of-straights/"
+  },
+  {
+    "id": "LEETCODE:957",
+    "platform": "LeetCode",
+    "externalId": "921",
+    "title": "使括号有效的最少添加",
+    "leafTopicIds": [
+      "stack",
+      "greedy"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/minimum-add-to-make-parentheses-valid/"
+  },
+  {
+    "id": "LEETCODE:894",
+    "platform": "LeetCode",
+    "externalId": "710",
+    "title": "黑名单中的随机数",
+    "leafTopicIds": [
+      "hash-table",
+      "binary-search",
+      "sorting"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "binary-search",
+      "sorting"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习哈希表、二分、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/random-pick-with-blacklist/"
+  },
+  {
+    "id": "LEETCODE:841",
+    "platform": "LeetCode",
+    "externalId": "821",
+    "title": "字符的最短距离",
+    "leafTopicIds": [
+      "two-pointers"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "基础",
+    "focus": "练习双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/shortest-distance-to-a-character/"
+  },
+  {
+    "id": "LEETCODE:1308",
+    "platform": "LeetCode",
+    "externalId": "1202",
+    "title": "交换字符串中的元素",
+    "leafTopicIds": [
+      "bfs",
+      "union-find",
+      "hash-table",
+      "sorting"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "union-find",
+      "hash-table",
+      "basics",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）、并查集、哈希表、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/smallest-string-with-swaps/"
+  },
+  {
+    "id": "LEETCODE:1054",
+    "platform": "LeetCode",
+    "externalId": "1009",
+    "title": "十进制整数的反码",
+    "leafTopicIds": [
+      "bitwise"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise"
+    ],
+    "difficulty": "基础",
+    "focus": "练习位运算相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/complement-of-base-10-integer/"
+  },
+  {
+    "id": "LEETCODE:1002",
+    "platform": "LeetCode",
+    "externalId": "962",
+    "title": "最大宽度坡",
+    "leafTopicIds": [
+      "stack",
+      "two-pointers"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈、双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/maximum-width-ramp/"
+  },
+  {
+    "id": "LEETCODE:907",
+    "platform": "LeetCode",
+    "externalId": "875",
+    "title": "爱吃香蕉的珂珂",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/koko-eating-bananas/"
+  },
+  {
+    "id": "LEETCODE:1065",
+    "platform": "LeetCode",
+    "externalId": "1016",
+    "title": "子串能表示从 1 到 N 数字的二进制串",
+    "leafTopicIds": [
+      "bitwise",
+      "hash-table"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "data-structures",
+      "hash-table"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习位运算、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/binary-string-with-substrings-representing-1-to-n/"
+  },
+  {
+    "id": "LEETCODE:890",
+    "platform": "LeetCode",
+    "externalId": "860",
+    "title": "柠檬水找零",
+    "leafTopicIds": [
+      "greedy"
+    ],
+    "topicIds": [
+      "greedy"
+    ],
+    "difficulty": "基础",
+    "focus": "练习贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/lemonade-change/"
+  },
+  {
+    "id": "LEETCODE:1017",
+    "platform": "LeetCode",
+    "externalId": "975",
+    "title": "奇偶跳",
+    "leafTopicIds": [
+      "stack",
+      "sorting"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "basics",
+      "sorting"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习栈、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/odd-even-jump/"
+  },
+  {
+    "id": "LEETCODE:637",
+    "platform": "LeetCode",
+    "externalId": "637",
+    "title": "二叉树的层平均值",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "基础",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/average-of-levels-in-binary-tree/"
+  },
+  {
+    "id": "LEETCODE:910",
+    "platform": "LeetCode",
+    "externalId": "878",
+    "title": "第 N 个神奇数字",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/nth-magical-number/"
+  },
+  {
+    "id": "LEETCODE:868",
+    "platform": "LeetCode",
+    "externalId": "838",
+    "title": "推多米诺",
+    "leafTopicIds": [
+      "two-pointers"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/push-dominoes/"
+  },
+  {
+    "id": "LEETCODE:1071",
+    "platform": "LeetCode",
+    "externalId": "1018",
+    "title": "可被 5 整除的二进制前缀",
+    "leafTopicIds": [
+      "bitwise"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise"
+    ],
+    "difficulty": "基础",
+    "focus": "练习位运算相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/binary-prefix-divisible-by-5/"
+  },
+  {
+    "id": "LEETCODE:901",
+    "platform": "LeetCode",
+    "externalId": "870",
+    "title": "优势洗牌",
+    "leafTopicIds": [
+      "greedy",
+      "two-pointers",
+      "sorting"
+    ],
+    "topicIds": [
+      "greedy",
+      "basics",
+      "two-pointers",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习贪心与思维、双指针、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/advantage-shuffle/"
+  },
+  {
+    "id": "LEETCODE:1045",
+    "platform": "LeetCode",
+    "externalId": "1003",
+    "title": "检查替换后的词是否有效",
+    "leafTopicIds": [
+      "stack"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/check-if-word-is-valid-after-substitutions/"
+  },
+  {
+    "id": "LEETCODE:655",
+    "platform": "LeetCode",
+    "externalId": "655",
+    "title": "输出二叉树",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/print-binary-tree/"
+  },
+  {
+    "id": "LEETCODE:912",
+    "platform": "LeetCode",
+    "externalId": "528",
+    "title": "按权重随机选择",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/random-pick-with-weight/"
+  },
+  {
+    "id": "LEETCODE:1281",
+    "platform": "LeetCode",
+    "externalId": "1177",
+    "title": "构建回文串检测",
+    "leafTopicIds": [
+      "bitwise",
+      "hash-table"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "data-structures",
+      "hash-table"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习位运算、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/can-make-palindrome-from-substring/"
+  },
+  {
+    "id": "LEETCODE:917",
+    "platform": "LeetCode",
+    "externalId": "881",
+    "title": "救生艇",
+    "leafTopicIds": [
+      "greedy",
+      "two-pointers",
+      "sorting"
+    ],
+    "topicIds": [
+      "greedy",
+      "basics",
+      "two-pointers",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习贪心与思维、双指针、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/boats-to-save-people/"
+  },
+  {
+    "id": "LEETCODE:1050",
+    "platform": "LeetCode",
+    "externalId": "1008",
+    "title": "前序遍历构造二叉搜索树",
+    "leafTopicIds": [
+      "stack"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/construct-binary-search-tree-from-preorder-traversal/"
+  },
+  {
+    "id": "LEETCODE:662",
+    "platform": "LeetCode",
+    "externalId": "662",
+    "title": "二叉树最大宽度",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/maximum-width-of-binary-tree/"
+  },
+  {
+    "id": "LEETCODE:914",
+    "platform": "LeetCode",
+    "externalId": "497",
+    "title": "非重叠矩形中的随机点",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/random-point-in-non-overlapping-rectangles/"
+  },
+  {
+    "id": "LEETCODE:1296",
+    "platform": "LeetCode",
+    "externalId": "1483",
+    "title": "树节点的第 K 个祖先",
+    "leafTopicIds": [
+      "bitwise",
+      "bfs",
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise",
+      "search",
+      "bfs",
+      "binary-search"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习位运算、广度优先搜索（BFS）、二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/kth-ancestor-of-a-tree-node/"
+  },
+  {
+    "id": "LEETCODE:946",
+    "platform": "LeetCode",
+    "externalId": "910",
+    "title": "最小差值 II",
+    "leafTopicIds": [
+      "greedy",
+      "sorting"
+    ],
+    "topicIds": [
+      "greedy",
+      "basics",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习贪心与思维、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/smallest-range-ii/"
+  },
+  {
+    "id": "LEETCODE:1078",
+    "platform": "LeetCode",
+    "externalId": "1021",
+    "title": "删除最外层的括号",
+    "leafTopicIds": [
+      "stack"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack"
+    ],
+    "difficulty": "基础",
+    "focus": "练习栈相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/remove-outermost-parentheses/"
+  },
+  {
+    "id": "LEETCODE:941",
+    "platform": "LeetCode",
+    "externalId": "905",
+    "title": "按奇偶排序数组",
+    "leafTopicIds": [
+      "two-pointers",
+      "sorting"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers",
+      "sorting"
+    ],
+    "difficulty": "基础",
+    "focus": "练习双指针、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/sort-array-by-parity/"
+  },
+  {
+    "id": "LEETCODE:979",
+    "platform": "LeetCode",
+    "externalId": "942",
+    "title": "增减字符串匹配",
+    "leafTopicIds": [
+      "greedy",
+      "two-pointers"
+    ],
+    "topicIds": [
+      "greedy",
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "基础",
+    "focus": "练习贪心与思维、双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/di-string-match/"
+  },
+  {
+    "id": "LEETCODE:1128",
+    "platform": "LeetCode",
+    "externalId": "1047",
+    "title": "删除字符串中的所有相邻重复项",
+    "leafTopicIds": [
+      "stack"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack"
+    ],
+    "difficulty": "基础",
+    "focus": "练习栈相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/"
+  },
+  {
+    "id": "LEETCODE:690",
+    "platform": "LeetCode",
+    "externalId": "690",
+    "title": "员工的重要性",
+    "leafTopicIds": [
+      "bfs",
+      "hash-table"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "hash-table"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/employee-importance/"
+  },
+  {
+    "id": "LEETCODE:923",
+    "platform": "LeetCode",
+    "externalId": "887",
+    "title": "鸡蛋掉落",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/super-egg-drop/"
+  },
+  {
+    "id": "LEETCODE:982",
+    "platform": "LeetCode",
+    "externalId": "945",
+    "title": "使数组唯一的最小增量",
+    "leafTopicIds": [
+      "greedy",
+      "sorting"
+    ],
+    "topicIds": [
+      "greedy",
+      "basics",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习贪心与思维、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/minimum-increment-to-make-array-unique/"
+  },
+  {
+    "id": "LEETCODE:1159",
+    "platform": "LeetCode",
+    "externalId": "1081",
+    "title": "不同字符的最小子序列",
+    "leafTopicIds": [
+      "stack",
+      "greedy"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/smallest-subsequence-of-distinct-characters/"
+  },
+  {
+    "id": "LEETCODE:733",
+    "platform": "LeetCode",
+    "externalId": "733",
+    "title": "图像渲染",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "基础",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/flood-fill/"
+  },
+  {
+    "id": "LEETCODE:924",
+    "platform": "LeetCode",
+    "externalId": "888",
+    "title": "公平的糖果交换",
+    "leafTopicIds": [
+      "hash-table",
+      "binary-search",
+      "sorting"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "binary-search",
+      "sorting"
+    ],
+    "difficulty": "基础",
+    "focus": "练习哈希表、二分、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/fair-candy-swap/"
+  },
+  {
+    "id": "LEETCODE:953",
+    "platform": "LeetCode",
+    "externalId": "917",
+    "title": "仅仅反转字母",
+    "leafTopicIds": [
+      "two-pointers"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "基础",
+    "focus": "练习双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/reverse-only-letters/"
+  },
+  {
+    "id": "LEETCODE:1188",
+    "platform": "LeetCode",
+    "externalId": "1096",
+    "title": "花括号展开 II",
+    "leafTopicIds": [
+      "stack",
+      "bfs",
+      "hash-table",
+      "sorting"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "search",
+      "bfs",
+      "hash-table",
+      "basics",
+      "sorting"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习栈、广度优先搜索（BFS）、哈希表、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/brace-expansion-ii/"
+  },
+  {
+    "id": "LEETCODE:947",
+    "platform": "LeetCode",
+    "externalId": "911",
+    "title": "在线选举",
+    "leafTopicIds": [
+      "hash-table",
+      "binary-search"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习哈希表、二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/online-election/"
+  },
+  {
+    "id": "LEETCODE:958",
+    "platform": "LeetCode",
+    "externalId": "922",
+    "title": "按奇偶排序数组 II",
+    "leafTopicIds": [
+      "two-pointers",
+      "sorting"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers",
+      "sorting"
+    ],
+    "difficulty": "基础",
+    "focus": "练习双指针、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/sort-array-by-parity-ii/"
+  },
+  {
+    "id": "LEETCODE:985",
+    "platform": "LeetCode",
+    "externalId": "948",
+    "title": "令牌放置",
+    "leafTopicIds": [
+      "greedy",
+      "two-pointers",
+      "sorting"
+    ],
+    "topicIds": [
+      "greedy",
+      "basics",
+      "two-pointers",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习贪心与思维、双指针、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/bag-of-tokens/"
+  },
+  {
+    "id": "LEETCODE:1208",
+    "platform": "LeetCode",
+    "externalId": "1111",
+    "title": "有效括号的嵌套深度",
+    "leafTopicIds": [
+      "stack"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/"
+  },
+  {
+    "id": "LEETCODE:753",
+    "platform": "LeetCode",
+    "externalId": "752",
+    "title": "打开转盘锁",
+    "leafTopicIds": [
+      "bfs",
+      "hash-table"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "hash-table"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/open-the-lock/"
+  },
+  {
+    "id": "LEETCODE:1023",
+    "platform": "LeetCode",
+    "externalId": "981",
+    "title": "基于时间的键值存储",
+    "leafTopicIds": [
+      "hash-table",
+      "binary-search"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习哈希表、二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/time-based-key-value-store/"
+  },
+  {
+    "id": "LEETCODE:991",
+    "platform": "LeetCode",
+    "externalId": "954",
+    "title": "二倍数对数组",
+    "leafTopicIds": [
+      "greedy",
+      "hash-table",
+      "sorting"
+    ],
+    "topicIds": [
+      "greedy",
+      "data-structures",
+      "hash-table",
+      "basics",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习贪心与思维、哈希表、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/array-of-doubled-pairs/"
+  },
+  {
+    "id": "LEETCODE:1219",
+    "platform": "LeetCode",
+    "externalId": "1124",
+    "title": "表现良好的最长时间段",
+    "leafTopicIds": [
+      "stack",
+      "hash-table"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "hash-table"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/longest-well-performing-interval/"
+  },
+  {
+    "id": "LEETCODE:764",
+    "platform": "LeetCode",
+    "externalId": "429",
+    "title": "N 叉树的层序遍历",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/n-ary-tree-level-order-traversal/"
+  },
+  {
+    "id": "LEETCODE:1046",
+    "platform": "LeetCode",
+    "externalId": "1004",
+    "title": "最大连续1的个数 III",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/max-consecutive-ones-iii/"
+  },
+  {
+    "id": "LEETCODE:959",
+    "platform": "LeetCode",
+    "externalId": "923",
+    "title": "三数之和的多种可能",
+    "leafTopicIds": [
+      "hash-table",
+      "two-pointers",
+      "sorting"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "two-pointers",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习哈希表、双指针、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/3sum-with-multiplicity/"
+  },
+  {
+    "id": "LEETCODE:992",
+    "platform": "LeetCode",
+    "externalId": "955",
+    "title": "删列造序 II",
+    "leafTopicIds": [
+      "greedy"
+    ],
+    "topicIds": [
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/delete-columns-to-make-sorted-ii/"
+  },
+  {
+    "id": "LEETCODE:1228",
+    "platform": "LeetCode",
+    "externalId": "1130",
+    "title": "叶值的最小代价生成树",
+    "leafTopicIds": [
+      "stack",
+      "greedy"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack",
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈、贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/minimum-cost-tree-from-leaf-values/"
+  },
+  {
+    "id": "LEETCODE:774",
+    "platform": "LeetCode",
+    "externalId": "559",
+    "title": "N 叉树的最大深度",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "基础",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/maximum-depth-of-n-ary-tree/"
+  },
+  {
+    "id": "LEETCODE:1056",
+    "platform": "LeetCode",
+    "externalId": "1011",
+    "title": "在 D 天内送达包裹的能力",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/capacity-to-ship-packages-within-d-days/"
+  },
+  {
+    "id": "LEETCODE:961",
+    "platform": "LeetCode",
+    "externalId": "925",
+    "title": "长按键入",
+    "leafTopicIds": [
+      "two-pointers"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "基础",
+    "focus": "练习双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/long-pressed-name/"
+  },
+  {
+    "id": "LEETCODE:1298",
+    "platform": "LeetCode",
+    "externalId": "1190",
+    "title": "反转每对括号间的子串",
+    "leafTopicIds": [
+      "stack"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/reverse-substrings-between-each-pair-of-parentheses/"
+  },
+  {
+    "id": "LEETCODE:799",
+    "platform": "LeetCode",
+    "externalId": "783",
+    "title": "二叉搜索树节点最小距离",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "基础",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/minimum-distance-between-bst-nodes/"
+  },
+  {
+    "id": "LEETCODE:1087",
+    "platform": "LeetCode",
+    "externalId": "1027",
+    "title": "最长等差数列",
+    "leafTopicIds": [
+      "hash-table",
+      "binary-search"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习哈希表、二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/longest-arithmetic-subsequence/"
+  },
+  {
+    "id": "LEETCODE:1009",
+    "platform": "LeetCode",
+    "externalId": "969",
+    "title": "煎饼排序",
+    "leafTopicIds": [
+      "greedy",
+      "two-pointers",
+      "sorting"
+    ],
+    "topicIds": [
+      "greedy",
+      "basics",
+      "two-pointers",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习贪心与思维、双指针、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/pancake-sorting/"
+  },
+  {
+    "id": "LEETCODE:1305",
+    "platform": "LeetCode",
+    "externalId": "1944",
+    "title": "队列中可以看到的人数",
+    "leafTopicIds": [
+      "stack"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习栈相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/number-of-visible-people-in-a-queue/"
+  },
+  {
+    "id": "LEETCODE:813",
+    "platform": "LeetCode",
+    "externalId": "797",
+    "title": "所有可能的路径",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/all-paths-from-source-to-target/"
+  },
+  {
+    "id": "LEETCODE:1185",
+    "platform": "LeetCode",
+    "externalId": "1095",
+    "title": "山脉数组中查找目标值",
+    "leafTopicIds": [
+      "binary-search"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/find-in-mountain-array/"
+  },
+  {
+    "id": "LEETCODE:1019",
+    "platform": "LeetCode",
+    "externalId": "977",
+    "title": "有序数组的平方",
+    "leafTopicIds": [
+      "two-pointers",
+      "sorting"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers",
+      "sorting"
+    ],
+    "difficulty": "基础",
+    "focus": "练习双指针、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/squares-of-a-sorted-array/"
+  },
+  {
+    "id": "LEETCODE:1018",
+    "platform": "LeetCode",
+    "externalId": "976",
+    "title": "三角形的最大周长",
+    "leafTopicIds": [
+      "greedy",
+      "sorting"
+    ],
+    "topicIds": [
+      "greedy",
+      "basics",
+      "sorting"
+    ],
+    "difficulty": "基础",
+    "focus": "练习贪心与思维、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/largest-perimeter-triangle/"
+  },
+  {
+    "id": "LEETCODE:1320",
+    "platform": "LeetCode",
+    "externalId": "1209",
+    "title": "删除字符串中的所有相邻重复项 II",
+    "leafTopicIds": [
+      "stack"
+    ],
+    "topicIds": [
+      "data-structures",
+      "stack"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习栈相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string-ii/"
+  },
+  {
+    "id": "LEETCODE:820",
+    "platform": "LeetCode",
+    "externalId": "802",
+    "title": "找到最终的安全状态",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/find-eventual-safe-states/"
+  },
+  {
+    "id": "LEETCODE:1232",
+    "platform": "LeetCode",
+    "externalId": "1300",
+    "title": "转变数组后最接近目标值的数组和",
+    "leafTopicIds": [
+      "binary-search",
+      "sorting"
+    ],
+    "topicIds": [
+      "basics",
+      "binary-search",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习二分、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/sum-of-mutated-array-closest-to-target/"
+  },
+  {
+    "id": "LEETCODE:1028",
+    "platform": "LeetCode",
+    "externalId": "986",
+    "title": "区间列表的交集",
+    "leafTopicIds": [
+      "two-pointers"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/interval-list-intersections/"
+  },
+  {
+    "id": "LEETCODE:1026",
+    "platform": "LeetCode",
+    "externalId": "984",
+    "title": "不含 AAA 或 BBB 的字符串",
+    "leafTopicIds": [
+      "greedy"
+    ],
+    "topicIds": [
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/string-without-aaa-or-bbb/"
+  },
+  {
+    "id": "LEETCODE:833",
+    "platform": "LeetCode",
+    "externalId": "815",
+    "title": "公交路线",
+    "leafTopicIds": [
+      "bfs",
+      "hash-table"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "hash-table"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习广度优先搜索（BFS）、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/bus-routes/"
+  },
+  {
+    "id": "LEETCODE:1249",
+    "platform": "LeetCode",
+    "externalId": "1146",
+    "title": "快照数组",
+    "leafTopicIds": [
+      "hash-table",
+      "binary-search"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "binary-search"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习哈希表、二分相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/snapshot-array/"
+  },
+  {
+    "id": "LEETCODE:1129",
+    "platform": "LeetCode",
+    "externalId": "1048",
+    "title": "最长字符串链",
+    "leafTopicIds": [
+      "hash-table",
+      "two-pointers",
+      "sorting"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "two-pointers",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习哈希表、双指针、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/longest-string-chain/"
+  },
+  {
+    "id": "LEETCODE:1033",
+    "platform": "LeetCode",
+    "externalId": "991",
+    "title": "坏了的计算器",
+    "leafTopicIds": [
+      "greedy"
+    ],
+    "topicIds": [
+      "greedy"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习贪心与思维相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/broken-calculator/"
+  },
+  {
+    "id": "LEETCODE:871",
+    "platform": "LeetCode",
+    "externalId": "841",
+    "title": "钥匙和房间",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习广度优先搜索（BFS）相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/keys-and-rooms/"
+  },
+  {
+    "id": "LEETCODE:1273",
+    "platform": "LeetCode",
+    "externalId": "1170",
+    "title": "比较字符串最小字母出现频次",
+    "leafTopicIds": [
+      "hash-table",
+      "binary-search",
+      "sorting"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "binary-search",
+      "sorting"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习哈希表、二分、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/compare-strings-by-frequency-of-the-smallest-character/"
+  },
+  {
+    "id": "LEETCODE:1133",
+    "platform": "LeetCode",
+    "externalId": "1163",
+    "title": "按字典序排在最后的子串",
+    "leafTopicIds": [
+      "two-pointers"
+    ],
+    "topicIds": [
+      "basics",
+      "two-pointers"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习双指针相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/last-substring-in-lexicographical-order/"
+  },
+  {
+    "id": "LEETCODE:1047",
+    "platform": "LeetCode",
+    "externalId": "1005",
+    "title": "K 次取反后最大化的数组和",
+    "leafTopicIds": [
+      "greedy",
+      "sorting"
+    ],
+    "topicIds": [
+      "greedy",
+      "basics",
+      "sorting"
+    ],
+    "difficulty": "基础",
+    "focus": "练习贪心与思维、排序相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/maximize-sum-of-array-after-k-negations/"
+  },
+  {
+    "id": "LEETCODE:884",
+    "platform": "LeetCode",
+    "externalId": "854",
+    "title": "相似度为 K 的字符串",
+    "leafTopicIds": [
+      "bfs",
+      "hash-table"
+    ],
+    "topicIds": [
+      "search",
+      "bfs",
+      "data-structures",
+      "hash-table"
+    ],
+    "difficulty": "挑战",
+    "focus": "练习广度优先搜索（BFS）、哈希表相关的建模、边界和实现。",
+    "url": "https://leetcode.cn/problems/k-similar-strings/"
   }
 ]
