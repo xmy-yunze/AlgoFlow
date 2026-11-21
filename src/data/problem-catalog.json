@@ -12526,5 +12526,24 @@
     "difficulty": "挑战",
     "focus": "练习广度优先搜索（BFS）、哈希表相关的建模、边界和实现。",
     "url": "https://leetcode.cn/problems/k-similar-strings/"
+  },
+  {
+    "id": "LUOGU:P1097",
+    "platform": "洛谷",
+    "externalId": "P1097",
+    "title": "[NOIP 2007 提高组] 统计数字",
+    "leafTopicIds": [
+      "sorting",
+      "hash-table"
+    ],
+    "topicIds": [
+      "basics",
+      "sorting",
+      "data-structures",
+      "hash-table"
+    ],
+    "difficulty": "基础",
+    "focus": "练习排序后分组计数，或使用哈希表统计频次后按数字升序输出。",
+    "url": "https://www.luogu.com.cn/problem/P1097"
   }
 ]
