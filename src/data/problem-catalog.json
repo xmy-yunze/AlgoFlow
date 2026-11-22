@@ -12545,5 +12545,39 @@
     "difficulty": "基础",
     "focus": "练习排序后分组计数，或使用哈希表统计频次后按数字升序输出。",
     "url": "https://www.luogu.com.cn/problem/P1097"
+  },
+  {
+    "id": "LUOGU:P1601",
+    "platform": "洛谷",
+    "externalId": "P1601",
+    "title": "高精度加法",
+    "leafTopicIds": [
+      "big-integer"
+    ],
+    "topicIds": [
+      "basics",
+      "big-integer"
+    ],
+    "difficulty": "基础",
+    "focus": "练习逐位相加与进位处理，处理超出整数范围的非负整数加法。",
+    "url": "https://www.luogu.com.cn/problem/P1601"
+  },
+  {
+    "id": "LUOGU:P1604",
+    "platform": "洛谷",
+    "externalId": "P1604",
+    "title": "B进制星球",
+    "leafTopicIds": [
+      "big-integer",
+      "base-conversion"
+    ],
+    "topicIds": [
+      "basics",
+      "big-integer",
+      "base-conversion"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习任意进制的高精度加法、字符数值转换与进位处理。",
+    "url": "https://www.luogu.com.cn/problem/P1604"
   }
 ]
