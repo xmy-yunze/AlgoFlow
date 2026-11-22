@@ -5,7 +5,7 @@ import { appendSession, editSession, deleteSession } from '../src/lib/practice.j
 test('热力按本地日期去重AC，重复、WA及无日期旧标记不虚增',()=>{
  const rows=[{problemId:'a',verdict:'AC',recordedAt:'2026-11-22T10:00:00'},{problemId:'a',verdict:'AC',recordedAt:'2026-11-22T11:00:00'},{problemId:'a',verdict:'WA',recordedAt:'2026-11-22T12:00:00'},{problemId:'b',verdict:'WA',recordedAt:'2026-11-22T13:00:00'},{problemId:'c',verdict:'AC',recordedAt:'2026-11-23T00:01:00'},{problemId:'d',verdict:'AC',recordedAt:'invalid'}]
  assert.deepEqual([...dailySolvedCounts(rows)], [['2026-11-22',1],['2026-11-23',1]])
- assert.deepEqual([0,1,2,3,4,5,6,9].map(heatLevel),[0,1,2,2,3,3,4,4])
+ assert.deepEqual([0,1,2,3,4,5,6,9].map(heatLevel),[0,1,2,3,4,5,6,6])
 })
 test('沿用现有编辑删除逻辑后重新派生热力，旧完成标记不丢失',()=>{
  const form={verdict:'AC',assistanceLevel:'INDEPENDENT',selfRating:3,minutes:'',errorTypes:[],note:''}

@@ -14,5 +14,5 @@ export function dailySolvedCounts(sessions = []) {
   return new Map([...days].map(([key, ids]) => [key, ids.size]))
 }
 export function heatLevel(count = 0) {
-  return count >= 6 ? 4 : count >= 4 ? 3 : count >= 2 ? 2 : count >= 1 ? 1 : 0
+  return Math.min(6, Math.max(0, Math.floor(count)))
 }
