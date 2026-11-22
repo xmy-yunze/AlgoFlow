@@ -12579,5 +12579,21 @@
     "difficulty": "进阶",
     "focus": "练习任意进制的高精度加法、字符数值转换与进位处理。",
     "url": "https://www.luogu.com.cn/problem/P1604"
+  },
+  {
+    "id": "LUOGU:P1143",
+    "platform": "洛谷",
+    "externalId": "P1143",
+    "title": "进制转换",
+    "leafTopicIds": [
+      "base-conversion"
+    ],
+    "topicIds": [
+      "basics",
+      "base-conversion"
+    ],
+    "difficulty": "基础",
+    "focus": "练习字符数码转换、按位累乘求值及除基取余，实现不同进制之间的转换。",
+    "url": "https://www.luogu.com.cn/problem/P1143"
   }
 ]
