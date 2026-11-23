@@ -12595,5 +12595,21 @@
     "difficulty": "基础",
     "focus": "练习字符数码转换、按位累乘求值及除基取余，实现不同进制之间的转换。",
     "url": "https://www.luogu.com.cn/problem/P1143"
+  },
+  {
+    "id": "LUOGU:P1308",
+    "platform": "洛谷",
+    "externalId": "P1308",
+    "title": "[NOIP 2011 普及组] 统计单词数",
+    "leafTopicIds": [
+      "simulation"
+    ],
+    "topicIds": [
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "基础",
+    "focus": "练习字符串扫描、忽略大小写的完整单词匹配，以及出现次数和首次位置统计。",
+    "url": "https://www.luogu.com.cn/problem/P1308"
   }
 ]
