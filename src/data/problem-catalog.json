@@ -12611,5 +12611,21 @@
     "difficulty": "基础",
     "focus": "练习字符串扫描、忽略大小写的完整单词匹配，以及出现次数和首次位置统计。",
     "url": "https://www.luogu.com.cn/problem/P1308"
+  },
+  {
+    "id": "LUOGU:P1332",
+    "platform": "洛谷",
+    "externalId": "P1332",
+    "title": "血色先锋队",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "进阶",
+    "focus": "练习多源广度优先搜索，将全部感染源同时入队，计算网格中各位置的最早感染时间。",
+    "url": "https://www.luogu.com.cn/problem/P1332"
   }
 ]
