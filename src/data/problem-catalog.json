@@ -12627,5 +12627,21 @@
     "difficulty": "进阶",
     "focus": "练习多源广度优先搜索，将全部感染源同时入队，计算网格中各位置的最早感染时间。",
     "url": "https://www.luogu.com.cn/problem/P1332"
+  },
+  {
+    "id": "LUOGU:P1451",
+    "platform": "洛谷",
+    "externalId": "P1451",
+    "title": "求细胞数量",
+    "leafTopicIds": [
+      "bfs"
+    ],
+    "topicIds": [
+      "search",
+      "bfs"
+    ],
+    "difficulty": "基础",
+    "focus": "练习网格广度优先搜索与访问标记，统计非零单元按上下左右相连形成的连通块。",
+    "url": "https://www.luogu.com.cn/problem/P1451"
   }
 ]
