@@ -12662,5 +12662,418 @@
     "difficulty": "基础",
     "focus": "练习使用映射维护姓名与成绩，实现插入修改、查询、删除和数量统计。",
     "url": "https://www.luogu.com.cn/problem/P5266"
+  },
+  {
+    "id": "LUOGU:P2142",
+    "platform": "洛谷",
+    "externalId": "P2142",
+    "title": "高精度减法",
+    "leafTopicIds": [
+      "big-integer"
+    ],
+    "topicIds": [
+      "basics",
+      "big-integer"
+    ],
+    "difficulty": "基础",
+    "focus": "高精度减法及借位处理",
+    "url": "https://www.luogu.com.cn/problem/P2142"
+  },
+  {
+    "id": "LUOGU:P1303",
+    "platform": "洛谷",
+    "externalId": "P1303",
+    "title": "A*B Problem",
+    "leafTopicIds": [
+      "big-integer"
+    ],
+    "topicIds": [
+      "basics",
+      "big-integer"
+    ],
+    "difficulty": "基础",
+    "focus": "高精度乘法与进位处理",
+    "url": "https://www.luogu.com.cn/problem/P1303"
+  },
+  {
+    "id": "LUOGU:P1255",
+    "platform": "洛谷",
+    "externalId": "P1255",
+    "title": "数楼梯",
+    "leafTopicIds": [
+      "big-integer"
+    ],
+    "topicIds": [
+      "basics",
+      "big-integer"
+    ],
+    "difficulty": "基础",
+    "focus": "递推计数中的大整数表示",
+    "url": "https://www.luogu.com.cn/problem/P1255"
+  },
+  {
+    "id": "LUOGU:P1080",
+    "platform": "洛谷",
+    "externalId": "P1080",
+    "title": "[NOIP 2012 提高组] 国王游戏",
+    "leafTopicIds": [
+      "big-integer"
+    ],
+    "topicIds": [
+      "basics",
+      "big-integer"
+    ],
+    "difficulty": "挑战",
+    "focus": "贪心排序与大整数乘除",
+    "url": "https://www.luogu.com.cn/problem/P1080"
+  },
+  {
+    "id": "LUOGU:P1591",
+    "platform": "洛谷",
+    "externalId": "P1591",
+    "title": "阶乘数码",
+    "leafTopicIds": [
+      "big-integer"
+    ],
+    "topicIds": [
+      "basics",
+      "big-integer"
+    ],
+    "difficulty": "基础",
+    "focus": "阶乘计算与数码统计",
+    "url": "https://www.luogu.com.cn/problem/P1591"
+  },
+  {
+    "id": "LUOGU:P1017",
+    "platform": "洛谷",
+    "externalId": "P1017",
+    "title": "[NOIP 2000 提高组] 进制转换",
+    "leafTopicIds": [
+      "base-conversion"
+    ],
+    "topicIds": [
+      "basics",
+      "base-conversion"
+    ],
+    "difficulty": "基础",
+    "focus": "负进制表示与余数调整",
+    "url": "https://www.luogu.com.cn/problem/P1017"
+  },
+  {
+    "id": "LUOGU:P1100",
+    "platform": "洛谷",
+    "externalId": "P1100",
+    "title": "高低位交换",
+    "leafTopicIds": [
+      "bitwise"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise"
+    ],
+    "difficulty": "基础",
+    "focus": "高低位交换与移位运算",
+    "url": "https://www.luogu.com.cn/problem/P1100"
+  },
+  {
+    "id": "LUOGU:P1469",
+    "platform": "洛谷",
+    "externalId": "P1469",
+    "title": "找筷子",
+    "leafTopicIds": [
+      "bitwise"
+    ],
+    "topicIds": [
+      "basics",
+      "bitwise"
+    ],
+    "difficulty": "基础",
+    "focus": "异或消除成对元素",
+    "url": "https://www.luogu.com.cn/problem/P1469"
+  },
+  {
+    "id": "LUOGU:P2004",
+    "platform": "洛谷",
+    "externalId": "P2004",
+    "title": "领地选择",
+    "leafTopicIds": [
+      "prefix-2d"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "prefix-2d"
+    ],
+    "difficulty": "基础",
+    "focus": "二维区域和与固定正方形枚举",
+    "url": "https://www.luogu.com.cn/problem/P2004"
+  },
+  {
+    "id": "LUOGU:P2280",
+    "platform": "洛谷",
+    "externalId": "P2280",
+    "title": "[HNOI2003] 激光炸弹",
+    "leafTopicIds": [
+      "prefix-2d"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "prefix-2d"
+    ],
+    "difficulty": "进阶",
+    "focus": "二维前缀和统计正方形范围内权值",
+    "url": "https://www.luogu.com.cn/problem/P2280"
+  },
+  {
+    "id": "LUOGU:P1387",
+    "platform": "洛谷",
+    "externalId": "P1387",
+    "title": "最大正方形",
+    "leafTopicIds": [
+      "prefix-2d"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "prefix-2d"
+    ],
+    "difficulty": "基础",
+    "focus": "二维前缀和检验全一正方形",
+    "url": "https://www.luogu.com.cn/problem/P1387"
+  },
+  {
+    "id": "LUOGU:P4552",
+    "platform": "洛谷",
+    "externalId": "P4552",
+    "title": "[Poetize6] IncDec Sequence",
+    "leafTopicIds": [
+      "difference-1d"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "difference-1d"
+    ],
+    "difficulty": "进阶",
+    "focus": "差分数组的正负增量分析",
+    "url": "https://www.luogu.com.cn/problem/P4552"
+  },
+  {
+    "id": "LUOGU:P3406",
+    "platform": "洛谷",
+    "externalId": "P3406",
+    "title": "海底高铁",
+    "leafTopicIds": [
+      "difference-1d"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "difference-1d"
+    ],
+    "difficulty": "进阶",
+    "focus": "路径区间使用次数的差分统计",
+    "url": "https://www.luogu.com.cn/problem/P3406"
+  },
+  {
+    "id": "LUOGU:P1083",
+    "platform": "洛谷",
+    "externalId": "P1083",
+    "title": "[NOIP 2012 提高组] 借教室",
+    "leafTopicIds": [
+      "difference-1d"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "difference-1d"
+    ],
+    "difficulty": "进阶",
+    "focus": "区间资源变化的差分检验",
+    "url": "https://www.luogu.com.cn/problem/P1083"
+  },
+  {
+    "id": "LUOGU:P2879",
+    "platform": "洛谷",
+    "externalId": "P2879",
+    "title": "[USACO07JAN] Tallest Cow S",
+    "leafTopicIds": [
+      "difference-1d"
+    ],
+    "topicIds": [
+      "basics",
+      "prefix-sum",
+      "difference-1d"
+    ],
+    "difficulty": "进阶",
+    "focus": "区间高度约束的差分恢复",
+    "url": "https://www.luogu.com.cn/problem/P2879"
+  },
+  {
+    "id": "LUOGU:P1888",
+    "platform": "洛谷",
+    "externalId": "P1888",
+    "title": "三角函数",
+    "leafTopicIds": [
+      "gcd-lcm"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "gcd-lcm"
+    ],
+    "difficulty": "基础",
+    "focus": "最大公约数约分",
+    "url": "https://www.luogu.com.cn/problem/P1888"
+  },
+  {
+    "id": "LUOGU:P3383",
+    "platform": "洛谷",
+    "externalId": "P3383",
+    "title": "【模板】线性筛素数",
+    "leafTopicIds": [
+      "sieve"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "sieve"
+    ],
+    "difficulty": "基础",
+    "focus": "素数筛与第k小素数查询",
+    "url": "https://www.luogu.com.cn/problem/P3383"
+  },
+  {
+    "id": "LUOGU:P5723",
+    "platform": "洛谷",
+    "externalId": "P5723",
+    "title": "【深基4.例13】质数口袋",
+    "leafTopicIds": [
+      "sieve"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "sieve"
+    ],
+    "difficulty": "基础",
+    "focus": "筛选素数并按预算累加",
+    "url": "https://www.luogu.com.cn/problem/P5723"
+  },
+  {
+    "id": "LUOGU:P5736",
+    "platform": "洛谷",
+    "externalId": "P5736",
+    "title": "【深基7.例2】质数筛",
+    "leafTopicIds": [
+      "primes"
+    ],
+    "topicIds": [
+      "math",
+      "number-theory",
+      "primes"
+    ],
+    "difficulty": "基础",
+    "focus": "素数判定与输出",
+    "url": "https://www.luogu.com.cn/problem/P5736"
+  },
+  {
+    "id": "LUOGU:P1616",
+    "platform": "洛谷",
+    "externalId": "P1616",
+    "title": "疯狂的采药",
+    "leafTopicIds": [
+      "knapsack"
+    ],
+    "topicIds": [
+      "dp",
+      "knapsack"
+    ],
+    "difficulty": "基础",
+    "focus": "练习完全背包：每种草药可以重复选取，在时间限制内求最大价值。",
+    "url": "https://www.luogu.com.cn/problem/P1616"
+  },
+  {
+    "id": "LUOGU:P1091",
+    "platform": "洛谷",
+    "externalId": "P1091",
+    "title": "[NOIP 2004 提高组] 合唱队形",
+    "leafTopicIds": [
+      "lis"
+    ],
+    "topicIds": [
+      "dp",
+      "linear-dp",
+      "lis"
+    ],
+    "difficulty": "基础",
+    "focus": "双向最长上升子序列合并",
+    "url": "https://www.luogu.com.cn/problem/P1091"
+  },
+  {
+    "id": "LUOGU:P4779",
+    "platform": "洛谷",
+    "externalId": "P4779",
+    "title": "【模板】单源最短路径（标准版）",
+    "leafTopicIds": [
+      "dijkstra"
+    ],
+    "topicIds": [
+      "graph",
+      "shortest-path",
+      "dijkstra"
+    ],
+    "difficulty": "进阶",
+    "focus": "非负权图的单源最短路",
+    "url": "https://www.luogu.com.cn/problem/P4779"
+  },
+  {
+    "id": "LUOGU:P1195",
+    "platform": "洛谷",
+    "externalId": "P1195",
+    "title": "口袋的天空",
+    "leafTopicIds": [
+      "union-find"
+    ],
+    "topicIds": [
+      "data-structures",
+      "union-find"
+    ],
+    "difficulty": "进阶",
+    "focus": "连通块合并与最小生成森林",
+    "url": "https://www.luogu.com.cn/problem/P1195"
+  },
+  {
+    "id": "LUOGU:P1111",
+    "platform": "洛谷",
+    "externalId": "P1111",
+    "title": "修复公路",
+    "leafTopicIds": [
+      "union-find"
+    ],
+    "topicIds": [
+      "data-structures",
+      "union-find"
+    ],
+    "difficulty": "进阶",
+    "focus": "按时间合并连通块",
+    "url": "https://www.luogu.com.cn/problem/P1111"
+  },
+  {
+    "id": "LUOGU:P1551",
+    "platform": "洛谷",
+    "externalId": "P1551",
+    "title": "亲戚",
+    "leafTopicIds": [
+      "union-find"
+    ],
+    "topicIds": [
+      "data-structures",
+      "union-find"
+    ],
+    "difficulty": "进阶",
+    "focus": "亲属关系合并与查询",
+    "url": "https://www.luogu.com.cn/problem/P1551"
   }
 ]
