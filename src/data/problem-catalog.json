@@ -12643,5 +12643,24 @@
     "difficulty": "基础",
     "focus": "练习网格广度优先搜索与访问标记，统计非零单元按上下左右相连形成的连通块。",
     "url": "https://www.luogu.com.cn/problem/P1451"
+  },
+  {
+    "id": "LUOGU:P5266",
+    "platform": "洛谷",
+    "externalId": "P5266",
+    "title": "【深基17.例6】学籍管理",
+    "leafTopicIds": [
+      "hash-table",
+      "simulation"
+    ],
+    "topicIds": [
+      "data-structures",
+      "hash-table",
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "基础",
+    "focus": "练习使用映射维护姓名与成绩，实现插入修改、查询、删除和数量统计。",
+    "url": "https://www.luogu.com.cn/problem/P5266"
   }
 ]
