@@ -13075,5 +13075,21 @@
     "difficulty": "进阶",
     "focus": "亲属关系合并与查询",
     "url": "https://www.luogu.com.cn/problem/P1551"
+  },
+  {
+    "id": "LUOGU:P1328",
+    "platform": "洛谷",
+    "externalId": "P1328",
+    "title": "[NOIP 2014 提高组] 生活大爆炸版石头剪刀布",
+    "leafTopicIds": [
+      "simulation"
+    ],
+    "topicIds": [
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "基础",
+    "focus": "练习胜负关系表、取模实现周期出拳，以及逐轮模拟得分统计。",
+    "url": "https://www.luogu.com.cn/problem/P1328"
   }
 ]
