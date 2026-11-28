@@ -13091,5 +13091,21 @@
     "difficulty": "基础",
     "focus": "练习胜负关系表、取模实现周期出拳，以及逐轮模拟得分统计。",
     "url": "https://www.luogu.com.cn/problem/P1328"
+  },
+  {
+    "id": "LUOGU:P1598",
+    "platform": "洛谷",
+    "externalId": "P1598",
+    "title": "[USACO03FEB] 垂直柱状图 Vertical Histogram",
+    "leafTopicIds": [
+      "simulation"
+    ],
+    "topicIds": [
+      "basics",
+      "simulation"
+    ],
+    "difficulty": "基础",
+    "focus": "练习字母频次统计、逐层输出垂直柱状图，以及行末空格和换行的格式控制。",
+    "url": "https://www.luogu.com.cn/problem/P1598"
   }
 ]
